@@ -1,0 +1,48 @@
+version: '3.5'
+
+services:
+  ui:
+    image: gitlab.mobiedu.vn:5050/mobiedu/cambridge/frontend/staging
+    environment:
+      HOST: 0.0.0.0
+      NUXT_PUBLIC_BASE_URL: http://host.docker.internal:4000
+      PORT: 3000
+    ports:
+      - 3000:3000
+
+  # api:
+  #   image: gitlab.mobiedu.vn:5050/mobiedu/mobiedu-v2/backend/next
+  #   environment:
+  #     DB_HOST: host.docker.internal
+  #     DB_PORT: 3306
+  #     DB_USER: mobiedu
+  #     DB_PASSWORD: mobiedu@1234
+  #     DB_NAME: mobiedu
+  #     PROVIDER: mobieduv2
+  #     WEB_PORT: 4000
+  #     EX_MOBIEDU_SECRET: N@viLms
+  #     LMS_VERSION: "3"
+  #     SECRET: mobiedu
+  #     APP_ENV: development
+  #     DEFAULT_LIMIT: 10
+  #     ENABLE_SWAG: TRUE
+  #     S3_ACCESS_KEY: 598PFJ6IVFVSO2KPKN73
+  #     S3_SECRET_KEY: ezeMmQ44ogr2kUNxVj5ieakqMKlxPNvYg38r7fJ3
+  #     S3_ENDPOINT: cdn.codeinet.com
+  #     S3_BUCKET: mobiedu
+  #     S3_SSL: true
+  #     LMS_ENDPOINT: https://dreamhouse.mobiedu.vn/RestApi
+  #     ELASTIC_APM_SERVICE_NAME: Exam Mobideu
+  #     ELASTIC_APM_SERVER_URL: http://10.54.204.15:8200
+  #     ELASTIC_APM_SECRET_TOKEN:
+  #     ELASTIC_APM_ENVIRONMENT: production
+  #     SECRETKEY: moocskey
+  #     SSO_END_POINT: https://sso.codeinet.com
+  #     SSO_CLIENT_ID: 740efc2954b10c21c34b
+  #     SSO_CLIENT_SECRET: d4664676f136fcd5b2e72121cd86830b7f1790b2
+  #     SSO_ORGANIZATION_NAME: mobiedu_id
+  #     SSO_APPLICATION_NAME: baitap
+  #   volumes:
+  #     - ./token_jwt_key.pem:/app/token_jwt_key.pem
+  #   ports:
+  #     - 4000:4000

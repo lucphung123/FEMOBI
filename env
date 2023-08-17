@@ -1,0 +1,4 @@
+NUXT_PUBLIC_BASE_URL="https://cam.codeinet.com"
+NUXT_PUBLIC_SOCKET_URL=nakamaws.codeinet.com
+PORT=3000
+HOST="0.0.0.0"
