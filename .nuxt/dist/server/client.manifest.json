@@ -6,10 +6,10 @@
     "module": true,
     "resourceType": "script"
   },
-  "/home/thanh/work/mobiedu-next-fe/node_modules/nuxt/dist/app/entry.js": {
+  "/home/minh/FeMobi/mobiedu-next-fe/node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "isEntry": true,
-    "file": "/home/thanh/work/mobiedu-next-fe/node_modules/nuxt/dist/app/entry.js"
+    "file": "/home/minh/FeMobi/mobiedu-next-fe/node_modules/nuxt/dist/app/entry.js"
   }
 }

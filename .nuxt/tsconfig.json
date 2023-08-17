@@ -9,7 +9,7 @@
     "skipLibCheck": true,
     "strict": true,
     "allowJs": true,
-    "baseUrl": "/home/thanh/work/mobiedu-next-fe",
+    "baseUrl": "/home/minh/FeMobi/mobiedu-next-fe",
     "noEmit": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
@@ -18,67 +18,64 @@
     ],
     "paths": {
       "~": [
-        "/home/thanh/work/mobiedu-next-fe"
+        "/home/minh/FeMobi/mobiedu-next-fe"
       ],
       "~/*": [
-        "/home/thanh/work/mobiedu-next-fe/*"
+        "/home/minh/FeMobi/mobiedu-next-fe/*"
       ],
       "@": [
-        "/home/thanh/work/mobiedu-next-fe"
+        "/home/minh/FeMobi/mobiedu-next-fe"
       ],
       "@/*": [
-        "/home/thanh/work/mobiedu-next-fe/*"
+        "/home/minh/FeMobi/mobiedu-next-fe/*"
       ],
       "~~": [
-        "/home/thanh/work/mobiedu-next-fe"
+        "/home/minh/FeMobi/mobiedu-next-fe"
       ],
       "~~/*": [
-        "/home/thanh/work/mobiedu-next-fe/*"
+        "/home/minh/FeMobi/mobiedu-next-fe/*"
       ],
       "@@": [
-        "/home/thanh/work/mobiedu-next-fe"
+        "/home/minh/FeMobi/mobiedu-next-fe"
       ],
       "@@/*": [
-        "/home/thanh/work/mobiedu-next-fe/*"
+        "/home/minh/FeMobi/mobiedu-next-fe/*"
       ],
       "assets": [
-        "/home/thanh/work/mobiedu-next-fe/assets"
+        "/home/minh/FeMobi/mobiedu-next-fe/assets"
       ],
       "assets/*": [
-        "/home/thanh/work/mobiedu-next-fe/assets/*"
+        "/home/minh/FeMobi/mobiedu-next-fe/assets/*"
       ],
       "public": [
-        "/home/thanh/work/mobiedu-next-fe/public"
-      ],
-      "public/*": [
-        "/home/thanh/work/mobiedu-next-fe/public/*"
+        "/home/minh/FeMobi/mobiedu-next-fe/public"
       ],
       "#app": [
-        "/home/thanh/work/mobiedu-next-fe/node_modules/nuxt/dist/app"
+        "/home/minh/FeMobi/mobiedu-next-fe/node_modules/nuxt/dist/app"
       ],
       "#app/*": [
-        "/home/thanh/work/mobiedu-next-fe/node_modules/nuxt/dist/app/*"
+        "/home/minh/FeMobi/mobiedu-next-fe/node_modules/nuxt/dist/app/*"
       ],
       "vue-demi": [
-        "/home/thanh/work/mobiedu-next-fe/node_modules/nuxt/dist/app/compat/vue-demi"
+        "/home/minh/FeMobi/mobiedu-next-fe/node_modules/nuxt/dist/app/compat/vue-demi"
       ],
       "pinia": [
-        "/home/thanh/work/mobiedu-next-fe/node_modules/pinia/dist/pinia"
+        "/home/minh/FeMobi/mobiedu-next-fe/node_modules/pinia/dist/pinia"
       ],
       "#vue-router": [
-        "/home/thanh/work/mobiedu-next-fe/.nuxt/vue-router"
+        "/home/minh/FeMobi/mobiedu-next-fe/.nuxt/vue-router"
       ],
       "#imports": [
-        "/home/thanh/work/mobiedu-next-fe/.nuxt/imports"
+        "/home/minh/FeMobi/mobiedu-next-fe/.nuxt/imports"
       ],
       "#build": [
-        "/home/thanh/work/mobiedu-next-fe/.nuxt"
+        "/home/minh/FeMobi/mobiedu-next-fe/.nuxt"
       ],
       "#build/*": [
-        "/home/thanh/work/mobiedu-next-fe/.nuxt/*"
+        "/home/minh/FeMobi/mobiedu-next-fe/.nuxt/*"
       ],
       "#components": [
-        "/home/thanh/work/mobiedu-next-fe/.nuxt/components"
+        "/home/minh/FeMobi/mobiedu-next-fe/.nuxt/components"
       ]
     }
   },
@@ -86,14 +83,14 @@
     "./nuxt.d.ts",
     "../**/*",
     "../**/*",
-    "/home/thanh/work/mobiedu-next-fe",
-    "/home/thanh/work/mobiedu-next-fe/*",
-    "/home/thanh/work/mobiedu-next-fe",
-    "/home/thanh/work/mobiedu-next-fe/*",
-    "/home/thanh/work/mobiedu-next-fe",
-    "/home/thanh/work/mobiedu-next-fe/*",
-    "/home/thanh/work/mobiedu-next-fe",
-    "/home/thanh/work/mobiedu-next-fe/*"
+    "/home/minh/FeMobi/mobiedu-next-fe",
+    "/home/minh/FeMobi/mobiedu-next-fe/*",
+    "/home/minh/FeMobi/mobiedu-next-fe",
+    "/home/minh/FeMobi/mobiedu-next-fe/*",
+    "/home/minh/FeMobi/mobiedu-next-fe",
+    "/home/minh/FeMobi/mobiedu-next-fe/*",
+    "/home/minh/FeMobi/mobiedu-next-fe",
+    "/home/minh/FeMobi/mobiedu-next-fe/*"
   ],
   "exclude": [
     "../dist",
