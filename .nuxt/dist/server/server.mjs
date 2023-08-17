@@ -1,1 +1,1 @@
-export { default } from "file:///home/thanh/work/mobiedu-next-fe/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
+export { default } from "file:///home/minh/FeMobi/mobiedu-next-fe/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"

@@ -1,5 +1,5 @@
 
-import { defuFn } from '/home/thanh/work/mobiedu-next-fe/node_modules/defu/dist/defu.mjs'
+import { defuFn } from '/home/minh/FeMobi/mobiedu-next-fe/node_modules/defu/dist/defu.mjs'
 
 const inlineConfig = {}
 

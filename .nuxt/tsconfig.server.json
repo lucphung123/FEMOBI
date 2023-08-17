@@ -12,54 +12,51 @@
     "jsxFragmentFactory": "Fragment",
     "paths": {
       "#imports": [
-        "/home/thanh/work/mobiedu-next-fe/.nuxt/types/nitro-imports"
+        "/home/minh/FeMobi/mobiedu-next-fe/.nuxt/types/nitro-imports"
       ],
       "#paths": [
-        "/home/thanh/work/mobiedu-next-fe/node_modules/nuxt/dist/core/runtime/nitro/paths"
+        "/home/minh/FeMobi/mobiedu-next-fe/node_modules/nuxt/dist/core/runtime/nitro/paths"
       ],
       "~": [
-        "/home/thanh/work/mobiedu-next-fe"
+        "/home/minh/FeMobi/mobiedu-next-fe"
       ],
       "~/*": [
-        "/home/thanh/work/mobiedu-next-fe/*"
+        "/home/minh/FeMobi/mobiedu-next-fe/*"
       ],
       "@": [
-        "/home/thanh/work/mobiedu-next-fe"
+        "/home/minh/FeMobi/mobiedu-next-fe"
       ],
       "@/*": [
-        "/home/thanh/work/mobiedu-next-fe/*"
+        "/home/minh/FeMobi/mobiedu-next-fe/*"
       ],
       "~~": [
-        "/home/thanh/work/mobiedu-next-fe"
+        "/home/minh/FeMobi/mobiedu-next-fe"
       ],
       "~~/*": [
-        "/home/thanh/work/mobiedu-next-fe/*"
+        "/home/minh/FeMobi/mobiedu-next-fe/*"
       ],
       "@@": [
-        "/home/thanh/work/mobiedu-next-fe"
+        "/home/minh/FeMobi/mobiedu-next-fe"
       ],
       "@@/*": [
-        "/home/thanh/work/mobiedu-next-fe/*"
+        "/home/minh/FeMobi/mobiedu-next-fe/*"
       ],
       "assets": [
-        "/home/thanh/work/mobiedu-next-fe/assets"
+        "/home/minh/FeMobi/mobiedu-next-fe/assets"
       ],
       "assets/*": [
-        "/home/thanh/work/mobiedu-next-fe/assets/*"
+        "/home/minh/FeMobi/mobiedu-next-fe/assets/*"
       ],
       "public": [
-        "/home/thanh/work/mobiedu-next-fe/public"
-      ],
-      "public/*": [
-        "/home/thanh/work/mobiedu-next-fe/public/*"
+        "/home/minh/FeMobi/mobiedu-next-fe/public"
       ],
       "pinia": [
-        "/home/thanh/work/mobiedu-next-fe/node_modules/pinia/dist/pinia"
+        "/home/minh/FeMobi/mobiedu-next-fe/node_modules/pinia/dist/pinia"
       ]
     }
   },
   "include": [
-    "/home/thanh/work/mobiedu-next-fe/.nuxt/types/nitro-nuxt.d.ts",
+    "/home/minh/FeMobi/mobiedu-next-fe/.nuxt/types/nitro-nuxt.d.ts",
     "./types/nitro.d.ts",
     "../**/*",
     "../server/**/*"
