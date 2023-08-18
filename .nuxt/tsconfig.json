@@ -50,6 +50,9 @@
       "public": [
         "/home/minh/FeMobi/mobiedu-next-fe/public"
       ],
+      "public/*": [
+        "/home/minh/FeMobi/mobiedu-next-fe/public/*"
+      ],
       "#app": [
         "/home/minh/FeMobi/mobiedu-next-fe/node_modules/nuxt/dist/app"
       ],
