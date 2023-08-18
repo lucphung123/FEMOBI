@@ -320,7 +320,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/index-41b3972a.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-74496768.mjs').then((m) => m.default || m)
   }
 ];
 const appHead = { "meta": [{ "name": "viewport", "content": "width=device-width, initial-scale=1" }, { "charset": "utf-8" }], "link": [], "style": [], "script": [], "noscript": [], "title": "Mobiedu Next" };
@@ -754,7 +754,7 @@ const _wrapIf = (component, props, slots) => {
   } };
 };
 const layouts = {
-  default: () => import('./_nuxt/default-6f636ff0.mjs').then((m) => m.default || m)
+  default: () => import('./_nuxt/default-aca501dd.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = /* @__PURE__ */ defineComponent({
   name: "LayoutLoader",

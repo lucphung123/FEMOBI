@@ -2,6 +2,8 @@
 declare module 'vue' {
   export interface GlobalComponents {
     'Footer': typeof import("../components/Footer.vue")['default']
+    'Header': typeof import("../components/Header.vue")['default']
+    'IconLogo': typeof import("../components/icon/Logo.vue")['default']
     'UnoIcon': typeof import("../node_modules/@unocss/nuxt/runtime/UnoIcon.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
     'NuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
@@ -22,6 +24,8 @@ declare module 'vue' {
     'Html': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyFooter': typeof import("../components/Footer.vue")['default']
+    'LazyHeader': typeof import("../components/Header.vue")['default']
+    'LazyIconLogo': typeof import("../components/icon/Logo.vue")['default']
     'LazyUnoIcon': typeof import("../node_modules/@unocss/nuxt/runtime/UnoIcon.vue")['default']
     'LazyNuxtWelcome': typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
     'LazyNuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
@@ -45,6 +49,8 @@ declare module 'vue' {
 }
 
 export const Footer: typeof import("../components/Footer.vue")['default']
+export const Header: typeof import("../components/Header.vue")['default']
+export const IconLogo: typeof import("../components/icon/Logo.vue")['default']
 export const UnoIcon: typeof import("../node_modules/@unocss/nuxt/runtime/UnoIcon.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
@@ -65,6 +71,8 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyFooter: typeof import("../components/Footer.vue")['default']
+export const LazyHeader: typeof import("../components/Header.vue")['default']
+export const LazyIconLogo: typeof import("../components/icon/Logo.vue")['default']
 export const LazyUnoIcon: typeof import("../node_modules/@unocss/nuxt/runtime/UnoIcon.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/@nuxt/ui-templates/dist/templates/welcome.vue")['default']
 export const LazyNuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/layout")['default']
