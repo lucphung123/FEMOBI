@@ -50,6 +50,9 @@
       "public": [
         "/home/minh/FeMobi/mobiedu-next-fe/public"
       ],
+      "public/*": [
+        "/home/minh/FeMobi/mobiedu-next-fe/public/*"
+      ],
       "pinia": [
         "/home/minh/FeMobi/mobiedu-next-fe/node_modules/pinia/dist/pinia"
       ]
