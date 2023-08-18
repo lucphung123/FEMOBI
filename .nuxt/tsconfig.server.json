@@ -12,54 +12,54 @@
     "jsxFragmentFactory": "Fragment",
     "paths": {
       "#imports": [
-        "/home/minh/FeMobi/mobiedu-next-fe/.nuxt/types/nitro-imports"
+        "/home/luc/mobi/mobiedu-next-fe/.nuxt/types/nitro-imports"
       ],
       "#paths": [
-        "/home/minh/FeMobi/mobiedu-next-fe/node_modules/nuxt/dist/core/runtime/nitro/paths"
+        "/home/luc/mobi/mobiedu-next-fe/node_modules/nuxt/dist/core/runtime/nitro/paths"
       ],
       "~": [
-        "/home/minh/FeMobi/mobiedu-next-fe"
+        "/home/luc/mobi/mobiedu-next-fe"
       ],
       "~/*": [
-        "/home/minh/FeMobi/mobiedu-next-fe/*"
+        "/home/luc/mobi/mobiedu-next-fe/*"
       ],
       "@": [
-        "/home/minh/FeMobi/mobiedu-next-fe"
+        "/home/luc/mobi/mobiedu-next-fe"
       ],
       "@/*": [
-        "/home/minh/FeMobi/mobiedu-next-fe/*"
+        "/home/luc/mobi/mobiedu-next-fe/*"
       ],
       "~~": [
-        "/home/minh/FeMobi/mobiedu-next-fe"
+        "/home/luc/mobi/mobiedu-next-fe"
       ],
       "~~/*": [
-        "/home/minh/FeMobi/mobiedu-next-fe/*"
+        "/home/luc/mobi/mobiedu-next-fe/*"
       ],
       "@@": [
-        "/home/minh/FeMobi/mobiedu-next-fe"
+        "/home/luc/mobi/mobiedu-next-fe"
       ],
       "@@/*": [
-        "/home/minh/FeMobi/mobiedu-next-fe/*"
+        "/home/luc/mobi/mobiedu-next-fe/*"
       ],
       "assets": [
-        "/home/minh/FeMobi/mobiedu-next-fe/assets"
+        "/home/luc/mobi/mobiedu-next-fe/assets"
       ],
       "assets/*": [
-        "/home/minh/FeMobi/mobiedu-next-fe/assets/*"
+        "/home/luc/mobi/mobiedu-next-fe/assets/*"
       ],
       "public": [
-        "/home/minh/FeMobi/mobiedu-next-fe/public"
+        "/home/luc/mobi/mobiedu-next-fe/public"
       ],
       "public/*": [
-        "/home/minh/FeMobi/mobiedu-next-fe/public/*"
+        "/home/luc/mobi/mobiedu-next-fe/public/*"
       ],
       "pinia": [
-        "/home/minh/FeMobi/mobiedu-next-fe/node_modules/pinia/dist/pinia"
+        "/home/luc/mobi/mobiedu-next-fe/node_modules/pinia/dist/pinia"
       ]
     }
   },
   "include": [
-    "/home/minh/FeMobi/mobiedu-next-fe/.nuxt/types/nitro-nuxt.d.ts",
+    "/home/luc/mobi/mobiedu-next-fe/.nuxt/types/nitro-nuxt.d.ts",
     "./types/nitro.d.ts",
     "../**/*",
     "../server/**/*"
