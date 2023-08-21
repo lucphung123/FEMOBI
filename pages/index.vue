@@ -6,7 +6,7 @@
   </div>
   <div>
     <div class="flex flex-wrap mx-20 mt--15">
-      <Button v-for="tab of tabs" :key="tab.id" text class="p-x-4 text-lg text-black" :class="activeTab === tab.id && '!text-white bg-blue-900'" @click="handleActiveTab(tab.id)">{{ tab.title }}</Button>
+      <button v-for="tab of tabs" :key="tab.id" text class="p-x-4 text-lg text-black" :class="activeTab === tab.id && '!text-white bg-blue-900'" @click="handleActiveTab(tab.id)">{{ tab.title }}</button>
     </div>
   </div>
   <div></div>

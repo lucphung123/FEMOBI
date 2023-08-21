@@ -20,7 +20,7 @@
         <p class="text-xl font-600">Giải pháp</p>
       </div>
       <div>
-        <P class="text-xl font-600">Cổng thi</P>
+        <p class="text-xl font-600">Cổng thi</p>
       </div>
     </div>
     <div class="flex-col space-y-3">
