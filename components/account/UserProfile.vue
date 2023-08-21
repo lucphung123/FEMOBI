@@ -26,7 +26,9 @@
           >
             <div :class="item.icon"></div>
             <div class="ml-2">
-              {{ item.title }}
+              <NuxtLink :to="item.url">
+                {{ item.title }}
+              </NuxtLink>
             </div>
           </div>
           <ul v-if="item.open">
@@ -38,7 +40,9 @@
                 class="flex items-center text-base leading-6 p-5 ml-8"
                 @click="selectItem(childItem)"
               >
-                {{ childItem.title }}
+                <NuxtLink :to="childItem.url">
+                  {{ childItem.title }}
+                </NuxtLink>
               </div>
             </li>
           </ul>
@@ -52,11 +56,13 @@ const menuItems = ref([
   {
     title: "Tài khoản của tôi",
     icon: "i-mdi:lead-pencil text-xl",
+    url: "/tai-khoan/ho-so",
     open: false,
     children: [
       {
         title: "Hồ sơ của tôi",
         children: [],
+        url: "/tai-khoan/ho-so",
       },
       {
         title: "Kích hoạt khóa học",
@@ -69,37 +75,33 @@ const menuItems = ref([
     title: "Khóa học của tôi",
     icon: "i-mdi:bookmark-outline text-xl",
     open: false,
-    children: [],
+    url: "/tai-khoan/khoa-hoc-cua-toi",
   },
   {
     title: "Chủ đề quan tâm",
     icon: "i-mdi:star-outline text-xl",
     open: false,
-    children: [],
+    url: "/tai-khoan/chu-de-quan-tam",
   },
   {
     title: "Khóa học đã xem",
     icon: "i-mdi:eye",
     open: false,
-    children: [],
   },
   {
     title: "Ưu đãi",
     icon: "i-mdi:cards-heart-outline text-xl",
     open: false,
-    children: [],
   },
   {
     title: "Thông báo",
     icon: "i-mdi:bell-ring-outline text-xl",
     open: false,
-    children: [],
   },
   {
     title: "Đơn hàng",
     icon: "i-mdi:cart-arrow-down text-xl",
     open: false,
-    children: [],
   },
 ]);
 
