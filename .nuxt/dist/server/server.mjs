@@ -1,0 +1,1 @@
+export { default } from "file:///home/luc/mobiedu/mobiedu-next-fe/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
