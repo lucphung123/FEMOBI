@@ -10,7 +10,7 @@
             Hồ sơ của tôi
           </p>
           <div class="flex">
-            <div class="w-55%">
+            <div class="w-65%">
               <p class="font-bold text-lg pb-[15px] border-b">
                 Thông tin cá nhân
               </p>
@@ -20,7 +20,7 @@
                   Họ và tên
                 </p>
                 <input
-                  class="h-14 border rounded-2 mt-4 p-5 outline-none w-70"
+                  class="h-14 border rounded-2 mt-4 p-5 outline-none w-90"
                   placeholder="Nguyễn Văn A"
                   type="text"
                   value="Dương Tuấn Minh"
@@ -30,14 +30,14 @@
                 <p class="mt-4">Ngày sinh</p>
                 <div>
                   <select
-                    class="w-28 h-14 border ml-8 rounded-2"
+                    class="w-33 h-14 border ml-13 rounded-2"
                     v-model="selectedDay"
                   >
                     <option v-for="day in days" :key="day">{{ day }}</option>
                   </select>
 
                   <select
-                    class="w-28 h-14 border ml-4 rounded-2"
+                    class="w-33 h-14 border ml-4 rounded-2"
                     v-model="selectedMonth"
                   >
                     <option v-for="(month, index) in months" :key="index">
@@ -46,7 +46,7 @@
                   </select>
 
                   <select
-                    class="w-28 h-14 border ml-4 rounded-2"
+                    class="w-33 h-14 border ml-4 rounded-2"
                     v-model="selectedYear"
                   >
                     <option v-for="year in years" :key="year">
@@ -129,24 +129,29 @@
                 <div v-if="showChangePasswordForm">
                   <div class="pt-2 pb-5 px-3.5">
                     <label>Mật khẩu hiện tại</label>
-                    <div class="mt-2 relative">
-                      <input
-                        class="bg-[white] w-full h-[50px] text-[#333333] text-sm px-5 py-[5px] rounded-[5px] border border-[#37A8FF] outline-none"
-                        :type="showCurrentPassword ? 'text' : 'password'"
-                        v-model="mCurrentPassword"
-                        name="mCurrentPassword"
-                        placeholder="Nhập mật khẩu hiện tại"
-                      />
-                      <span
-                        class="absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
-                        @click="showCurrentPassword = !showCurrentPassword"
-                      >
-                        <div
-                          class="i-mdi:eye-outline text-xl"
-                          v-if="showCurrentPassword"
-                        ></div>
-                        <div v-else class="i-mdi:eye-off-outline text-xl"></div>
-                      </span>
+                    <div class="mt-2">
+                      <div class="relative items-center">
+                        <input
+                          class="bg-[white] w-full h-[50px] text-[#333333] text-sm px-5 py-[5px] rounded-[5px] border border-[#37A8FF] outline-none"
+                          :type="showCurrentPassword ? 'text' : 'password'"
+                          v-model="mCurrentPassword"
+                          name="mCurrentPassword"
+                          placeholder="Nhập mật khẩu hiện tại"
+                        />
+                        <span
+                          class="absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
+                          @click="showCurrentPassword = !showCurrentPassword"
+                        >
+                          <div
+                            class="i-mdi:eye-outline text-xl"
+                            v-if="showCurrentPassword"
+                          ></div>
+                          <div
+                            v-else
+                            class="i-mdi:eye-off-outline text-xl"
+                          ></div>
+                        </span>
+                      </div>
                       <div
                         class="text-red-500 mt-2 italic text-sm"
                         v-if="!mCurrentPassword && hasSubmitted"
@@ -157,24 +162,29 @@
                   </div>
                   <div class="pt-0 pb-5 px-3.5">
                     <label>Nhập mật khẩu mới</label>
-                    <div class="mt-2 relative">
-                      <input
-                        class="bg-[white] w-full h-[50px] text-[#333333] text-sm px-5 py-[5px] rounded-[5px] border border-[#37A8FF] outline-none"
-                        :type="showNewPassword ? 'text' : 'password'"
-                        v-model="mNewPassword"
-                        name="mNewPassword"
-                        placeholder="Nhập mật khẩu mới"
-                      />
-                      <span
-                        class="absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
-                        @click="showNewPassword = !showNewPassword"
-                      >
-                        <div
-                          class="i-mdi:eye-outline text-xl"
-                          v-if="showNewPassword"
-                        ></div>
-                        <div v-else class="i-mdi:eye-off-outline text-xl"></div>
-                      </span>
+                    <div class="mt-2">
+                      <div class="relative">
+                        <input
+                          class="bg-[white] w-full h-[50px] text-[#333333] text-sm px-5 py-[5px] rounded-[5px] border border-[#37A8FF] outline-none"
+                          :type="showNewPassword ? 'text' : 'password'"
+                          v-model="mNewPassword"
+                          name="mNewPassword"
+                          placeholder="Nhập mật khẩu mới"
+                        />
+                        <span
+                          class="absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
+                          @click="showNewPassword = !showNewPassword"
+                        >
+                          <div
+                            class="i-mdi:eye-outline text-xl"
+                            v-if="showNewPassword"
+                          ></div>
+                          <div
+                            v-else
+                            class="i-mdi:eye-off-outline text-xl"
+                          ></div>
+                        </span>
+                      </div>
                       <div
                         class="text-red-500 mt-2 italic text-sm"
                         v-if="!mNewPassword && hasSubmitted"
@@ -185,26 +195,31 @@
                   </div>
                   <div class="pt-0 pb-5 px-3.5">
                     <label>Nhập lại mật khẩu mới</label>
-                    <div class="mt-2 relative">
-                      <input
-                        class="bg-[white] w-full h-[50px] text-[#333333] text-sm px-5 py-[5px] rounded-[5px] border border-[#37A8FF] outline-none"
-                        :type="showConfirmNewPassword ? 'text' : 'password'"
-                        v-model="mConfirmNewPassword"
-                        name="mConfirmNewPassword"
-                        placeholder="Nhập lại mật khẩu mới"
-                      />
-                      <span
-                        class="absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
-                        @click="
-                          showConfirmNewPassword = !showConfirmNewPassword
-                        "
-                      >
-                        <div
-                          class="i-mdi:eye-outline text-xl"
-                          v-if="showConfirmNewPassword"
-                        ></div>
-                        <div v-else class="i-mdi:eye-off-outline text-xl"></div>
-                      </span>
+                    <div class="mt-2">
+                      <div class="relative">
+                        <input
+                          class="bg-[white] w-full h-[50px] text-[#333333] text-sm px-5 py-[5px] rounded-[5px] border border-[#37A8FF] outline-none"
+                          :type="showConfirmNewPassword ? 'text' : 'password'"
+                          v-model="mConfirmNewPassword"
+                          name="mConfirmNewPassword"
+                          placeholder="Nhập lại mật khẩu mới"
+                        />
+                        <span
+                          class="absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
+                          @click="
+                            showConfirmNewPassword = !showConfirmNewPassword
+                          "
+                        >
+                          <div
+                            class="i-mdi:eye-outline text-xl"
+                            v-if="showConfirmNewPassword"
+                          ></div>
+                          <div
+                            v-else
+                            class="i-mdi:eye-off-outline text-xl"
+                          ></div>
+                        </span>
+                      </div>
                       <div
                         class="text-red-500 mt-2 italic text-sm"
                         v-if="!mConfirmNewPassword && hasSubmitted"
@@ -222,7 +237,7 @@
                 </div>
               </div>
             </div>
-            <div class="w-45% ml-20">
+            <div class="w-45% ml-5">
               <p class="font-bold text-lg pb-[15px] border-b">
                 Số điện thoại và Email
               </p>

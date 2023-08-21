@@ -7,13 +7,10 @@
           <p class="text-[#004390] text-9 leading-normal mr-0.5">
             Chủ đề quan tâm
           </p>
-          <div class="flex justify-center mt-15">
-            <img src="/img/noFile.svg" alt="" />
-          </div>
-          <div
-            class="flex justify-center mt-5 leading-5 text-xl font-medium py-6"
-          >
-            <p>Bạn chưa quan tâm đến chủ đề nào. Vui lòng thêm chủ đề!</p>
+          <div class="grid-cols-4 grid">
+            <ul>
+              <li v-for="topic in selectedTopics" :key="topic">{{ topic }}</li>
+            </ul>
           </div>
           <div class="justify-center flex">
             <Modal v-show="showModal" @close-modal="showModal = false" />
@@ -33,6 +30,6 @@
 <script setup>
 import UserProfile from "../../components/account/UserProfile.vue";
 import Modal from "../../components/modal/Modal.vue";
-
 const showModal = ref(false);
+const selectedTopics = ref([]);
 </script>
