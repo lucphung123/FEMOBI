@@ -61,6 +61,7 @@ const menuItems = ref([
       {
         title: "Kích hoạt khóa học",
         children: [],
+        url: "/tai-khoan/kich-hoat-khoa-hoc",
       },
     ],
   },

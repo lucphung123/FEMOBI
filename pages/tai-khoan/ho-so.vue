@@ -91,7 +91,7 @@
               </div>
               <div class="mt-4">
                 <button
-                  class="cursor-pointer bg-[#004390] h-10 text-[white] font-bold text-sm px-[20px] py-2.5 rounded-[20px]"
+                  class="hover-bg-[#f1b821] hover-text-[#1d1d1b] bg-light-100cursor-pointer bg-[#004390] h-10 text-[white] text-sm px-[20px] rounded-[20px]"
                 >
                   Lưu thay đổi
                 </button>
@@ -99,10 +99,126 @@
               <div class="mt-4">
                 <p class="font-bold text-lg pb-[15px] border-b">Bảo mật</p>
               </div>
-              <div class="mt-4 flex justify-between">
-                <div class="flex items-center">
-                  <div class="i-mdi:lock-outline text-3xl"></div>
-                  <p class="ml-4">Đổi mật khẩu</p>
+              <div>
+                <div class="mt-4 flex justify-between">
+                  <div class="flex items-center">
+                    <div class="i-mdi:lock-outline text-3xl"></div>
+                    <p class="ml-4">Đổi mật khẩu</p>
+                  </div>
+                  <div>
+                    <button
+                      v-if="!showChangePasswordForm"
+                      class="hover-bg-[#f1b821] hover-text-[#1d1d1b] bg-white text-[#004390] border-[#004390] border px-[10px] py-1 rounded-2"
+                      @click="toggleForm"
+                    >
+                      Cập nhật
+                    </button>
+                    <div v-else>
+                      <div>
+                        <button
+                          class="hover-bg-[#f1b821] hover-text-[#1d1d1b] cursor-pointer bg-[#004390] h-10 text-[white] text-sm px-[20px] py-2.5 rounded-[20px]"
+                          type="submit"
+                          @click="saveChanges"
+                        >
+                          Lưu thay đổi
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div v-if="showChangePasswordForm">
+                  <div class="pt-2 pb-5 px-3.5">
+                    <label>Mật khẩu hiện tại</label>
+                    <div class="mt-2 relative">
+                      <input
+                        class="bg-[white] w-full h-[50px] text-[#333333] text-sm px-5 py-[5px] rounded-[5px] border border-[#37A8FF] outline-none"
+                        :type="showCurrentPassword ? 'text' : 'password'"
+                        v-model="mCurrentPassword"
+                        name="mCurrentPassword"
+                        placeholder="Nhập mật khẩu hiện tại"
+                      />
+                      <span
+                        class="absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
+                        @click="showCurrentPassword = !showCurrentPassword"
+                      >
+                        <div
+                          class="i-mdi:eye-outline text-xl"
+                          v-if="showCurrentPassword"
+                        ></div>
+                        <div v-else class="i-mdi:eye-off-outline text-xl"></div>
+                      </span>
+                      <div
+                        class="text-red-500 mt-2 italic text-sm"
+                        v-if="!mCurrentPassword && hasSubmitted"
+                      >
+                        Trường thông tin này là bắt buộc
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-0 pb-5 px-3.5">
+                    <label>Nhập mật khẩu mới</label>
+                    <div class="mt-2 relative">
+                      <input
+                        class="bg-[white] w-full h-[50px] text-[#333333] text-sm px-5 py-[5px] rounded-[5px] border border-[#37A8FF] outline-none"
+                        :type="showNewPassword ? 'text' : 'password'"
+                        v-model="mNewPassword"
+                        name="mNewPassword"
+                        placeholder="Nhập mật khẩu mới"
+                      />
+                      <span
+                        class="absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
+                        @click="showNewPassword = !showNewPassword"
+                      >
+                        <div
+                          class="i-mdi:eye-outline text-xl"
+                          v-if="showNewPassword"
+                        ></div>
+                        <div v-else class="i-mdi:eye-off-outline text-xl"></div>
+                      </span>
+                      <div
+                        class="text-red-500 mt-2 italic text-sm"
+                        v-if="!mNewPassword && hasSubmitted"
+                      >
+                        Trường thông tin này là bắt buộc
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pt-0 pb-5 px-3.5">
+                    <label>Nhập lại mật khẩu mới</label>
+                    <div class="mt-2 relative">
+                      <input
+                        class="bg-[white] w-full h-[50px] text-[#333333] text-sm px-5 py-[5px] rounded-[5px] border border-[#37A8FF] outline-none"
+                        :type="showConfirmNewPassword ? 'text' : 'password'"
+                        v-model="mConfirmNewPassword"
+                        name="mConfirmNewPassword"
+                        placeholder="Nhập lại mật khẩu mới"
+                      />
+                      <span
+                        class="absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer"
+                        @click="
+                          showConfirmNewPassword = !showConfirmNewPassword
+                        "
+                      >
+                        <div
+                          class="i-mdi:eye-outline text-xl"
+                          v-if="showConfirmNewPassword"
+                        ></div>
+                        <div v-else class="i-mdi:eye-off-outline text-xl"></div>
+                      </span>
+                      <div
+                        class="text-red-500 mt-2 italic text-sm"
+                        v-if="!mConfirmNewPassword && hasSubmitted"
+                      >
+                        Trường thông tin này là bắt buộc
+                      </div>
+                      <div
+                        v-if="passwordsMismatch && hasSubmitted"
+                        class="text-red-500 mt-2 italic text-sm"
+                      >
+                        Mật khẩu nhập lại không khớp!
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -110,6 +226,119 @@
               <p class="font-bold text-lg pb-[15px] border-b">
                 Số điện thoại và Email
               </p>
+              <div class="flex justify-between items-center mt-5">
+                <div v-if="showNumber" class="flex items-center">
+                  <div class="i-mdi:phone-outline text-3xl mr-3"></div>
+                  <div
+                    class="text-[#666666] font-normal text-base leading-[22px]"
+                  >
+                    <p>Số điện thoại</p>
+                    <p>0397573781</p>
+                  </div>
+                </div>
+                <div class="relative" v-else>
+                  <div
+                    class="absolute left-2 top-1/2 transform -translate-y-1/2"
+                  >
+                    <div class="i-mdi:phone-outline text-3xl"></div>
+                  </div>
+                  <input
+                    class="bg-[white] w-80% h-[50px] text-[#333333] text-sm px-12 py-[5px] rounded-[5px] border border-[#37A8FF] outline-none"
+                    type="text"
+                    placeholder="Nhập số điện thoại"
+                  />
+                </div>
+                <div v-if="showNumber">
+                  <button
+                    class="hover-bg-[#f1b821] hover-text-[#1d1d1b] bg-white text-[#004390] border-[#004390] border px-[10px] py-1 rounded-2"
+                    @click="showFromNumber"
+                  >
+                    Cập nhật
+                  </button>
+                </div>
+
+                <div v-else>
+                  <button
+                    class="hover-bg-[#f1b821] hover-text-[#1d1d1b] cursor-pointer bg-[#004390] h-10 text-[white] text-sm px-[20px] py-2.5 rounded-[20px]"
+                    type="submit"
+                  >
+                    Lưu thay đổi
+                  </button>
+                </div>
+              </div>
+              <div class="flex justify-between items-center mt-5">
+                <div v-if="showEmail" class="flex items-center">
+                  <div class="i-mdi:email-outline text-3xl mr-3"></div>
+                  <div
+                    class="text-[#666666] font-normal text-base leading-[22px]"
+                  >
+                    <p>Địa chỉ Email</p>
+                    <p>Duongtuanminhst@gmail.com</p>
+                  </div>
+                </div>
+                <div class="relative" v-else>
+                  <div
+                    class="absolute left-2 top-1/2 transform -translate-y-1/2"
+                  >
+                    <div class="i-mdi:email-outline text-3xl"></div>
+                  </div>
+                  <input
+                    class="bg-[white] w-80% h-[50px] text-[#333333] text-sm px-12 py-[5px] rounded-[5px] border border-[#37A8FF] outline-none"
+                    type="text"
+                    placeholder="Nhập Email"
+                  />
+                </div>
+                <div v-if="showEmail">
+                  <button
+                    class="hover-bg-[#f1b821] hover-text-[#1d1d1b] bg-white text-[#004390] border-[#004390] border px-[10px] py-1 rounded-2"
+                    @click="showFromEmail"
+                  >
+                    Cập nhật
+                  </button>
+                </div>
+
+                <div v-else>
+                  <button
+                    class="hover-bg-[#f1b821] hover-text-[#1d1d1b] cursor-pointer bg-[#004390] h-10 text-[white] text-sm px-[20px] py-2.5 rounded-[20px]"
+                    type="submit"
+                  >
+                    Lưu thay đổi
+                  </button>
+                </div>
+              </div>
+              <p class="font-bold text-lg pb-[15px] border-b mt-8">
+                Liên kết mạng xã hội
+              </p>
+              <div class="flex justify-between mt-8">
+                <div class="flex items-center">
+                  <div class="i-mdi:facebook text-3xl"></div>
+                  <p
+                    class="ml-2 text-[#666666] font-normal text-base leading-[22px]"
+                  >
+                    Facebook
+                  </p>
+                </div>
+                <button
+                  class="hover-bg-[#f1b821] hover-text-[#1d1d1b] bg-white text-[#004390] border-[#004390] border px-[10px] py-1 rounded-2"
+                >
+                  Liên kết
+                </button>
+              </div>
+              <div class="flex justify-between mt-8">
+                <div class="flex items-center">
+                  <div class="i-mdi:google text-3xl"></div>
+                  <p
+                    class="ml-2 text-[#666666] font-normal text-base leading-[22px]"
+                  >
+                    Google
+                  </p>
+                </div>
+                <button
+                  class="hover-bg-[#f1b821] hover-text-[#1d1d1b] bg-white text-[#004390] border-[#004390] border px-[10px] py-1 rounded-2"
+                >
+                  Liên kết
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -143,4 +372,56 @@ const selectedMonth = ref(null);
 const selectedYear = ref(null);
 
 const selectedGender = ref(null);
+//form pass
+const showCurrentPassword = ref(false);
+const showNewPassword = ref(false);
+const showConfirmNewPassword = ref(false);
+const mCurrentPassword = ref("");
+const mNewPassword = ref("");
+
+const mConfirmNewPassword = ref("");
+
+const showChangePasswordForm = ref(false);
+const hasSubmitted = ref(false);
+
+const toggleForm = () => {
+  showChangePasswordForm.value = !showChangePasswordForm.value;
+};
+const passwordsMismatch = computed(
+  () => mNewPassword.value !== mConfirmNewPassword.value
+);
+const saveChanges = () => {
+  hasSubmitted.value = true;
+  let hasError = false;
+
+  if (!mCurrentPassword.value) {
+    hasError = true;
+  }
+
+  if (!mNewPassword.value) {
+    hasError = true;
+  }
+
+  if (!mConfirmNewPassword.value) {
+    hasError = true;
+  }
+
+  if (mNewPassword.value !== mConfirmNewPassword.value) {
+    hasError = true;
+  }
+
+  if (hasError) {
+    return;
+  }
+};
+// form number
+const showNumber = ref(true);
+const showFromNumber = () => {
+  showNumber.value = !showNumber.value;
+};
+// form email
+const showEmail = ref(true);
+const showFromEmail = () => {
+  showEmail.value = !showEmail.value;
+};
 </script>
