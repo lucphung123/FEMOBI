@@ -1,0 +1,16 @@
+<template>
+  <div class="fixed flex justify-center bg-[#000000da] inset-0 z122" @click="$emit('close-modal')">
+    <div @click.stop class="text-center bg-[white] h-40 w-150 mt-[10%] rounded-[20px]">
+      <p class="font-medium text-lg mt-10">Bạn có chắc muốn xóa chủ đề này</p>
+      <div class="mt-5">
+        <button class="justify-center bg-[#E5E5E5] h-11 w-40 text-[#004390] text-sm px-[20px] rounded-[20px] font-bold">XÓA CHỦ ĐỀ</button>
+        <button class="hover-bg-[#f1b821] hover-text-[#1d1d1b] justify-center ml-5 bg-[#004390] h-11 w-23 text-[white] text-sm px-[20px] rounded-[20px] font-bold" @click="$emit('close-modal')">HỦY</button>
+      </div>
+    </div>
+    <div class="cursor-pointer mt-28" @click="$emit('close-modal')">
+      <div class="i-mdi:close text-white text-3xl"></div>
+    </div>
+  </div>
+</template>
+
+<script></script>
