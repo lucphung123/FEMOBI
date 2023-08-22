@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-center w-full px-10 py-5">
     <div class="flex items-center gap-10 w-full">
-      <IconLogo class="w-1/4"></IconLogo>
+      <nuxt-link to="/"><img src="/img/logo.png" alt="" /></nuxt-link>
       <div class="dropdown-trigger" @mouseenter="showDropdown" @mouseleave="hideDropdown">
         <div class="dropdown flex items-center">
           <nuxt-link to="/khoa-hoc"><p class="text-xl font-600">Khoá học</p></nuxt-link>
