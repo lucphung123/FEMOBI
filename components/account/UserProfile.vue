@@ -4,9 +4,9 @@
       <div class="flex justify-center items-center w-15 h-15 overflow-hidden rounded-[50%]">
         <img class="w-full h-full object-cover" src="/img/4.png" alt="" />
       </div>
-      <div class="flex-1 text-[#666666] text-sm leading-5 pl-2.5">
+      <div class="flex-1 text-color_9 text-sm leading-5 pl-2.5">
         <p class="user-title">Tài khoản của</p>
-        <h2 class="text-[#1d1d1b] font-medium text-xl leading-[26px] mt-[5px]">Dương Tuấn Minh</h2>
+        <h2 class="text-color_6 font-medium text-xl leading-[26px] mt-[5px]">Dương Tuấn Minh</h2>
       </div>
     </div>
     <div>

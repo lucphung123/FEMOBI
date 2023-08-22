@@ -4,13 +4,13 @@
       <UserProfile class="w-25%" />
       <div class="w-80% bg-white border rounded-3 ml-10">
         <div class="p-10">
-          <p class="text-[#004390] font-bold text-2xl leading-[45px] text-left mb-2.5">Hồ sơ của tôi</p>
+          <p class="text-color_4 font-bold text-2xl leading-[45px] text-left mb-2.5">Hồ sơ của tôi</p>
           <div class="flex">
             <div class="w-65%">
               <p class="font-bold text-lg pb-[15px] border-b">Thông tin cá nhân</p>
               <div class="flex mt-4 gap-3">
                 <img class="w-25 h-25 object-cover" src="/img/4.png" alt="" />
-                <p class="mt-9 text-[#1d1d1b] text-base leading-6 mb-1">Họ và tên</p>
+                <p class="mt-9 text-color_6 text-base leading-6 mb-1">Họ và tên</p>
                 <input class="h-14 border rounded-2 mt-4 p-5 outline-none w-77" placeholder="Nguyễn Văn A" type="text" value="Dương Tuấn Minh" />
               </div>
               <div class="flex mt-4">
@@ -53,7 +53,7 @@
                 </div>
               </div>
               <div class="mt-4">
-                <button class="hover-bg-[#f1b821] hover-text-[#1d1d1b] bg-light-100cursor-pointer bg-[#004390] h-10 text-[white] text-sm px-[20px] rounded-[20px]">Lưu thay đổi</button>
+                <button class="hover-bg-color_5 hover-text-color_6 bg-light-100cursor-pointer bg-color_4 h-10 text-[white] text-sm px-[20px] rounded-[20px]">Lưu thay đổi</button>
               </div>
               <div class="mt-4">
                 <p class="font-bold text-lg pb-[15px] border-b">Bảo mật</p>
@@ -65,10 +65,10 @@
                     <p class="ml-4">Đổi mật khẩu</p>
                   </div>
                   <div>
-                    <button v-if="!showChangePasswordForm" class="hover-bg-[#f1b821] hover-text-[#1d1d1b] bg-white text-[#004390] border-[#004390] border px-[10px] py-1 rounded-2" @click="toggleForm">Cập nhật</button>
+                    <button v-if="!showChangePasswordForm" class="hover-bg-color_5 hover-text-color_6 bg-white text-color_4 border-color_4 border px-[10px] py-1 rounded-2" @click="toggleForm">Cập nhật</button>
                     <div v-else>
                       <div>
-                        <button class="hover-bg-[#f1b821] hover-text-[#1d1d1b] cursor-pointer bg-[#004390] h-10 text-[white] text-sm px-[20px] py-2.5 rounded-[20px]" type="submit" @click="saveChanges">Lưu thay đổi</button>
+                        <button class="hover-bg-color_5 hover-text-color_6 cursor-pointer bg-color_4 h-10 text-[white] text-sm px-[20px] py-2.5 rounded-[20px]" type="submit" @click="saveChanges">Lưu thay đổi</button>
                       </div>
                     </div>
                   </div>
@@ -78,7 +78,7 @@
                     <label>Mật khẩu hiện tại</label>
                     <div class="mt-2">
                       <div class="relative items-center">
-                        <input class="bg-[white] w-full h-[50px] text-[#333333] text-sm px-5 py-[5px] rounded-[5px] border border-[#37A8FF] outline-none" :type="showCurrentPassword ? 'text' : 'password'" v-model="mCurrentPassword" name="mCurrentPassword" placeholder="Nhập mật khẩu hiện tại" />
+                        <input class="bg-[white] w-full h-[50px] text-color_8 text-sm px-5 py-[5px] rounded-[5px] border border-color_2 outline-none" :type="showCurrentPassword ? 'text' : 'password'" v-model="mCurrentPassword" name="mCurrentPassword" placeholder="Nhập mật khẩu hiện tại" />
                         <span class="absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer" @click="showCurrentPassword = !showCurrentPassword">
                           <div class="i-mdi:eye-outline text-xl" v-if="showCurrentPassword"></div>
                           <div v-else class="i-mdi:eye-off-outline text-xl"></div>
@@ -91,7 +91,7 @@
                     <label>Nhập mật khẩu mới</label>
                     <div class="mt-2">
                       <div class="relative">
-                        <input class="bg-[white] w-full h-[50px] text-[#333333] text-sm px-5 py-[5px] rounded-[5px] border border-[#37A8FF] outline-none" :type="showNewPassword ? 'text' : 'password'" v-model="mNewPassword" name="mNewPassword" placeholder="Nhập mật khẩu mới" />
+                        <input class="bg-[white] w-full h-[50px] text-color_8 text-sm px-5 py-[5px] rounded-[5px] border border-color_2 outline-none" :type="showNewPassword ? 'text' : 'password'" v-model="mNewPassword" name="mNewPassword" placeholder="Nhập mật khẩu mới" />
                         <span class="absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer" @click="showNewPassword = !showNewPassword">
                           <div class="i-mdi:eye-outline text-xl" v-if="showNewPassword"></div>
                           <div v-else class="i-mdi:eye-off-outline text-xl"></div>
@@ -104,7 +104,7 @@
                     <label>Nhập lại mật khẩu mới</label>
                     <div class="mt-2">
                       <div class="relative">
-                        <input class="bg-[white] w-full h-[50px] text-[#333333] text-sm px-5 py-[5px] rounded-[5px] border border-[#37A8FF] outline-none" :type="showConfirmNewPassword ? 'text' : 'password'" v-model="mConfirmNewPassword" name="mConfirmNewPassword" placeholder="Nhập lại mật khẩu mới" />
+                        <input class="bg-[white] w-full h-[50px] text-color_8 text-sm px-5 py-[5px] rounded-[5px] border border-color_2 outline-none" :type="showConfirmNewPassword ? 'text' : 'password'" v-model="mConfirmNewPassword" name="mConfirmNewPassword" placeholder="Nhập lại mật khẩu mới" />
                         <span class="absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer" @click="showConfirmNewPassword = !showConfirmNewPassword">
                           <div class="i-mdi:eye-outline text-xl" v-if="showConfirmNewPassword"></div>
                           <div v-else class="i-mdi:eye-off-outline text-xl"></div>
@@ -122,7 +122,7 @@
               <div class="flex justify-between items-center mt-5">
                 <div v-if="showNumber" class="flex items-center">
                   <div class="i-mdi:phone-outline text-3xl mr-3"></div>
-                  <div class="text-[#666666] font-normal text-base leading-[22px]">
+                  <div class="text-color_9 font-normal text-base leading-[22px]">
                     <p>Số điện thoại</p>
                     <p>0397573781</p>
                   </div>
@@ -131,20 +131,20 @@
                   <div class="absolute left-2 top-1/2 transform -translate-y-1/2">
                     <div class="i-mdi:phone-outline text-3xl"></div>
                   </div>
-                  <input class="bg-[white] w-80% h-[50px] text-[#333333] text-sm px-12 py-[5px] rounded-[5px] border border-[#37A8FF] outline-none" type="text" placeholder="Nhập số điện thoại" />
+                  <input class="bg-[white] w-80% h-[50px] text-color_8 text-sm px-12 py-[5px] rounded-[5px] border border-color_2 outline-none" type="text" placeholder="Nhập số điện thoại" />
                 </div>
                 <div v-if="showNumber">
-                  <button class="hover-bg-[#f1b821] hover-text-[#1d1d1b] bg-white text-[#004390] border-[#004390] border px-[10px] py-1 rounded-2" @click="showFromNumber">Cập nhật</button>
+                  <button class="hover-bg-color_5 hover-text-color_6 bg-white text-color_4 border-color_4 border px-[10px] py-1 rounded-2" @click="showFromNumber">Cập nhật</button>
                 </div>
 
                 <div v-else>
-                  <button class="hover-bg-[#f1b821] hover-text-[#1d1d1b] cursor-pointer bg-[#004390] h-10 text-[white] text-sm w-30 py-2.5 rounded-[20px]" type="submit">Lưu thay đổi</button>
+                  <button class="hover-bg-color_5 hover-text-color_6 cursor-pointer bg-color_4 h-10 text-[white] text-sm w-30 py-2.5 rounded-[20px]" type="submit">Lưu thay đổi</button>
                 </div>
               </div>
               <div class="flex justify-between items-center mt-5">
                 <div v-if="showEmail" class="flex items-center">
                   <div class="i-mdi:email-outline text-3xl mr-3"></div>
-                  <div class="text-[#666666] font-normal text-base leading-[22px]">
+                  <div class="text-color_9 font-normal text-base leading-[22px]">
                     <p>Địa chỉ Email</p>
                     <p>Duongtuanminhst@gmail.com</p>
                   </div>
@@ -153,30 +153,30 @@
                   <div class="absolute left-2 top-1/2 transform -translate-y-1/2">
                     <div class="i-mdi:email-outline text-3xl"></div>
                   </div>
-                  <input class="bg-[white] w-80% h-[50px] text-[#333333] text-sm px-12 py-[5px] rounded-[5px] border border-[#37A8FF] outline-none" type="text" placeholder="Nhập Email" />
+                  <input class="bg-[white] w-80% h-[50px] text-color_8 text-sm px-12 py-[5px] rounded-[5px] border border-color_2 outline-none" type="text" placeholder="Nhập Email" />
                 </div>
                 <div v-if="showEmail">
-                  <button class="hover-bg-[#f1b821] hover-text-[#1d1d1b] bg-white text-[#004390] border-[#004390] border px-[10px] py-1 rounded-2" @click="showFromEmail">Cập nhật</button>
+                  <button class="hover-bg-color_5 hover-text-color_6 bg-white text-color_4 border-color_4 border px-[10px] py-1 rounded-2" @click="showFromEmail">Cập nhật</button>
                 </div>
 
                 <div v-else>
-                  <button class="hover-bg-[#f1b821] hover-text-[#1d1d1b] cursor-pointer bg-[#004390] h-10 text-[white] text-sm w-30 py-2.5 rounded-[20px]" type="submit">Lưu thay đổi</button>
+                  <button class="hover-bg-color_5 hover-text-color_6 cursor-pointer bg-color_4 h-10 text-[white] text-sm w-30 py-2.5 rounded-[20px]" type="submit">Lưu thay đổi</button>
                 </div>
               </div>
               <p class="font-bold text-lg pb-[15px] border-b mt-8">Liên kết mạng xã hội</p>
               <div class="flex justify-between mt-8">
                 <div class="flex items-center">
                   <img src="/img/icon/facebook.png" alt="" />
-                  <p class="ml-2 text-[#666666] font-normal text-base leading-[22px]">Facebook</p>
+                  <p class="ml-2 text-color_9 font-normal text-base leading-[22px]">Facebook</p>
                 </div>
-                <button class="hover-bg-[#f1b821] hover-text-[#1d1d1b] bg-white text-[#004390] border-[#004390] border px-[10px] py-1 rounded-2">Liên kết</button>
+                <button class="hover-bg-color_5 hover-text-color_6 bg-white text-color_4 border-color_4 border px-[10px] py-1 rounded-2">Liên kết</button>
               </div>
               <div class="flex justify-between mt-8">
                 <div class="flex items-center">
                   <img src="/img/icon/google.png" alt="" />
-                  <p class="ml-2 text-[#666666] font-normal text-base leading-[22px]">Google</p>
+                  <p class="ml-2 text-color_9 font-normal text-base leading-[22px]">Google</p>
                 </div>
-                <button class="hover-bg-[#f1b821] hover-text-[#1d1d1b] bg-white text-[#004390] border-[#004390] border px-[10px] py-1 rounded-2">Liên kết</button>
+                <button class="hover-bg-color_5 hover-text-color_6 bg-white text-color_4 border-color_4 border px-[10px] py-1 rounded-2">Liên kết</button>
               </div>
             </div>
           </div>

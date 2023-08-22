@@ -7,7 +7,7 @@
       <!-- <div @click="showCourse">Minh</div> -->
       <div v-if="noCourse" class="w-75% bg-white border h-130 rounded-3 ml-10">
         <div class="p-10">
-          <p class="text-[#004390] text-9 leading-normal mr-0.5">Khóa học của tôi</p>
+          <p class="text-color_4 text-9 leading-normal mr-0.5">Khóa học của tôi</p>
           <div class="flex justify-center mt-15">
             <img src="/img/noFile.svg" alt="" />
           </div>
@@ -15,17 +15,17 @@
       </div>
       <div class="w-80% bg-white border rounded-3 ml-10">
         <div class="p-10">
-          <p class="text-[#004390] text-9 leading-normal mr-0.5">Khóa học của tôi</p>
+          <p class="text-color_4 text-9 leading-normal mr-0.5">Khóa học của tôi</p>
           <div class="grid grid-cols-4 gap-7">
             <div v-for="(product, index) in products" :key="index" class="mt-5">
               <img :src="product.imgSrc" alt="" />
-              <p class="h-5 mt-2 text-[#333333] font-bold text-sm leading-5">
+              <p class="h-5 mt-2 text-color_8 font-bold text-sm leading-5">
                 {{ product.title }}
               </p>
-              <p class="mt-2 text-[#999999] text-sm leading-5">
+              <p class="mt-2 text-color_7 text-sm leading-5">
                 {{ product.author }}
               </p>
-              <p class="mt-2 text-[#004390] font-bold text-sm leading-5">
+              <p class="mt-2 text-color_4 font-bold text-sm leading-5">
                 {{ product.price }}
               </p>
             </div>
