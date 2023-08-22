@@ -1,9 +1,9 @@
 <template>
   <div class="p-10 bg-#EFEFEF">
     <div class="flex">
-      <UserProfile class="w-20%" />
-      <div class="w-80% bg-white border rounded-3 ml-10 h-80">
-        <div class="p-5">
+      <UserProfile class="w-25%" />
+      <div class="w-75% bg-white border rounded-3 ml-10 h-80">
+        <div class="p-10">
           <p class="text-[#004390] font-bold text-2xl leading-[45px] text-left mb-2.5">Kích hoạt khóa học</p>
           <div class="text-center px-45">
             <div>Bạn hãy nhập <b>mã kích hoạt</b> được nhận qua email để kích hoạt khóa học đã mua và bắt đầu trải nghiệm học tập trên mobiEdu nhé</div>

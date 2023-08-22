@@ -1,9 +1,9 @@
 <template>
   <div class="p-10 bg-#EFEFEF">
     <div class="flex">
-      <UserProfile class="w-20%" />
-      <div class="w-80% bg-white border rounded-3 ml-10">
-        <div class="p-5">
+      <UserProfile class="w-25%" />
+      <div class="w-75% bg-white border rounded-3 ml-10">
+        <div class="p-10">
           <p class="text-[#004390] text-9 leading-normal mr-0.5">Chủ đề quan tâm</p>
           <div v-if="selectedTopics.length === 0" class="mt-15">
             <div class="flex justify-center mt-15">

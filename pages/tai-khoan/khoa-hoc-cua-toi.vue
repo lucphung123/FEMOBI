@@ -1,7 +1,7 @@
 <template>
   <div class="p-10 bg-#EFEFEF">
     <div class="flex">
-      <div class="w-20%">
+      <div class="w-25%">
         <UserProfile />
         <div class="bg-white rounded-3 p-5 mt-10">
           <div class="flex border-b pb-4">
@@ -50,8 +50,8 @@
         </div>
       </div>
       <!-- <div @click="showCourse">Minh</div> -->
-      <div v-if="noCourse" class="w-80% bg-white border h-130 rounded-3 ml-10">
-        <div class="p-5">
+      <div v-if="noCourse" class="w-75% bg-white border h-130 rounded-3 ml-10">
+        <div class="p-10">
           <p class="text-[#004390] text-9 leading-normal mr-0.5">Khóa học của tôi</p>
           <div class="flex justify-center mt-15">
             <img src="/img/noFile.svg" alt="" />
@@ -63,8 +63,8 @@
           </div>
         </div>
       </div>
-      <div v-else class="w-80% bg-white border rounded-3 ml-10">
-        <div class="p-5">
+      <div v-else class="w-75% bg-white border rounded-3 ml-10">
+        <div class="p-10">
           <p class="text-[#004390] text-9 leading-normal mr-0.5">Khóa học của tôi</p>
           <div class="grid grid-cols-4 gap-7">
             <div v-for="(product, index) in products" :key="index" class="mt-5">
