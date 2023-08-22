@@ -76,11 +76,13 @@ const menuItems = ref([
     title: "Ưu đãi",
     icon: "i-mdi:cards-heart-outline text-xl",
     open: false,
+    url: "/tai-khoan/uu-dai",
   },
   {
     title: "Thông báo",
     icon: "i-mdi:bell-ring-outline text-xl",
     open: false,
+    url: "/tai-khoan/thong-bao",
   },
   {
     title: "Đơn hàng",
