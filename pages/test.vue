@@ -1,11 +1,10 @@
 <template>
-  <div class="bg-white p-5">
-    <p class="text-center">Hãy chọn chủ đề mà bạn quan tâm</p>
-    <div class="grid grid-cols-4 p-10">
-      <img class="mt-5" src="/img/3.png" alt="" />
-      <input type="radio" class="w-5 h-5" />
-    </div>
-  </div>
-</template>
+  <ModalConfirm v-show="showModal" @close-modal="showModal = false" />
 
-<script setup></script>
+  <button class="hover-bg-[#f1b821] hover-text-[#1d1d1b] justify-center mt-5 bg-[#004390] h-10 text-[white] text-sm px-[20px] rounded-[20px] font-bold" @click="showModal = true">THÊM CHỦ ĐỀ</button>
+</template>
+<script setup>
+import ModalConfirm from "../components/modal/ModalConfirm.vue"
+
+const showModal = ref(false)
+</script>
