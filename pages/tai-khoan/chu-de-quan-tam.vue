@@ -24,11 +24,12 @@
                         {{ topic.label }}
                       </p>
                       <div v-if="topic.hovered" class="flex absolute -translate-x-2/4 -translate-y-2/4 z-1 text-center left-2/4 top-3/4 cursor-pointer">
-                        <div class="i-mdi:delete-outline text-white" @click="removeSelectedTopic(index)"></div>
-                        <p class="text-white text-sm ml-1" @click="removeSelectedTopic(index)">Xóa</p>
+                        <div class="i-mdi:delete-outline text-white" @click="showModalConfirm = true"></div>
+                        <p class="text-white text-sm ml-1" @click="showModalConfirm = true">Xóa</p>
                       </div>
                     </div>
                   </div>
+                  <ModalConfirm v-show="showModalConfirm" @close-modal="showModalConfirm = false" />
                 </div>
               </div>
             </div>
@@ -45,14 +46,14 @@
 <script setup>
 import UserProfile from "../../components/account/UserProfile.vue"
 import Modal from "../../components/modal/Modal.vue"
+import ModalConfirm from "../../components/modal/ModalConfirm.vue"
+
+const showModalConfirm = ref(false)
 const showModal = ref(false)
 const selectedTopics = ref([])
 
 function updateSelectedTopics(topics) {
   selectedTopics.value = topics
   showModal.value = false
-}
-function removeSelectedTopic(index) {
-  selectedTopics.value.splice(index, 1)
 }
 </script>

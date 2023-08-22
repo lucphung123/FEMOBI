@@ -59,7 +59,6 @@ const emits = defineEmits()
 
 function selectTopicsAndCloseModal() {
   const selectedTopics = imageList.filter((data, index) => isChecked.value[index])
-  console.log(selectedTopics)
   emits("select-topics", selectedTopics)
   emits("close-modal")
 }
