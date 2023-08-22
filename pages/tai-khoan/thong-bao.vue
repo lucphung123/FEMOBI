@@ -1,18 +1,18 @@
 <template>
   <div class="p-10 bg-#EFEFEF">
     <div class="flex">
-      <div class="w-25%">
+      <div class="w-1/4">
         <UserProfile />
       </div>
-      <div class="w-75% bg-white border h-130 rounded-3 ml-10">
+      <div class="w-3/4 bg-white border h-130 rounded-3 ml-10">
         <div class="p-10">
-          <p class="text-[#004390] text-9 leading-normal mr-0.5">Thông báo</p>
-          <table>
+          <p class="text-color_4 text-3xl leading-normal mr-0.5">Thông báo</p>
+          <table class="rounded-lg bg-color_4 w-full mt-4">
             <thead>
-              <tr class="bg-#004390 w-full text-left h-11 text-#FFFFFF">
-                <th class="w-120 px-5">Tiêu đề</th>
-                <th class="w-50 px-5">Người gửi</th>
-                <th class="w-50 px-5">Ngày gửi</th>
+              <tr class="w-full text-left h-11 text-white">
+                <th class="w-70% px-5">Tiêu đề</th>
+                <th class="w-15% px-5">Người gửi</th>
+                <th class="w-15% px-5 text-right">Ngày gửi</th>
               </tr>
             </thead>
             <tbody>
