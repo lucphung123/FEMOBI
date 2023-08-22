@@ -29,7 +29,7 @@
                       </div>
                     </div>
                   </div>
-                  <ModalConfirm v-show="showModalConfirm" @close-modal="showModalConfirm = false" />
+                  <ModalConfirm v-show="showModalConfirm" :id="index" v-model:selectedTopics="selectedTopics" @close-modal="showModalConfirm = false" />
                 </div>
               </div>
             </div>

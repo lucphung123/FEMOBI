@@ -17,16 +17,12 @@ export default defineNuxtConfig({
   },
 
   build: {
-    transpile:
-      process.env.NODE_ENV === "production" ? ["@css-render/vue3-ssr"] : [],
+    transpile: process.env.NODE_ENV === "production" ? ["@css-render/vue3-ssr"] : [],
   },
 
   vite: {
     optimizeDeps: {
-      include:
-        process.env.NODE_ENV === "development"
-          ? ["date-fns-tz/esm/formatInTimeZone"]
-          : [],
+      include: process.env.NODE_ENV === "development" ? ["date-fns-tz/esm/formatInTimeZone"] : [],
     },
     plugins: [],
     ssr: {
@@ -49,4 +45,4 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
-});
+})
