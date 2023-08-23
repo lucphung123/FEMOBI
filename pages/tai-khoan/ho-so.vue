@@ -53,7 +53,7 @@
                 </div>
               </div>
               <div class="mt-4">
-                <button class="hover-bg-color_5 hover-text-color_6 bg-light-100cursor-pointer bg-color_4 h-10 text-[white] text-sm px-[20px] rounded-[20px]">Lưu thay đổi</button>
+                <button class="hover:bg-color_5 hover:text-color_6 bg-light-100cursor-pointer bg-color_4 h-10 text-[white] text-sm px-[20px] rounded-[20px]">Lưu thay đổi</button>
               </div>
               <div class="mt-4">
                 <p class="font-bold text-lg pb-[15px] border-b">Bảo mật</p>
@@ -65,10 +65,10 @@
                     <p class="ml-4">Đổi mật khẩu</p>
                   </div>
                   <div>
-                    <button v-if="!showChangePasswordForm" class="hover-bg-color_5 hover-text-color_6 bg-white text-color_4 border-color_4 border px-[10px] py-1 rounded-2" @click="toggleForm">Cập nhật</button>
+                    <button v-if="!showChangePasswordForm" class="hover:bg-color_5 hover:text-color_6 bg-white text-color_4 border-color_4 border px-[10px] py-1 rounded-2" @click="toggleForm">Cập nhật</button>
                     <div v-else>
                       <div>
-                        <button class="hover-bg-color_5 hover-text-color_6 cursor-pointer bg-color_4 h-10 text-[white] text-sm px-[20px] py-2.5 rounded-[20px]" type="submit" @click="saveChanges">Lưu thay đổi</button>
+                        <button class="hover:bg-color_5 hover:text-color_6 cursor-pointer bg-color_4 h-10 text-[white] text-sm px-[20px] py-2.5 rounded-[20px]" type="submit" @click="saveChanges">Lưu thay đổi</button>
                       </div>
                     </div>
                   </div>
@@ -134,11 +134,11 @@
                   <input class="bg-[white] w-80% h-[50px] text-color_8 text-sm px-12 py-[5px] rounded-[5px] border border-color_2 outline-none" type="text" placeholder="Nhập số điện thoại" />
                 </div>
                 <div v-if="showNumber">
-                  <button class="hover-bg-color_5 hover-text-color_6 bg-white text-color_4 border-color_4 border px-[10px] py-1 rounded-2" @click="showFromNumber">Cập nhật</button>
+                  <button class="hover:bg-color_5 hover:text-color_6 bg-white text-color_4 border-color_4 border px-[10px] py-1 rounded-2" @click="showFromNumber">Cập nhật</button>
                 </div>
 
                 <div v-else>
-                  <button class="hover-bg-color_5 hover-text-color_6 cursor-pointer bg-color_4 h-10 text-[white] text-sm w-30 py-2.5 rounded-[20px]" type="submit">Lưu thay đổi</button>
+                  <button class="hover:bg-color_5 hover:text-color_6 cursor-pointer bg-color_4 h-10 text-[white] text-sm w-30 py-2.5 rounded-[20px]" type="submit">Lưu thay đổi</button>
                 </div>
               </div>
               <div class="flex justify-between items-center mt-5">
@@ -156,11 +156,11 @@
                   <input class="bg-[white] w-80% h-[50px] text-color_8 text-sm px-12 py-[5px] rounded-[5px] border border-color_2 outline-none" type="text" placeholder="Nhập Email" />
                 </div>
                 <div v-if="showEmail">
-                  <button class="hover-bg-color_5 hover-text-color_6 bg-white text-color_4 border-color_4 border px-[10px] py-1 rounded-2" @click="showFromEmail">Cập nhật</button>
+                  <button class="hover:bg-color_5 hover:text-color_6 bg-white text-color_4 border-color_4 border px-[10px] py-1 rounded-2" @click="showFromEmail">Cập nhật</button>
                 </div>
 
                 <div v-else>
-                  <button class="hover-bg-color_5 hover-text-color_6 cursor-pointer bg-color_4 h-10 text-[white] text-sm w-30 py-2.5 rounded-[20px]" type="submit">Lưu thay đổi</button>
+                  <button class="hover:bg-color_5 hover:text-color_6 cursor-pointer bg-color_4 h-10 text-[white] text-sm w-30 py-2.5 rounded-[20px]" type="submit">Lưu thay đổi</button>
                 </div>
               </div>
               <p class="font-bold text-lg pb-[15px] border-b mt-8">Liên kết mạng xã hội</p>
@@ -169,14 +169,14 @@
                   <img src="/img/icon/facebook.png" alt="" />
                   <p class="ml-2 text-color_9 font-normal text-base leading-[22px]">Facebook</p>
                 </div>
-                <button class="hover-bg-color_5 hover-text-color_6 bg-white text-color_4 border-color_4 border px-[10px] py-1 rounded-2">Liên kết</button>
+                <button class="hover:bg-color_5 hover:text-color_6 bg-white text-color_4 border-color_4 border px-[10px] py-1 rounded-2">Liên kết</button>
               </div>
               <div class="flex justify-between mt-8">
                 <div class="flex items-center">
                   <img src="/img/icon/google.png" alt="" />
                   <p class="ml-2 text-color_9 font-normal text-base leading-[22px]">Google</p>
                 </div>
-                <button class="hover-bg-color_5 hover-text-color_6 bg-white text-color_4 border-color_4 border px-[10px] py-1 rounded-2">Liên kết</button>
+                <button class="hover:bg-color_5 hover:text-color_6 bg-white text-color_4 border-color_4 border px-[10px] py-1 rounded-2">Liên kết</button>
               </div>
             </div>
           </div>

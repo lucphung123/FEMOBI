@@ -44,8 +44,8 @@
             </div>
           </div>
           <div class="flex">
-            <button @click="showCourse" class="hover-bg-color_5 hover-text-color_6 mt-3 cursor-pointer bg-color_4 h-7 text-[white] text-sm px-[20px] rounded-[20px] font-bold">Áp dụng</button>
-            <button class="hover-bg-color_5 hover-text-color_6 mt-3 bg-[#E5E5E5] cursor-pointer h-7 text-color_6 text-sm px-[20px] rounded-[20px] ml-3">Xóa</button>
+            <button @click="showCourse" class="hover:bg-color_5 hover:text-color_6 mt-3 cursor-pointer bg-color_4 h-7 text-[white] text-sm px-[20px] rounded-[20px] font-bold">Áp dụng</button>
+            <button class="hover:bg-color_5 hover:text-color_6 mt-3 bg-[#E5E5E5] cursor-pointer h-7 text-color_6 text-sm px-[20px] rounded-[20px] ml-3">Xóa</button>
           </div>
         </div>
       </div>
@@ -75,7 +75,7 @@
               <p class="mt-2 text-color_7 text-sm leading-5">
                 {{ product.author }}
               </p>
-              <button class="hover-bg-color_5 hover-text-color_6 mt-3 bg-light-100cursor-pointer bg-color_4 h-10 text-[white] text-sm px-[20px] rounded-[20px] font-bold">VÀO HỌC</button>
+              <button class="hover:bg-color_5 hover:text-color_6 mt-3 bg-light-100cursor-pointer bg-color_4 h-10 text-[white] text-sm px-[20px] rounded-[20px] font-bold">VÀO HỌC</button>
             </div>
           </div>
         </div>

@@ -21,7 +21,7 @@
           </div>
         </div>
       </div>
-      <button class="hover-bg-color_5 hover-text-color_6 justify-center mt-5 bg-color_4 h-10 text-[white] text-sm px-[20px] rounded-[20px] font-bold" @click="selectTopicsAndCloseModal">CHỌN HOÀN TÂT</button>
+      <button class="hover:bg-color_5 hover:text-color_6 justify-center mt-5 bg-color_4 h-10 text-[white] text-sm px-[20px] rounded-[20px] font-bold" @click="selectTopicsAndCloseModal">CHỌN HOÀN TÂT</button>
     </div>
     <div class="cursor-pointer ml-245 mt-1" @click="$emit('close-modal')">
       <div class="i-mdi:close text-white text-3xl"></div>

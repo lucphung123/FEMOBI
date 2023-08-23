@@ -4,7 +4,7 @@
       <p class="font-medium text-lg mt-10">Bạn có chắc muốn xóa chủ đề này</p>
       <div class="mt-5">
         <button class="justify-center bg-[#E5E5E5] h-11 w-40 text-color_4 text-sm px-[20px] rounded-[20px] font-bold" @click="delete_topic">XÓA CHỦ ĐỀ</button>
-        <button class="hover-bg-color_5 hover-text-color_6 justify-center ml-5 bg-color_4 h-11 w-23 text-[white] text-sm px-[20px] rounded-[20px] font-bold" @click="close_modal">HỦY</button>
+        <button class="hover:bg-color_5 hover:text-color_6 justify-center ml-5 bg-color_4 h-11 w-23 text-[white] text-sm px-[20px] rounded-[20px] font-bold" @click="close_modal">HỦY</button>
       </div>
     </div>
     <div class="cursor-pointer mt-42" @click="close_modal">

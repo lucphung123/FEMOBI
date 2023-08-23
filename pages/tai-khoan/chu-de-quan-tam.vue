@@ -36,7 +36,7 @@
           </div>
           <div class="justify-center flex">
             <Modal v-show="showModal" @close-modal="showModal = false" @select-topics="updateSelectedTopics" />
-            <button class="hover-bg-color_5 hover-text-color_6 justify-center mt-5 bg-color_4 h-10 text-[white] text-sm px-[20px] rounded-[20px] font-bold" @click="showModal = true">THÊM CHỦ ĐỀ</button>
+            <button class="hover:bg-color_5 hover:text-color_6 justify-center mt-5 bg-color_4 h-10 text-[white] text-sm px-[20px] rounded-[20px] font-bold" @click="showModal = true">THÊM CHỦ ĐỀ</button>
           </div>
         </div>
       </div>

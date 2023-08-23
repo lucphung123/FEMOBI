@@ -9,7 +9,7 @@
             <div>Bạn hãy nhập <b>mã kích hoạt</b> được nhận qua email để kích hoạt khóa học đã mua và bắt đầu trải nghiệm học tập trên mobiEdu nhé</div>
             <input class="bg-[white] w-60% h-[50px] text-color_8 text-sm px-5 py-[5px] rounded-[5px] border border-color_2 outline-none mt-5" type="text" placeholder="NHẬP MÃ KÍCH HOẠT, Ví dụ: 130E3157B8" />
             <br />
-            <button class="hover-bg-color_5 hover-text-color_6 mt-5 bg-light-100cursor-pointer bg-color_4 h-10 text-[white] text-sm px-[20px] rounded-[20px] font-bold">KÍCH HOẠT NGAY</button>
+            <button class="hover:bg-color_5 hover:text-color_6 mt-5 bg-light-100cursor-pointer bg-color_4 h-10 text-[white] text-sm px-[20px] rounded-[20px] font-bold">KÍCH HOẠT NGAY</button>
           </div>
         </div>
       </div>
