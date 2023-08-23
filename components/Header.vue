@@ -37,7 +37,7 @@
           <!-- <div class="i-mdi:magnify absolute text-2xl"></div> -->
         </div>
         <div>
-          <button class="text-white bg-[#004390] rounded-full h-40px w-130px font-600 text-sm">ĐĂNG NHẬP</button>
+          <button class="text-white bg-color_4 rounded-full h-40px w-130px font-600 text-sm">ĐĂNG NHẬP</button>
         </div>
       </div>
     </div>

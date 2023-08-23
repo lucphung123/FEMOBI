@@ -16,12 +16,12 @@
           >
             <img class="" :src="data.src" alt="" />
           </div>
-          <div class="w-5 h-5 top-1 right-1 rounded-full absolute border flex justify-center items-center" :class="{ 'bg-[#f1b821]': isChecked[index] }">
+          <div class="w-5 h-5 top-1 right-1 rounded-full absolute border flex justify-center items-center" :class="{ 'bg-color_5': isChecked[index] }">
             <div class="i-mdi:check text-white" v-if="isChecked[index]"></div>
           </div>
         </div>
       </div>
-      <button class="hover-bg-[#f1b821] hover-text-[#1d1d1b] justify-center mt-5 bg-[#004390] h-10 text-[white] text-sm px-[20px] rounded-[20px] font-bold" @click="selectTopicsAndCloseModal">CHỌN HOÀN TÂT</button>
+      <button class="hover:bg-color_5 hover:text-color_6 justify-center mt-5 bg-color_4 h-10 text-[white] text-sm px-[20px] rounded-[20px] font-bold" @click="selectTopicsAndCloseModal">CHỌN HOÀN TÂT</button>
     </div>
     <div class="cursor-pointer ml-245 mt-1" @click="$emit('close-modal')">
       <div class="i-mdi:close text-white text-3xl"></div>

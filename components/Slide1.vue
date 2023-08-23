@@ -5,7 +5,7 @@
         <div class="xl:mt-0 space-y-8 flex-col justify-center items-center ml-4 text-white">
           <p class="font-600 text-7xl">{{ i.name }}</p>
           <p class="text-3xl">{{ i.office }}</p>
-          <button class="text-[#004390] font-semibold bg-white p2 text-sm rd-20px">ĐĂNG NHẬP NGAY</button>
+          <button class="text-color_4 font-semibold bg-white p2 text-sm rd-20px">ĐĂNG NHẬP NGAY</button>
         </div>
         <div class="h-full w-full rounded-5 flex justify-center items-center">
           <img class="rounded-5" :src="i.src" :alt="i.alt" />

@@ -4,7 +4,7 @@
       <UserProfile class="w-25%" />
       <div class="w-75% bg-white border rounded-3 ml-10">
         <div class="p-10">
-          <p class="text-[#004390] text-9 leading-normal mr-0.5">Chủ đề quan tâm</p>
+          <p class="text-color_4 text-9 leading-normal mr-0.5">Chủ đề quan tâm</p>
           <div v-if="selectedTopics.length === 0" class="mt-15">
             <div class="flex justify-center mt-15">
               <img src="/img/noFile.svg" alt="" />
@@ -36,7 +36,7 @@
           </div>
           <div class="justify-center flex">
             <Modal v-show="showModal" @close-modal="showModal = false" @select-topics="updateSelectedTopics" />
-            <button class="hover-bg-[#f1b821] hover-text-[#1d1d1b] justify-center mt-5 bg-[#004390] h-10 text-[white] text-sm px-[20px] rounded-[20px] font-bold" @click="showModal = true">THÊM CHỦ ĐỀ</button>
+            <button class="hover:bg-color_5 hover:text-color_6 justify-center mt-5 bg-color_4 h-10 text-[white] text-sm px-[20px] rounded-[20px] font-bold" @click="showModal = true">THÊM CHỦ ĐỀ</button>
           </div>
         </div>
       </div>

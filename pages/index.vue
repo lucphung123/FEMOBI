@@ -17,7 +17,7 @@
       </div>
       <div class="flex-col space-y-10">
         <div>
-          <p class="text-[#004390] font-600 text-5xl">Giải pháp mobiEdu</p>
+          <p class="text-color_4 font-600 text-5xl">Giải pháp mobiEdu</p>
         </div>
         <div>
           <p class="text-xl">Các giải pháp giúp nhà trường - doanh nghiệp mọi lĩnh vực quản lí, đào tạo, liên lạc hiệu quả, tích hợp các nội dung đào tạo từ các chuyên gia dễ dàng, làm nổi bật thương hiệu tổ chức.</p>
