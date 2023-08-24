@@ -1,9 +1,9 @@
 <template>
-  <div class="">
-    <div class="flex flex-col justify-center items-center">
+  <div class="w-300 flex flex-col justify-center items-center">
+    <div class="flex flex-col justify-center items-center wfull">
       <div class="w-screen">
-        <div class="bg-[url(/img/bg/bg-banner.jpg)] wfull object-fill bg-cover relative">
-          <Slide1 class="absolute" />
+        <div class="bg-[url(/img/bg/bg-banner.jpg)] w-full bg-cover">
+          <Slide1 class="" />
         </div>
       </div>
     </div>
@@ -19,25 +19,28 @@
       </div>
     </div>
     <div class="flex flex-col justify-center items-center">
-      <div class="bg-[url(/img/bg/bg-footer.png)] w-screen bg-cover bg-center mt-20">
-        <div class="flex justify-center items-center p25 space-x-20">
-          <div class="h-full rounded-5 flex justify-center items-center">
-            <img src="/img/5.jpg" alt="" />
-          </div>
-          <div class="flex-col space-y-10 flex-col justify-center items-center">
-            <div>
-              <p class="text-[#004390] font-600 text-5xl">Giải pháp mobiEdu</p>
+      <div class="w-full">
+        <div class="bg-[url(/img/bg/bg-footer.png)] bg-cover w-screen">
+          <div class="flex justify-center items-center p25 space-x-20">
+            <div class="h-full rounded-5 flex justify-center items-center">
+              <img src="/img/5.jpg" alt="" />
             </div>
-            <div>
-              <p class="text-xl">Các giải pháp giúp nhà trường - doanh nghiệp mọi lĩnh vực quản lí, đào tạo, liên lạc hiệu quả, tích hợp các nội dung đào tạo từ các chuyên gia dễ dàng, làm nổi bật thương hiệu tổ chức.</p>
-            </div>
-            <div class="flex justify-center">
-              <button class="text-blue-900 bg-white border-1px border-blue font-bold text-center p-2 rd-20px w-20%">XEM THÊM</button>
+            <div class="flex-col space-y-10 flex-col justify-center items-center">
+              <div>
+                <p class="text-[#004390] font-600 text-5xl">Giải pháp mobiEdu</p>
+              </div>
+              <div>
+                <p class="text-xl">Các giải pháp giúp nhà trường - doanh nghiệp mọi lĩnh vực quản lí, đào tạo, liên lạc hiệu quả, tích hợp các nội dung đào tạo từ các chuyên gia dễ dàng, làm nổi bật thương hiệu tổ chức.</p>
+              </div>
+              <div class="flex justify-center">
+                <button class="text-blue-900 bg-white border-1px border-blue font-bold text-center p-2 rd-20px w-20%">XEM THÊM</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="flex flex-col justify-center items-center">
       <div class="bg-[#002B55] w-screen bg-cover bg-center">
         <div class="p-20">
@@ -71,8 +74,12 @@
       </div>
       <div><Review /></div>
     </div>
-    <div>
-      <Advertise />
+    <div class="flex flex-col justify-center items-center">
+      <div class="w-screen">
+        <div class="bg-[url(/img/bg/bg-home-5.png)] h-400px bg-cover">
+          <Advertise class="" />
+        </div>
+      </div>
     </div>
     <div>
       <News />
