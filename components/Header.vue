@@ -1,18 +1,20 @@
 <template>
-  <div class="flex items-center w-full px-10 py-5">
-    <div class="flex items-center gap-10 w-full">
-      <nuxt-link to="/"><img src="/img/logo.png" alt="" /></nuxt-link>
-      <div class="dropdown-trigger" @mouseenter="showDropdown" @mouseleave="hideDropdown">
-        <div class="dropdown flex items-center">
-          <nuxt-link to="/khoa-hoc"><p class="text-xl font-600">Khoá học</p></nuxt-link>
-          <div class="i-mdi:chevron-down text-xl"></div>
-        </div>
-        <div class="dropdown-content w-1/6 duration-200 transition rounded-4" :class="{ active: dropdownVisible }">
-          <div class="cursor-pointer flex flex-col p-5 space-y-5 text-sm font-500">
-            <p class="border-b">Tất cả</p>
-            <p class="border-b">Trẻ em</p>
-            <p class="border-b">Sinh viên</p>
-            <p class="border-b">Người đi làm</p>
+  <div class="w-full flex justify-center">
+    <div class="flex items-center justify-center px-7 py-2 bg-white w-screen bg-cover bg-center">
+      <div class="flex items-center space-x-5 w-full">
+        <nuxt-link to="/"><img src="/img/logo.png" alt="" /></nuxt-link>
+        <div class="dropdown-trigger" @mouseenter="showDropdown" @mouseleave="hideDropdown">
+          <div class="dropdown flex items-center">
+            <nuxt-link to="/khoa-hoc"><p class="text-xl font-600">Khoá học</p></nuxt-link>
+            <div class="i-mdi:chevron-down text-xl"></div>
+          </div>
+          <div class="dropdown-content w-1/6 duration-500 transition-all rounded-4" :class="{ active: dropdownVisible }">
+            <div class="cursor-pointer flex flex-col p-5 space-y-5 text-sm font-500">
+              <p class="border-b cursor-pointer">Tất cả</p>
+              <p class="border-b cursor-pointer">Trẻ em</p>
+              <p class="border-b cursor-pointer">Sinh viên</p>
+              <p class="border-b cursor-pointer">Người đi làm</p>
+            </div>
           </div>
         </div>
       </div>

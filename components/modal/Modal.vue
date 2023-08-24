@@ -30,7 +30,6 @@
 </template>
 
 <script setup>
-import { ref, defineEmits } from "vue"
 const imageList = [
   { src: "/img/course1/Tieu-hoc.png", label: "Tiền tiểu học" },
   { src: "/img/course1/stream.png", label: "Steam" },

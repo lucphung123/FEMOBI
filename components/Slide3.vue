@@ -1,18 +1,9 @@
 <template>
-  <swiper @swiper="setSwiper" :grabCursor="true" :modules="modules" class="flex">
-    <swiper-slide v-for="i in reviews" :key="i.body" class="swiper-slide-bg">
+  <swiper :modules="modules" :slides-per-view="4" autoplay  :pagination="{ clickable: true }" :scrollbar="{ draggable: true }" class="flex">
+    <swiper-slide v-for="(product, index) in products" :key="index">
       <div class="flex justify-center items-center space-x-20">
         <div class="h-full w-full rounded-5 flex justify-center items-center">
-          <img class="rounded-5" :src="i.src" :alt="i.alt" />
-        </div>
-        <div class="h-full w-full rounded-5 flex justify-center items-center">
-          <img class="rounded-5" :src="i.src" :alt="i.alt" />
-        </div>
-        <div class="h-full w-full rounded-5 flex justify-center items-center">
-          <img class="rounded-5" :src="i.src" :alt="i.alt" />
-        </div>
-        <div class="h-full w-full rounded-5 flex justify-center items-center">
-          <img class="rounded-5" :src="i.src" :alt="i.alt" />
+          <img class="rounded-5" :src="product.src" alt="" />
         </div>
       </div>
     </swiper-slide>
@@ -21,18 +12,48 @@
 
 <script setup>
 import { Swiper, SwiperSlide } from "swiper/vue"
-import { EffectCards } from "swiper"
+import { EffectCards, Autoplay, Navigation } from "swiper"
 import "swiper/css"
 import "swiper/css/effect-cards"
+import "swiper/css/navigation"
+import "swiper/css/autoplay"
 
-const modules = [EffectCards]
-const reviews = [
+const modules = [EffectCards, Autoplay, Navigation]
+const products = [
   {
-    src: "/img/1.jpg",
+    src: "/img/8.png",
   },
   {
-    src: "/img/1.jpg",
+    src: "/img/8.png",
   },
+  {
+    src: "/img/8.png",
+  },
+  {
+    src: "/img/8.png",
+  },
+  {
+    src: "/img/8.png",
+  },
+  {
+    src: "/img/8.png",
+  },
+  {
+    src: "/img/8.png",
+  },
+  {
+    src: "/img/8.png",
+  },
+  {
+    src: "/img/8.png",
+  },
+  {
+    src: "/img/8.png",
+  },
+  {
+    src: "/img/8.png",
+  },
+  
 ]
 let mySwiper = ref({})
 const setSwiper = xswiper => {
