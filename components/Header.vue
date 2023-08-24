@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col justify-center items-center w-300">
+  <div class="w-full flex flex-col justify-center items-center">
     <div class="w-full">
       <div class="w-full flex justify-center">
-        <div class="flex items-center justify-center px-7 py-2 w-full">
+        <div class="flex items-center justify-center px-0 py-2 w-full">
           <div class="flex items-center space-x-5 w-full">
             <nuxt-link to="/"><img src="/img/logo.png" alt="" /></nuxt-link>
             <div class="dropdown-trigger" @mouseenter="showDropdown" @mouseleave="hideDropdown">
