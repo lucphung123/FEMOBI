@@ -1,9 +1,28 @@
 body {
   font-family: "Raleway", sans-serif;
-  /* background-color: #cccccc; */
+  background-color: #ffffff;
   background-size: cover;
 
 }
 body::-webkit-scrollbar {
   display: none; 
+}
+.responsive{
+  @apply w-full max-w-300 px-2
+}
+svg {
+  vertical-align: baseline;
+}
+
+body {
+  /* font-family: "Roboto", cursive; */
+  font-family: "Inter Tight", sans-serif;
+}
+
+textarea {
+  @apply p-2;
+}
+
+.card {
+  @apply bg-white cursor-pointer rounded-md duration-300 shadow hover:(shadow-xl);
 }

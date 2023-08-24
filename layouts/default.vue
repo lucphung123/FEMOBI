@@ -1,11 +1,13 @@
 <template>
-  <div class="w-full items-center relative">
-    <div class="sticky top-0 z-100 w-full bg-white shadow flex justify-center">
+  <div class="w-full h-full">
+    <div class="sticky top-0 z-10 flex justify-center w-full bg-white">
       <Header />
     </div>
-    <div class="w-full flex-1">
+    <div class="w-full flex-1 flex justify-center">
       <slot />
     </div>
-    <Footer class="z-0" />
+    <div class="flex justify-center">
+      <Footer />
+    </div>
   </div>
 </template>
