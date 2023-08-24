@@ -29,7 +29,9 @@
           <p>Về mobiEdu</p>
           <p>Hỗ trợ</p>
         </div>
-        <div class="i-mdi:cart text-xl"></div>
+        <nuxt-link to="/gio-hang">
+          <div class="i-mdi:cart text-xl"></div>
+        </nuxt-link>
       </div>
       <div class="flex items-ceter gap-7">
         <div class="relative">

@@ -1,5 +1,5 @@
 <template>
-  <div class="py-20">
+  <div class="">
     <div v-if="courseItems.length === 0" class="bg-color_10">
       <div class="items-center justify-center flex">
         <img src="/img/cart/shopping-cart.svg" alt="" />
@@ -64,7 +64,9 @@
               <input type="text" placeholder="Mã giảm giá" class="h-7 border rounded-5 p-3 outline-none w-48" />
               <button class="bg-color_4 text-white text-sm text-center h-7 rounded-5 ml-5 px-1 w-19">ÁP DỤNG</button>
             </div>
-            <button class="bg-color_1 text-white text-center font-bold leading-2.5 text-3.5 h-10 w-full mt-4 rounded-5">TIẾP TỤC THANH TOÁN</button>
+            <nuxt-link to="/thanh-toan/thong-tin-thanh-toan">
+              <button class="bg-color_1 text-white text-center font-bold leading-2.5 text-3.5 h-10 w-full mt-4 rounded-5">TIẾP TỤC THANH TOÁN</button>
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -74,12 +76,14 @@
         <div class="i-mdi:cog-outline text-color_4 font-300 text-10"></div>
         <div class="text-color_4 font-bold text-3xl">KHÓA HỌC CÙNG LĨNH VỰC</div>
       </div>
+      <SlideCourse class="mt-5" />
     </div>
   </div>
 </template>
 
 <script setup>
 import { ref, computed } from "vue"
+import SlideCourse from "../../components/slide/SlideCourse.vue"
 
 const courseItems = ref([
   { id: 1, name: "108 Tọa pháp Yoga - Bí mật trẻ mãi", price: 700000, image: "/img/course1/Tieng-anh.png" },
