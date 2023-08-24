@@ -4,7 +4,7 @@
       <div>
         <div class="flex justify-between p-10">
           <div>
-            <p class="relative text-[#333333] font-bold text-lg leading-6">VỀ MOBIEDU</p>
+            <p class="relative text-color_8 font-bold text-lg leading-6">VỀ MOBIEDU</p>
             <ul class="pb-[22px] border-solid mt-5">
               <li>
                 <a class="flex items-center text-color_9 text-base leading-9" href="#">Giới thiệu</a>
@@ -21,7 +21,7 @@
             </ul>
           </div>
           <div>
-            <p class="relative text-[#333333] font-bold text-lg leading-6">ĐỐI TÁC & KHÁCH HÀNG</p>
+            <p class="relative text-color_8 font-bold text-lg leading-6">ĐỐI TÁC & KHÁCH HÀNG</p>
             <ul class="pb-[22px] border-solid mt-5">
               <li>
                 <a class="flex items-center text-color_9 text-base leading-9" href="#">Dành cho đại lý</a>
@@ -29,7 +29,7 @@
             </ul>
           </div>
           <div>
-            <p class="relative text-[#333333] font-bold text-lg leading-6">TẢI ỨNG DỤNG MOBIEDU NGAY</p>
+            <p class="relative text-color_8 font-bold text-lg leading-6">TẢI ỨNG DỤNG MOBIEDU NGAY</p>
             <div class="mt-5 flex">
               <div class="mr-[18px] pr-[23px] border-r border-solid">
                 <img src="/img/qr-code.png" alt="" />
@@ -48,7 +48,7 @@
             </div>
           </div>
           <div>
-            <p class="relative text-[#333333] font-bold text-lg leading-6">THANH TOÁN</p>
+            <p class="relative text-color_8 font-bold text-lg leading-6">THANH TOÁN</p>
             <ul class="pb-[22px] border-solid mt-5">
               <li>
                 <a class="flex items-center text-color_9 text-base leading-9" href="#"> <img class="mr-3" src="/img/icon/momo.png" alt="" /><span>Ví Momo</span></a>
@@ -59,7 +59,7 @@
             </ul>
           </div>
           <div>
-            <p class="relative text-[#333333] font-bold text-lg leading-6">THEO DÕI MOBIEDU</p>
+            <p class="relative text-color_8 font-bold text-lg leading-6">THEO DÕI MOBIEDU</p>
             <ul class="pb-[22px] border-solid mt-5">
               <li>
                 <a class="flex items-center text-color_9 text-base leading-9" href="#"> <img class="mr-3" src="/img/icon/facebook.png" alt="" /><span>Facebook</span></a>
@@ -74,17 +74,17 @@
       <div>
         <ul class="flex justify-between border-y">
           <li>
-            <a class="flex ml-35 text-[#21a6f1] text-lg leading-6 uppercase py-[13px]" href="#">CHÍNH SÁCH BẢO MẬT</a>
+            <a class="flex ml-35 text-color_2 text-lg leading-6 uppercase py-[13px]" href="#">CHÍNH SÁCH BẢO MẬT</a>
           </li>
 
           <li>
-            <a class="flex text-[#21a6f1] text-lg leading-6 uppercase py-[13px]" href="#">ĐIỀU KHOẢN SỬ DỤNG</a>
+            <a class="flex text-color_2 text-lg leading-6 uppercase py-[13px]" href="#">ĐIỀU KHOẢN SỬ DỤNG</a>
           </li>
           <li>
-            <a class="flex text-[#21a6f1] text-lg leading-6 uppercase py-[13px]" href="#">GIẢI QUYẾT TRANH CHẤP</a>
+            <a class="flex text-color_2 text-lg leading-6 uppercase py-[13px]" href="#">GIẢI QUYẾT TRANH CHẤP</a>
           </li>
           <li>
-            <a class="flex mr-35 text-[#21a6f1] text-lg leading-6 uppercase py-[13px]" href="#">QUY CHẾ HOẠT ĐỘNG</a>
+            <a class="flex mr-35 text-color_2 text-lg leading-6 uppercase py-[13px]" href="#">QUY CHẾ HOẠT ĐỘNG</a>
           </li>
         </ul>
       </div>
@@ -96,7 +96,7 @@
             </div>
           </div>
         </div>
-        <div class="text-center text-[#333333] text-sm leading-[18px]">
+        <div class="text-center text-color_8 text-sm leading-[18px]">
           <div>Cơ quan chủ quản: TỔNG CÔNG TY VIỄN THÔNG MOBIFONE</div>
           <div>Địa chỉ: Số 1 Phạm Văn Bạch, Phường Yên Hòa, Quận Cầu Giấy, Hà Nội</div>
           <div class="flex">
