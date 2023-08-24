@@ -7,11 +7,11 @@
       <div class="text-center">
         <p class="text-color_7 font-normal text-2xl leading-45px">Giỏ hàng (0 sản phẩm)</p>
       </div>
-      <p class="text-[#333333] font-normal text-xl leading-26px text-center">Hiện tại giỏ hàng của bạn chưa có sản phẩm nào.</p>
+      <p class="text-color_8 font-normal text-xl leading-26px text-center">Hiện tại giỏ hàng của bạn chưa có sản phẩm nào.</p>
       <div class="items-center justify-center flex">
-        <p class="text-[#333333] font-normal text-xl leading-26px text-center">Vui lòng lựa chọn</p>
+        <p class="text-color_8 font-normal text-xl leading-26px text-center">Vui lòng lựa chọn</p>
         <a href="" class="px-1 text-color_4 font-bold text-xl leading-26px"> Khóa học </a>
-        <p class="text-[#333333] font-normal text-xl leading-26px text-center">mà bạn muốn đăng kí!</p>
+        <p class="text-color_8 font-normal text-xl leading-26px text-center">mà bạn muốn đăng kí!</p>
       </div>
     </div>
     <div v-else class="bg-color_10 px-15 pt-5 pb-15">

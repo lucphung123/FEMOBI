@@ -1,5 +1,5 @@
 <template>
-  <div class="p-10 bg-#EFEFEF">
+  <div class="p-10 bg-color_11">
     <div class="flex">
       <UserProfile class="w-25%" />
       <div class="w-80% bg-white border rounded-3 ml-10">

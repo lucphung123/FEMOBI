@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-#EFEFEF">
+  <div class="bg-color_11">
     <div class="flex items-center mb-5">
       <div class="flex justify-center items-center w-15 h-15 overflow-hidden rounded-[50%]">
         <img class="w-full h-full object-cover" src="/img/4.png" alt="" />

@@ -1,5 +1,5 @@
 <template>
-  <div class="p-10 bg-#EFEFEF">
+  <div class="p-10 bg-color_11">
     <div class="flex">
       <div class="w-25%">
         <UserProfile />
@@ -35,7 +35,7 @@
                 <div class="border-b flex pb-5">
                   <div class="relative">
                     <img class="h-25 rounded-lg" :src="item.imageSrc" alt="" />
-                    <p class="absolute top-2 left-2 px-1 bg-#D2001A text-white text-12px">-50%</p>
+                    <p class="absolute top-2 left-2 px-1 bg-color_1 text-white text-12px">-50%</p>
                     <div class="flex absolute top-2 left-29 bg-#1D1D1B80 px-1 items-center">
                       <div class="i-mdi:star-outline text-yellow-500 mr-1"></div>
                       <p class="text-white text-12px">4.8</p>
