@@ -23,15 +23,15 @@
             </div>
             <div v-if="item.children && item.children.length" :class="item.open ? 'i-mdi:chevron-up md:text-2xl' : 'i-mdi:chevron-down md:text-xl'"></div>
           </div>
-          <ul>
-            <li v-for="(childItem, childIndex) in item.children" :key="childIndex">
-              <div class="flex items-center text-base leading-6 p-5 ml-8" @click="selectItem(childItem)">
+          <div class="overflow-auto transition-all scrollbar-hide" :class="item.open && index === 0 ? 'h-32 duration-500' : 'h-0 duration-500'">
+            <div v-for="(childItem, childIndex) in item.children" :key="childIndex">
+              <div class="flex items-center text-base leading-6 p-5 ml-8">
                 <NuxtLink :to="childItem.url">
                   {{ childItem.title }}
                 </NuxtLink>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </li>
       </ul>
     </div>
@@ -95,10 +95,13 @@ const menuItems = ref([
   },
 ])
 
-const toggleItem = item => {
+function toggleItem(item) {
+  console.log("🚀 ~ file: UserProfile.vue:99 ~ toggleItem ~ item:", item)
   item.open = !item.open
 }
-function selectItem(item) {
-  console.log("🚀 ~ file: UserProfile.vue:102 ~ item:", item)
-}
 </script>
+<style scoped>
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+</style>

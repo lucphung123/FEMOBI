@@ -4,7 +4,6 @@
       <div class="w-25%">
         <UserProfile />
       </div>
-      <!-- <div @click="showCourse">Minh</div> -->
       <div v-if="noCourse" class="w-75% bg-white border h-130 rounded-3 ml-10">
         <div class="p-10">
           <p class="text-color_4 text-9 leading-normal mr-0.5">Khóa học của tôi</p>
@@ -36,7 +35,7 @@
   </div>
 </template>
 <script setup>
-import UserProfile from "../../components/account/UserProfile.vue"
+import UserProfile from "~~/components/account/UserProfile.vue"
 const products = [
   {
     imgSrc: "/img/product/1.png",

@@ -48,6 +48,11 @@ import UserProfile from "../../components/account/UserProfile.vue"
 import Modal from "../../components/modal/Modal.vue"
 import ModalConfirm from "../../components/modal/ModalConfirm.vue"
 
+// layouts
+definePageMeta({
+  layout: "course",
+})
+
 const showModalConfirm = ref(false)
 const showModal = ref(false)
 const selectedTopics = ref([])
