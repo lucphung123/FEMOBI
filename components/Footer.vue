@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[url(/img/bg/bg-footer.png)] bg-cover bg-center w-full">
+  <div class="bg-[url(/img/bg/bg-footer.png)] bg-bottom bg-center w-full">
     <div class="pt-20">
       <div>
         <div class="flex justify-between p-10">

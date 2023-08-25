@@ -8,9 +8,9 @@
         <div>
           <img src="/img/11.png" alt="" class="rd-5" />
         </div>
-        <button class="flex items-center bg-color_4 space-x-1 text-white">
+        <button class="flex items-center bg-color_4 space-x-1 text-white px-1">
           <div class="i-mdi:calendar-range"></div>
-          <p>07:30 19-08-2023</p>
+          <p class="">07:30 19-08-2023</p>
         </button>
         <div>
           <p class="text-xl font-600">5 TRƯỜNG ĐÀO TẠO KHOA HỌC MÁY TÍNH TỐT NHẤT THẾ GIỚI</p>
@@ -22,7 +22,7 @@
             <img src="/img/13.png" alt="" />
           </div>
           <div class="flex-col space-y-3">
-            <button class="flex items-center bg-color_4 space-x-1 text-white">
+            <button class="flex items-center bg-color_4 space-x-1 text-white px-1">
               <div class="i-mdi:calendar-range"></div>
               <p>07:30 19-08-2023</p>
             </button>
@@ -35,7 +35,7 @@
             <img src="/img/14.png" alt="" />
           </div>
           <div class="flex-col space-y-3">
-            <button class="flex items-center bg-color_4 space-x-1 text-white">
+            <button class="flex items-center bg-color_4 space-x-1 text-white px-1">
               <div class="i-mdi:calendar-range"></div>
               <p>07:30 19-08-2023</p>
             </button>
@@ -48,7 +48,7 @@
             <img src="/img/15.png" alt="" />
           </div>
           <div class="flex-col space-y-3">
-            <button class="flex items-center bg-color_4 space-x-1 text-white">
+            <button class="flex items-center bg-color_4 space-x-1 text-white px-1">
               <div class="i-mdi:calendar-range"></div>
               <p>07:30 19-08-2023</p>
             </button>
