@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col justify-center items-center">
     <div class="w-full flex">
-      <div class="w-full flex flex-col justify-center space-y-5 my-10 mx-20">
+      <div class="w-full flex flex-col justify-center space-y-10 my-10 mx-20">
         <div class="w-1/2">
           <p class="text-white font-600 text-4xl">ĐĂNG KÍ NGAY - NHẬN QUÀ LIỀN TAY</p>
         </div>
