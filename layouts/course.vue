@@ -2,7 +2,7 @@
   <div class="w-full min-h-screen flex flex-col overflow-clip items-center bg-color_11">
     <!-- header -->
     <div class="w-full sticky z-100 top-0 bg-white flex-1 flex flex-col items-center">
-      <div class="lg:(w-225 px-0) xl:(w-300) 2xl:(w-340)">
+      <div class="lg:(w-225 px-0) xl:(w-340) 2xl:(w-380)">
         <Header />
       </div>
     </div>

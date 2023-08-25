@@ -85,6 +85,10 @@
 </template>
 <script setup>
 import UserProfile from "../../components/account/UserProfile.vue"
+// layouts
+definePageMeta({
+  layout: "course",
+})
 const noCourse = ref(false)
 const showCourse = () => {
   noCourse.value = !noCourse.value

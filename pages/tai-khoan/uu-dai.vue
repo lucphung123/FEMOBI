@@ -14,4 +14,8 @@
 </template>
 <script setup>
 import UserProfile from "../../components/account/UserProfile.vue"
+// layouts
+definePageMeta({
+  layout: "course",
+})
 </script>

@@ -71,6 +71,10 @@
 </template>
 
 <script setup>
+// layouts
+definePageMeta({
+  layout: "course",
+})
 const totalAmount = ref(0)
 const discount = 0
 const paymentOptions = ref([

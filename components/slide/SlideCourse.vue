@@ -6,13 +6,13 @@
           <div class="items-center flex justify-center">
             <img class="w-40 hover:scale-105 duration-300" :src="product.imgSrc" alt="" />
           </div>
-          <p class="h-5 mt-2 text-color_8 font-bold text-sm leading-5 ml-5">
+          <p class="h-5 mt-2 text-color_8 font-bold text-sm leading-5 ml-9">
             {{ product.title }}
           </p>
-          <p class="mt-2 text-color_7 text-sm leading-5 ml-5">
+          <p class="mt-2 text-color_7 text-sm leading-5 ml-9">
             {{ product.author }}
           </p>
-          <p class="mt-2 text-color_4 font-bold text-sm leading-5 ml-5">
+          <p class="mt-2 text-color_4 font-bold text-sm leading-5 ml-9">
             {{ product.price }}
           </p>
         </div>

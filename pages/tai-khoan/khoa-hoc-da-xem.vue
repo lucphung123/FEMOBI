@@ -36,6 +36,10 @@
 </template>
 <script setup>
 import UserProfile from "~~/components/account/UserProfile.vue"
+// layouts
+definePageMeta({
+  layout: "course",
+})
 const products = [
   {
     imgSrc: "/img/product/1.png",

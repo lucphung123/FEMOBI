@@ -30,6 +30,10 @@
 </template>
 <script setup>
 import UserProfile from "../../components/account/UserProfile.vue"
+// layouts
+definePageMeta({
+  layout: "course",
+})
 const items = [
   { title: "Thay đổi thông tin cá nhân thành công!", sender: "mobiEdu", date: "15/08/2023" },
   //   { title: "Tiêu đề 2", sender: "Người gửi 2", date: "Ngày gửi 2" },
