@@ -31,20 +31,20 @@
 
 <script setup>
 const imageList = [
-  { src: "/img/course1/Tieu-hoc.png", label: "Tiền tiểu học" },
-  { src: "/img/course1/stream.png", label: "Steam" },
-  { src: "/img/course1/tin-hoc.png", label: "Tin học" },
-  { src: "/img/course1/Tieng-anh.png", label: "Tiếng anh" },
-  { src: "/img/course1/Thpt.png", label: "Môn học phổ thông" },
-  { src: "/img/course1/Ky-nang-mem.png", label: "Kỹ năng mềm" },
-  { src: "/img/course1/Ky-nang-van-phong.png", label: "Kỹ năng văn phòng" },
-  { src: "/img/course1/marketting.png", label: "Kinh doanh - Marketing" },
-  { src: "/img/course1/nghe-thuat.png", label: "Nghệ thuật" },
-  { src: "/img/course1/suc-khoe.png", label: "Sức khỏe - Đời sống" },
-  { src: "/img/course1/Ky-nang-van-phong.png", label: "Kỹ năng văn phòng" },
-  { src: "/img/course1/marketting.png", label: "Kinh doanh - Marketing" },
-  { src: "/img/course1/nghe-thuat.png", label: "Nghệ thuật" },
-  { src: "/img/course1/suc-khoe.png", label: "Sức khỏe - Đời sống" },
+  { id: 1, src: "/img/course1/Tieu-hoc.png", label: "Tiền tiểu học" },
+  { id: 2, src: "/img/course1/stream.png", label: "Steam" },
+  { id: 3, src: "/img/course1/tin-hoc.png", label: "Tin học" },
+  { id: 4, src: "/img/course1/Tieng-anh.png", label: "Tiếng anh" },
+  { id: 5, src: "/img/course1/Thpt.png", label: "Môn học phổ thông" },
+  { id: 6, src: "/img/course1/Ky-nang-mem.png", label: "Kỹ năng mềm" },
+  { id: 7, src: "/img/course1/Ky-nang-van-phong.png", label: "Kỹ năng văn phòng" },
+  { id: 8, src: "/img/course1/marketting.png", label: "Kinh doanh - Marketing" },
+  { id: 9, src: "/img/course1/nghe-thuat.png", label: "Nghệ thuật" },
+  { id: 10, src: "/img/course1/suc-khoe.png", label: "Sức khỏe - Đời sống" },
+  { id: 11, src: "/img/course1/Ky-nang-van-phong.png", label: "Kỹ năng văn phòng" },
+  { id: 12, src: "/img/course1/marketting.png", label: "Kinh doanh - Marketing" },
+  { id: 13, src: "/img/course1/nghe-thuat.png", label: "Nghệ thuật" },
+  { id: 14, src: "/img/course1/suc-khoe.png", label: "Sức khỏe - Đời sống" },
 ]
 const isChecked = ref(Array(imageList.length).fill(false))
 

@@ -37,10 +37,12 @@ function close_modal() {
   emit("close-modal")
 }
 function delete_topic() {
-  if (props.id) {
+  if (props.id !== null) {
+    console.log(props.id)
     let x = items.value.filter((x, index) => {
       return index !== props.id
     })
+    console.log(x)
     items.value = x
   }
   close_modal()

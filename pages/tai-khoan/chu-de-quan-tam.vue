@@ -1,7 +1,7 @@
 <template>
-  <div class="p-10 bg-color_11">
+  <div class="py-10 bg-color_11">
     <div class="flex">
-      <UserProfile class="w-25%" />
+      <UserProfile class="w-27%" />
       <div class="w-75% bg-white border rounded-3 ml-10">
         <div class="p-10">
           <p class="text-color_4 text-9 leading-normal mr-0.5">Chủ đề quan tâm</p>

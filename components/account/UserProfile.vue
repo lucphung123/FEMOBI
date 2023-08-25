@@ -12,15 +12,18 @@
     <div>
       <ul>
         <li class="cursor-pointer" v-for="(item, index) in menuItems" :key="index">
-          <div class="flex items-center text-base leading-6 p-5 border-b border-gray" @click="toggleItem(item)">
-            <div :class="item.icon"></div>
-            <div class="ml-2">
-              <NuxtLink :to="item.url">
-                {{ item.title }}
-              </NuxtLink>
+          <div class="flex items-center justify-between text-base leading-6 p-5 border-b border-gray" @click="toggleItem(item)">
+            <div class="flex items-center">
+              <div :class="item.icon"></div>
+              <div class="ml-2">
+                <NuxtLink :to="item.url">
+                  {{ item.title }}
+                </NuxtLink>
+              </div>
             </div>
+            <div v-if="item.children && item.children.length" :class="item.open ? 'i-mdi:chevron-up md:text-2xl' : 'i-mdi:chevron-down md:text-xl'"></div>
           </div>
-          <ul v-if="item.open">
+          <ul>
             <li v-for="(childItem, childIndex) in item.children" :key="childIndex">
               <div class="flex items-center text-base leading-6 p-5 ml-8" @click="selectItem(childItem)">
                 <NuxtLink :to="childItem.url">
@@ -94,5 +97,8 @@ const menuItems = ref([
 
 const toggleItem = item => {
   item.open = !item.open
+}
+function selectItem(item) {
+  console.log("🚀 ~ file: UserProfile.vue:102 ~ item:", item)
 }
 </script>

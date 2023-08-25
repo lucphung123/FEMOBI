@@ -1,7 +1,7 @@
 <template>
-  <div class="p-10 bg-color_11">
+  <div class="bg-color_11 py-10">
     <div class="flex">
-      <UserProfile class="w-25%" />
+      <UserProfile class="w-27%" />
       <div class="w-75% bg-white border rounded-3 ml-10 h-80">
         <div class="p-10">
           <p class="text-color_4 font-bold text-2xl leading-[45px] text-left mb-2.5">Kích hoạt khóa học</p>
