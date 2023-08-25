@@ -1,7 +1,7 @@
 <template>
-  <div class="p-10 bg-color_11">
+  <div class="py-10 bg-color_11">
     <div class="flex">
-      <div class="w-25%">
+      <div class="w-27%">
         <UserProfile />
         <div class="bg-white rounded-3 p-5 mt-10">
           <div class="flex border-b pb-4">

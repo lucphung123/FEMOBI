@@ -1,7 +1,7 @@
 <template>
-  <div class="p-10 bg-color_11">
+  <div class="bg-color_11 py-10">
     <div class="flex">
-      <UserProfile class="w-25%" />
+      <UserProfile class="w-27%" />
       <div class="w-80% bg-white border rounded-3 ml-10">
         <div class="p-10">
           <p class="text-color_4 font-bold text-2xl leading-[45px] text-left mb-2.5">Hồ sơ của tôi</p>
@@ -11,22 +11,22 @@
               <div class="flex mt-4 gap-3">
                 <img class="w-25 h-25 object-cover" src="/img/4.png" alt="" />
                 <p class="mt-9 text-color_6 text-base leading-6 mb-1">Họ và tên</p>
-                <input class="h-14 border rounded-2 mt-4 p-5 outline-none w-77" placeholder="Nguyễn Văn A" type="text" value="Dương Tuấn Minh" />
+                <input class="h-14 border rounded-2 mt-4 p-5 outline-none w-60%" placeholder="Nguyễn Văn A" type="text" value="Dương Tuấn Minh" />
               </div>
               <div class="flex mt-4">
                 <p class="mt-4">Ngày sinh</p>
                 <div>
-                  <select class="w-28 h-14 border ml-14 rounded-2" v-model="selectedDay">
+                  <select class="w-27 h-14 border ml-14 rounded-2" v-model="selectedDay">
                     <option v-for="day in days" :key="day">{{ day }}</option>
                   </select>
 
-                  <select class="w-28 h-14 border ml-4 rounded-2" v-model="selectedMonth">
+                  <select class="w-27 h-14 border ml-4 rounded-2" v-model="selectedMonth">
                     <option v-for="(month, index) in months" :key="index">
                       {{ month }}
                     </option>
                   </select>
 
-                  <select class="w-28 h-14 border ml-4 rounded-2" v-model="selectedYear">
+                  <select class="w-27 h-14 border ml-4 rounded-2" v-model="selectedYear">
                     <option v-for="year in years" :key="year">
                       {{ year }}
                     </option>
@@ -134,7 +134,7 @@
                   <input class="bg-[white] w-80% h-[50px] text-color_8 text-sm px-12 py-[5px] rounded-[5px] border border-color_2 outline-none" type="text" placeholder="Nhập số điện thoại" />
                 </div>
                 <div v-if="showNumber">
-                  <button class="hover:bg-color_5 hover:text-color_6 bg-white text-color_4 border-color_4 border px-[10px] py-1 rounded-2" @click="showFromNumber">Cập nhật</button>
+                  <button class="hover:bg-color_5 hover:text-color_6 bg-white text-color_4 border-color_4 border px-[6px] py-1 rounded-2" @click="showFromNumber">Cập nhật</button>
                 </div>
 
                 <div v-else>
@@ -156,7 +156,7 @@
                   <input class="bg-[white] w-80% h-[50px] text-color_8 text-sm px-12 py-[5px] rounded-[5px] border border-color_2 outline-none" type="text" placeholder="Nhập Email" />
                 </div>
                 <div v-if="showEmail">
-                  <button class="hover:bg-color_5 hover:text-color_6 bg-white text-color_4 border-color_4 border px-[10px] py-1 rounded-2" @click="showFromEmail">Cập nhật</button>
+                  <button class="hover:bg-color_5 hover:text-color_6 bg-white text-color_4 border-color_4 border px-[6px] py-1 rounded-2" @click="showFromEmail">Cập nhật</button>
                 </div>
 
                 <div v-else>
