@@ -188,6 +188,10 @@
 <script setup>
 import UserProfile from "../../components/account/UserProfile.vue"
 import { ref } from "vue"
+// layouts
+definePageMeta({
+  layout: "course",
+})
 
 const days = ref([...Array(31).keys()].map(day => day + 1))
 const months = ref(["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"])

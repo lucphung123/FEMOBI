@@ -82,6 +82,10 @@
 
 <script setup>
 import { ref, reactive } from "vue"
+// layouts
+definePageMeta({
+  layout: "course",
+})
 
 // const
 const hasSubmitted = ref(false)

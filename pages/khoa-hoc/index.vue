@@ -40,4 +40,9 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+// layouts
+definePageMeta({
+  layout: "course",
+})
+</script>
