@@ -1,5 +1,14 @@
 <template>
-  <div class="flex gap-10 mt-10 items-center border-b pb-15">
+  <div class="flex text-color_7 py-5 font-normal text-4 leading-4 items-center gap-2">
+    <nuxt-link to="/">Trang chủ</nuxt-link>
+    <div class="i-mdi:chevron-right text-xl"></div>
+    <nuxt-link to="/tin-tuc">
+      <p>Tin tức</p>
+    </nuxt-link>
+    <div class="i-mdi:chevron-right text-xl"></div>
+    <p class="font-bold">Tin tức</p>
+  </div>
+  <div class="flex gap-10 items-center border-b pb-15">
     <div class="w-1/2">
       <img src="/img/tintuc/tintuc1.jpg" class="rounded-lg" alt="" />
     </div>

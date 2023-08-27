@@ -1,5 +1,10 @@
 <template>
-  <div class="bg-color_11 py-10">
+  <div class="flex text-color_7 py-5 font-normal text-4 leading-4 items-center gap-2">
+    <nuxt-link to="/">Trang chủ</nuxt-link>
+    <div class="i-mdi:chevron-right text-xl"></div>
+    <p class="font-bold">Hồ sơ của tui</p>
+  </div>
+  <div class="bg-color_11">
     <div class="flex">
       <UserProfile class="w-27%" />
       <div class="w-80% bg-white border rounded-3 ml-10">

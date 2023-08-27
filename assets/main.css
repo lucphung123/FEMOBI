@@ -33,3 +33,6 @@ textarea {
 .topic {
   @apply flex justify-between items-center w-30% shadow-[2px_2px_8px_rgba(0,67,144,0.1)] bg-[white] font-medium text-3xl pl-30px pr-1.5 py-18px rounded-10px border-l-8 cursor-pointer
 }
+.bg-help{
+  @apply bg-[rgba(227,239,249,0.5)]
+}
