@@ -1,28 +1,29 @@
 <template>
-  <div class="p-10 bg-color_11">
+  <div class="flex text-color_7 py-5 font-normal text-4 leading-4 items-center gap-2">
+    <nuxt-link to="/">Trang chủ</nuxt-link>
+    <div class="i-mdi:chevron-right text-xl"></div>
+    <p class="font-bold">Thông báo</p>
+  </div>
+  <div class="bg-color_11">
     <div class="flex">
       <div class="w-25%">
         <UserProfile />
       </div>
-      <div class="w-75% bg-white border h-130 rounded-3 ml-10">
+      <div class="w-75% bg-white border h-80 rounded-3 ml-10">
         <div class="p-10">
           <p class="text-color_4 text-9 leading-normal mr-0.5">Thông báo</p>
-          <table class="bg-color_4 w-full rounded-lg">
-            <thead>
-              <tr class="text-left h-11 text-#FFFFFF">
-                <th class="w-120 px-5">Tiêu đề</th>
-                <th class="w-50 px-5">Người gửi</th>
-                <th class="w-50 px-5">Ngày gửi</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="(item, index) in items" :key="index">
-                <td>{{ item.title }}</td>
-                <td>{{ item.sender }}</td>
-                <td>{{ item.date }}</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="flex px-5 py-3 bg-color_4 rounded-lg text-white font-bold mt-5">
+            <p class="w-60%">Tiêu đề</p>
+            <p class="w-30%">Người gửi</p>
+            <p class="w-20% text-right">Ngày gửi</p>
+          </div>
+          <div v-for="(data, index) in notify" :key="index" class="flex px-5 py-3 rounded-lg text-color_9 justify-between">
+            <nuxt-link class="w-60%" to="/tai-khoan/thong-bao-chi-tiet">
+              <p class="hover:text-color_4 cursor-pointer">{{ data.title }}</p>
+            </nuxt-link>
+            <p class="w-30%">{{ data.user }}</p>
+            <p class="w-20% text-right">{{ data.date }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -34,9 +35,18 @@ import UserProfile from "../../components/account/UserProfile.vue"
 definePageMeta({
   layout: "course",
 })
-const items = [
-  { title: "Thay đổi thông tin cá nhân thành công!", sender: "mobiEdu", date: "15/08/2023" },
-  //   { title: "Tiêu đề 2", sender: "Người gửi 2", date: "Ngày gửi 2" },
-  //   { title: "Tiêu đề 3", sender: "Người gửi 3", date: "Ngày gửi 3" },
+const notify = [
+  {
+    id: 1,
+    title: "Thay đổi thông tin cá nhân thành công!",
+    user: "iNet",
+    date: "27/08/2023",
+  },
+  {
+    id: 1,
+    title: "Thay đổi mật khẩu!",
+    user: "iNet",
+    date: "27/08/2023",
+  },
 ]
 </script>
