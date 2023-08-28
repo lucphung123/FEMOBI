@@ -1,7 +1,7 @@
 <template>
   <div class="w-full min-h-screen flex flex-col overflow-clip bg-white items-center">
     <!-- header -->
-    <div class="w-full sticky z-100 top-0 flex-1 flex flex-col bg-white items-center">
+    <div class="w-full sticky z-100 top-0 flex-1 flex flex-col bg-white items-center shadow-md">
       <div class="lg:(w-225 px-0) xl:(w-300) 2xl:(w-340)">
         <Header />
       </div>

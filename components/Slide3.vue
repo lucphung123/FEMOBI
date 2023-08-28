@@ -1,7 +1,7 @@
 <template>
   <swiper :modules="modules" :slides-per-view="4" autoplay  :pagination="{ clickable: true }" :scrollbar="{ draggable: true }" class="flex">
     <swiper-slide v-for="(product, index) in products" :key="index">
-      <div class="flex justify-center items-center space-x-20">
+      <div class="flex justify-center items-center">
         <div class="h-full w-full rounded-5 flex justify-center items-center">
           <img class="rounded-5" :src="product.src" alt="" />
         </div>
