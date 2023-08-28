@@ -43,6 +43,9 @@
       <p>Tất cả câu hỏi</p>
     </div>
   </div>
+  <megaMenu />
 </template>
 
-<script setup></script>
+<script setup>
+import megaMenu from "../../components/megaMenu.vue"
+</script>
