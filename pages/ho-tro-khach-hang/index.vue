@@ -4,9 +4,9 @@
     <div class="i-mdi:chevron-right text-3xl"></div>
     <p class="font-bold">Hỗ trợ</p>
   </div>
-  <div class="relative mt-10 md:mt-20 lg:mt-36 xl:mt-30 mb-0 md:mb-50">
+  <div class="relative mt-20">
     <div class="absolute w-screen left-1/2 -translate-x-1/2 -translate-y-full md:mt-50 bg-help h-65 flex flex-col items-center">
-      <div class="w-full lg:w-225 xl:(w-300 h-250px) 2xl:(w-340 h-280px) mx-auto my-auto">
+      <div class="w-full">
         <div>
           <p class="text-center text-color_4 font-bold text-12 mt-17 leading-7">mobiEdu có thể giúp gì cho bạn?</p>
         </div>

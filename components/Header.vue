@@ -31,7 +31,7 @@
           <div class="flex gap-10 text-gray-600 font-600 justify-end">
             <div class="flex gap-10">
               <p class="cursor-pointer">Về mobiEdu</p>
-              <nuxt-link to="ho-tro-khach-hang" class="cursor-pointer">
+              <nuxt-link to="/ho-tro-khach-hang" class="cursor-pointer">
                 <p>Hỗ trợ</p>
               </nuxt-link>
             </div>
