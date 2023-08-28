@@ -59,7 +59,9 @@
       </div>
     </div>
     <div class="flex justify-center">
-      <button class="text-blue-900 bg-white border-1px border-blue font-bold text-center p-2 rd-20px w-150px">XEM THÊM</button>
+      <nuxt-link to="/tin-tuc">
+        <button class="text-blue-900 bg-white border-1px border-blue font-bold text-center p-2 rd-20px w-150px">XEM THÊM</button>
+      </nuxt-link>
     </div>
   </div>
 </template>

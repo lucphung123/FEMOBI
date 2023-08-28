@@ -46,18 +46,18 @@
       <p class="text-center mt-5 text-color_9 text-8">Không tìm thấy kết quả phù hợp</p>
       <p class="text-center text-color_6 text-5 mt-5 font-bold">Bạn chưa tìm kiếm được thông tin mong muốn? Liên hệ với chúng tôi để được hỗ trợ</p>
       <div class="flex mt-10 gap-5 justify-center">
-        <div @click="showModal = true" class="cursor-pointer p-3 bg-color_13 rounded-lg">
+        <div @click="showModal = true" class="cursor-pointer p-3 bg-color_13 rounded-lg ease-in-out delay-150 hover:-translate-y-3 duration-300">
           <div class="i-mdi:phone text-white text-5xl"></div>
         </div>
-        <div @click="showModalForm = true" class="cursor-pointer p-3 bg-color_5 rounded-lg">
+        <div @click="showModalForm = true" class="cursor-pointer p-3 bg-color_5 rounded-lg ease-in-out delay-150 hover:-translate-y-3 duration-300">
           <div class="i-mdi:email-outline text-white text-5xl"></div>
         </div>
-        <div class="cursor-pointer p-3 bg-color_2 rounded-lg flex justify-center px-4">
+        <a href="https://zalo.me/0777202020" target="_blank" class="cursor-pointer p-3 bg-color_2 rounded-lg flex justify-center px-4 ease-in-out delay-150 hover:-translate-y-3 duration-300">
           <img src="/img/icon/zalo-30.png" class="w-40px h-40px" alt="" />
-        </div>
-        <div class="cursor-pointer p-3 bg-color_4 rounded-lg">
+        </a>
+        <a href="https://www.facebook.com/mobiedu.vn" target="_blank" class="cursor-pointer p-3 bg-color_4 rounded-lg ease-in-out delay-150 hover:-translate-y-3 duration-300">
           <div class="i-mdi:facebook text-white text-5xl"></div>
-        </div>
+        </a>
       </div>
       <div v-if="showModal">
         <div class="fixed flex justify-center bg-[#000000da] inset-0 z122">
@@ -74,7 +74,7 @@
       </div>
       <div v-if="showModalForm">
         <div class="fixed flex justify-center bg-[#000000da] inset-0 z122 overflow-y-auto">
-          <div class="bg-[white] h-160 w-150 mt-20 rounded-[20px] p-10">
+          <div class="bg-[white] h-170 w-150 mt-20 rounded-[20px] p-10">
             <img class="ml-40" src="/img/logo.png" alt="" />
             <p class="mt-4">Họ tên *</p>
             <input class="bg-[white] w-full h-[50px] text-color_8 text-sm px-5 mt-1 py-[5px] rounded-[5px] border border-color_2 outline-none" type="text" placeholder="Nhập Họ và tên" />
