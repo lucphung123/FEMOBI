@@ -43,11 +43,11 @@
       </div>
     </div>
 
-    <div class="relative mt-80 md:mt-20 lg:mt-36 xl:mt-170 mb-0 md:mb-50">
-      <div class="absolute w-screen left-1/2 -translate-x-1/2 -translate-y-full bg-[#efefef] h-160 flex flex-col items-center">
+    <div class="relative mt-80 md:mt-20 lg:mt-36 xl:mt-270 mb-0 md:mb-50">
+      <div class="absolute w-screen left-1/2 -translate-x-1/2 -translate-y-full bg-[#efefef] h-260 flex flex-col items-center">
         <div class="w-full lg:w-225 xl:(w-300 h-250px) 2xl:(w-340 h-280px) mx-auto my-auto">
-          <div class="-mt-30 bg-white w-5/7 rd-1">
-            <div class="p10 space-y-5">
+          <div class=" bg-white w-5/7 rd-1">
+            <div class="p10 space-y-5 -mt-70">
               <div class="flex bg-#f2f7fd rd-2 sticky top-0">
                 <button
                   v-for="(tab, index) in tabs"
@@ -62,7 +62,15 @@
                   {{ tab }}
                 </button>
               </div>
-              <div v-for="(tab, index) in tabs" :key="index" ref="tabElements" class="mt-10 bg-gray-200 p-4">
+              <div class="text-3xl text-color_4 font-600">Tổng quan</div>
+              <div class="text-lg">
+                <p v-if="showFullText">{{ longText }}</p>
+                <p v-else>{{ shortenedText }}</p>
+                <button @click="toggleText" class="text-blue-500 bg-white text-lg">
+                  {{ showFullText ? "Rút gọn" : "Xem thêm" }}
+                </button>
+              </div>
+              <div v-for="(tab, index) in tabs" :key="index" ref="tabElement" class="mt-10 bg-gray-200 p-4">
                 <p>Nội dung của Tab {{ index + 1 }}</p>
               </div>
             </div>
@@ -74,32 +82,24 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref } from "vue"
 
-const tabs = ref(['Tab 1', 'Tab 2', 'Tab 3']);
-const activeTab = ref('Tab 1');
-const tabElements = ref([]);
+const tabs = ["Tab 1", "Tab 2", "Tab 3"]
+const activeTab = ref(tabs[0])
 
-const changeTab = (tab, index) => {
-  activeTab.value = tab;
+const changeTab = tab => {
+  activeTab.value = tab
+  scrollToTab(tab)
+}
 
-  // Cuộn đến nội dung của tab tương ứng
-  const tabElement = tabElements[index];
-  if (tabElement) {
-    tabElement.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-
-    // Chờ một chút cho việc cuộn xảy ra trước khi cuộn trang lên đầu
-    setTimeout(() => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      });
-    }, 100);
+const tabElement = ref([])
+const scrollToTab = tab => {
+  const index = tabs.indexOf(tab)
+  const tabRef = tabElement[index]
+  if (tabRef) {
+    tabRef.scrollIntoView({ behavior: "smooth", block: "start" })
   }
-};
+}
 const maxLength = 670
 const showFullText = ref(false)
 
