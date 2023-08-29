@@ -4,7 +4,7 @@
     <div class="i-mdi:chevron-right text-xl"></div>
     <p class="font-bold">Hashtag</p>
   </div>
-  <div class="flex sticky flex-col transition duration-[all] z-5 bg-blue-500 ease-[ease-in-out] w-screen top-23">
+  <div class="flex sticky flex-col transition duration-[all] z-5 bg-color_15 ease-[ease-in-out] w-screen top-23">
     <div class="lg:(w-225 px-0) xl:(w-320) 2xl:(w-340) mx-auto">
       <div class="flex items-center">
         <img src="/img/Hashtag.svg" class="w-30 h-30" alt="" />
@@ -66,11 +66,15 @@
       </div>
     </div>
   </div>
-  <div class="flex text-center items-center gap-2 mt-20">
-    <div class="i-mdi:cog-outline text-color_4 font-300 text-10"></div>
-    <div class="text-color_4 font-bold text-3xl">CÓ THỂ BẠN QUAN TÂM</div>
+  <div class="bg-white w-screen mt-20">
+    <div class="lg:(w-225 px-0) xl:(w-320) 2xl:(w-340) mx-auto">
+      <div class="flex text-center items-center gap-2 mt-20">
+        <div class="i-mdi:cog-outline text-color_4 font-300 text-10"></div>
+        <div class="text-color_4 font-bold text-3xl">CÓ THỂ BẠN QUAN TÂM</div>
+      </div>
+      <SlideCourse class="mt-5" />
+    </div>
   </div>
-  <SlideCourse class="mt-5" />
 </template>
 
 <script setup>

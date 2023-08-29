@@ -1,5 +1,5 @@
 <template>
-  <div class="p-10 bg-color_11">
+  <div class="p-10 w-full">
     <ul class="flex relative justify-between items-center max-w-750px mx-auto my-0">
       <li class="relative leading-6 text-center z-5">
         <div class="flex justify-center items-center w-30px bg-color_2 h-30px text-white font-bold text-lg rounded-50%">1</div>

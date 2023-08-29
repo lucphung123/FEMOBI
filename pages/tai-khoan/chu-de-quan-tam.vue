@@ -1,10 +1,12 @@
 <template>
-  <div class="flex text-color_7 py-5 font-normal text-4 leading-4 items-center gap-2">
-    <nuxt-link to="/">Trang chủ</nuxt-link>
-    <div class="i-mdi:chevron-right text-xl"></div>
-    <p class="font-bold">Chủ đề quan tâm</p>
+  <div class="w-full">
+    <div class="flex text-color_7 py-5 font-normal text-4 leading-4 items-center gap-2">
+      <nuxt-link to="/">Trang chủ</nuxt-link>
+      <div class="i-mdi:chevron-right text-xl"></div>
+      <p class="font-bold">Chủ đề quan tâm</p>
+    </div>
   </div>
-  <div class="bg-color_11">
+  <div class="bg-color_11 w-full">
     <div class="flex">
       <UserProfile class="w-27%" />
       <div class="w-75% bg-white border rounded-3 ml-10">
