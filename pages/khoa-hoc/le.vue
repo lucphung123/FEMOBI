@@ -46,7 +46,7 @@
     <div class="relative mt-80 md:mt-20 lg:mt-36 xl:mt-270 mb-0 md:mb-50">
       <div class="absolute w-screen left-1/2 -translate-x-1/2 -translate-y-full bg-[#efefef] h-260 flex flex-col items-center">
         <div class="w-full lg:w-225 xl:(w-300 h-250px) 2xl:(w-340 h-280px) mx-auto my-auto">
-          <div class=" bg-white w-5/7 rd-1">
+          <div class="bg-white w-5/7 rd-1">
             <div class="p10 space-y-5 -mt-70">
               <div class="flex bg-#f2f7fd rd-2 sticky top-0">
                 <button
@@ -82,8 +82,6 @@
 </template>
 
 <script setup>
-import { ref } from "vue"
-
 const tabs = ["Tab 1", "Tab 2", "Tab 3"]
 const activeTab = ref(tabs[0])
 

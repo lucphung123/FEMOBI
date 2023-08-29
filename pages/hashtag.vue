@@ -4,14 +4,16 @@
     <div class="i-mdi:chevron-right text-xl"></div>
     <p class="font-bold">Hashtag</p>
   </div>
-  <div class="flex sticky flex-col transition duration-[all] z-5 bg-red ease-[ease-in-out] w-full top-20">
-    <div class="flex items-center">
-      <img src="/img/Hashtag.svg" class="w-30 h-30" alt="" />
-      <div>
-        <p class="text-5 text-color_6 font-bold">hocsinh</p>
-        <div class="flex px-2 rounded-lg bg-color_16 justify-center items-center gap-2 py-1 mt-2">
-          <div class="i-mdi:facebook text-white"></div>
-          <a href="" class="text-white text-sm"> Share</a>
+  <div class="flex sticky flex-col transition duration-[all] z-5 bg-blue-500 ease-[ease-in-out] w-screen top-23">
+    <div class="lg:(w-225 px-0) xl:(w-320) 2xl:(w-340) mx-auto">
+      <div class="flex items-center">
+        <img src="/img/Hashtag.svg" class="w-30 h-30" alt="" />
+        <div>
+          <p class="text-5 text-color_6 font-bold">hocsinh</p>
+          <div class="flex px-2 rounded-lg bg-color_16 justify-center items-center gap-2 py-1 mt-2">
+            <div class="i-mdi:facebook text-white"></div>
+            <a href="" class="text-white text-sm"> Share</a>
+          </div>
         </div>
       </div>
     </div>
