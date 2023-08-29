@@ -1,8 +1,5 @@
 <template>
-  <div v-if="isLoading">
-    <Loading />
-  </div>
-  <div v-else class="w-full flex flex-col justify-center items-center">
+  <div class="w-full flex flex-col justify-center items-center">
     <div class="w-full">
       <div class="w-full flex justify-center">
         <div class="flex items-center justify-center px-0 py-2 w-full">
@@ -59,10 +56,10 @@
 
 <script setup>
 import { ref } from "vue"
-const isLoading = ref(true)
-setTimeout(() => {
-  isLoading.value = false
-}, 1000)
+// const isLoading = ref(true)
+// setTimeout(() => {
+//   isLoading.value = false
+// }, 1000)
 
 //dropdown
 const dropdownVisible = ref(false)
