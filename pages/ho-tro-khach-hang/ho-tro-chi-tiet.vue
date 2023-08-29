@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="w-full">
     <div class="flex text-center bg-color_10">
       <div :class="[' bg-color_11 cursor-pointer text-white  text-xl mt-5  ', activeTab === 'course' ? 'text-white border-b bg-color_4 rounded-lg ' : 'text-black hover:(text-color_4)']" @click="activateTab('course')">Sản phẩm</div>
       <div :class="[' bg-color_11 cursor-pointer text-white  text-xl mt-5  ', activeTab === 'news' ? 'text-white border-b bg-color_4 rounded-lg ' : 'text-black hover:(text-color_4)']" @click="activateTab('news')">Hướng dẫn</div>
