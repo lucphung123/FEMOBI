@@ -1,7 +1,7 @@
 <template>
   <div class="pt-20">
     <div>
-      <div class="flex justify-between p-10">
+      <div class="flex justify-between">
         <div>
           <p class="relative text-color_8 font-bold text-lg leading-6">VỀ MOBIEDU</p>
           <ul class="pb-[22px] border-solid mt-5">
@@ -65,6 +65,9 @@
             </li>
             <li>
               <a class="flex items-center text-color_9 text-base leading-9" href="#"> <img class="mr-3" src="/img/icon/youtube.png" alt="" /><span>Youtube</span></a>
+            </li>
+            <li>
+              <a class="flex items-center text-color_9 text-base leading-9" href="#"> <img class="mr-3" src="/img/icon/exclamation.png" alt="" /><span>Liên hệ </span></a>
             </li>
           </ul>
         </div>
