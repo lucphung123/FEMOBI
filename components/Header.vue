@@ -1,5 +1,8 @@
 <template>
-  <div class="w-full flex flex-col justify-center items-center">
+  <div v-if="isLoading">
+    <Loading />
+  </div>
+  <div v-else class="w-full flex flex-col justify-center items-center">
     <div class="w-full">
       <div class="w-full flex justify-center">
         <div class="flex items-center justify-center px-0 py-2 w-full">
@@ -10,20 +13,20 @@
                 <nuxt-link to="/khoa-hoc"><p class="text-xl font-600">Khoá học</p></nuxt-link>
                 <div class="i-mdi:chevron-down text-xl"></div>
               </div>
-              <div class="dropdown-content w-1/6 duration-500 transition-all rounded-4" :class="{ active: dropdownVisible }">
+              <div class="dropdown-content w-60 h-45 duration-500 transition-all rounded-4" :class="{ active: dropdownVisible }">
                 <div class="cursor-pointer flex flex-col p-5 space-y-5 text-sm font-500">
-                  <p class="border-b cursor-pointer">Tất cả</p>
-                  <p class="border-b cursor-pointer">Trẻ em</p>
-                  <p class="border-b cursor-pointer">Sinh viên</p>
-                  <p class="border-b cursor-pointer">Người đi làm</p>
+                  <nuxt-link to="/khoa-hoc"> <p class="border-b cursor-pointer hover:text-color_4">Tất cả</p></nuxt-link>
+                  <nuxt-link to="/khoa-hoc/tre-em"> <p class="border-b cursor-pointer hover:text-color_4">Trẻ em</p></nuxt-link>
+                  <nuxt-link to="/khoa-hoc/hoc-sinh-pho-thong"> <p class="border-b cursor-pointer hover:text-color_4">Học sinh phổ thông</p></nuxt-link>
+                  <nuxt-link to="/khoa-hoc/sinh-vien-nguoi-di-lam"> <p class="border-b cursor-pointer hover:text-color_4">Sinh viên và người đi làm</p></nuxt-link>
                 </div>
               </div>
             </div>
             <div>
-              <p class="text-xl font-600">Giải pháp</p>
+              <nuxt-link to="/giai-phap"> <p class="text-xl font-600 cursor-pointer hover:text-color_4">Giải pháp</p></nuxt-link>
             </div>
             <div>
-              <p class="text-xl font-600">Cổng thi</p>
+              <nuxt-link to="/cong-thi"> <p class="text-xl font-600 cursor-pointer hover:text-color_4">Cổng thi</p></nuxt-link>
             </div>
           </div>
         </div>
@@ -56,6 +59,10 @@
 
 <script setup>
 import { ref } from "vue"
+const isLoading = ref(true)
+setTimeout(() => {
+  isLoading.value = false
+}, 1000)
 
 //dropdown
 const dropdownVisible = ref(false)

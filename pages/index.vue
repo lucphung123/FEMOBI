@@ -1,5 +1,8 @@
 <template>
-  <div class="w-full lg:px-0 flex flex-col">
+  <div v-if="isLoading">
+    <Loading />
+  </div>
+  <div v-else class="w-full lg:px-0 flex flex-col">
     <div class="relative mt-60 md:mt-20 lg:mt-36 xl:mt-100 mb-0 md:mb-50 w-full">
       <div class="absolute w-screen left-1/2 -translate-x-1/2 -translate-y-full md:mt-50 bg-[url(/img/bg/bg-banner.jpg)] bg-bottom bg-cover">
         <div class="w-full mx-auto flex items-center justify-between">
@@ -97,6 +100,10 @@
 </template>
 
 <script setup>
+const isLoading = ref(true)
+setTimeout(() => {
+  isLoading.value = false
+}, 1000)
 const activeTab = ref(0)
 function handleActiveTab(key) {
   const courseId = courses.value?.[activeBtn.value]?.id

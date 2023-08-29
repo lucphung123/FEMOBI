@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-4 gap-7">
     <div v-for="(product, index) in products" :key="index" class="mt-5">
-      <img :src="product.imgSrc" alt="" />
+      <NuxtLink to="/khoa-hoc/le"><img :src="product.imgSrc" alt=""  class="hover:scale-105 animate-ease"/></NuxtLink>
       <p class="h-5 mt-2 text-color_8 font-bold text-sm leading-5">
         {{ product.title }}
       </p>
