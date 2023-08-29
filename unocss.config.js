@@ -19,6 +19,7 @@ export default defineConfig({
       color_14: "#21A6F1",
       color_15: "#F1F7FC",
       color_16: "#1877F2",
+      color_16: "#EBEEF2",
     },
   },
   presets: [presetUno(), presetAttributify(), presetWind(), presetIcons(), presetTypography()],

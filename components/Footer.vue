@@ -67,7 +67,9 @@
               <a class="flex items-center text-color_9 text-base leading-9" href="#"> <img class="mr-3" src="/img/icon/youtube.png" alt="" /><span>Youtube</span></a>
             </li>
             <li>
-              <a class="flex items-center text-color_9 text-base leading-9" href="#"> <img class="mr-3" src="/img/icon/exclamation.png" alt="" /><span>Liên hệ </span></a>
+              <nuxt-link to="/lien-he">
+                <a class="flex items-center text-color_9 text-base leading-9" href="#"> <img class="mr-3" src="/img/icon/exclamation.png" alt="" /><span>Liên hệ </span></a>
+              </nuxt-link>
             </li>
           </ul>
         </div>
@@ -76,17 +78,19 @@
     <div>
       <ul class="flex justify-between border-y">
         <li>
-          <a class="flex ml-35 text-color_2 text-lg leading-6 uppercase py-[13px]" href="#">CHÍNH SÁCH BẢO MẬT</a>
+          <nuxt-link to="/text">
+            <a class="flex ml-35 text-color_2 text-lg leading-6 uppercase py-[13px] hover:text-color_1" href="#">CHÍNH SÁCH BẢO MẬT</a>
+          </nuxt-link>
         </li>
 
         <li>
-          <a class="flex text-color_2 text-lg leading-6 uppercase py-[13px]" href="#">ĐIỀU KHOẢN SỬ DỤNG</a>
+          <a class="flex text-color_2 text-lg leading-6 uppercase py-[13px] hover:text-color_1" href="#">ĐIỀU KHOẢN SỬ DỤNG</a>
         </li>
         <li>
-          <a class="flex text-color_2 text-lg leading-6 uppercase py-[13px]" href="#">GIẢI QUYẾT TRANH CHẤP</a>
+          <a class="flex text-color_2 text-lg leading-6 uppercase py-[13px] hover:text-color_1" href="#">GIẢI QUYẾT TRANH CHẤP</a>
         </li>
         <li>
-          <a class="flex mr-35 text-color_2 text-lg leading-6 uppercase py-[13px]" href="#">QUY CHẾ HOẠT ĐỘNG</a>
+          <a class="flex mr-35 text-color_2 text-lg leading-6 uppercase py-[13px] hover:text-color_1" href="#">QUY CHẾ HOẠT ĐỘNG</a>
         </li>
       </ul>
     </div>
