@@ -17,11 +17,11 @@
           </div>
           <div class="space-y-4">
             <div>
-              <nuxt-link to="/khoa-hoc"><p class="font-bold text-lg text-color_4 mx-8 mt-5">Tất cả</p></nuxt-link>
+              <nuxt-link to="/khoa-hoc"><p class="text-#333333 text-lg mx-8">Tất cả</p></nuxt-link>
             </div>
             <hr class="border-t-1 border-gray-300" />
             <div>
-              <nuxt-link to="/khoa-hoc/tre-em"><p class="text-#333333 text-lg mx-8">Trẻ em</p></nuxt-link>
+              <nuxt-link to="/khoa-hoc/tre-em"><p class="font-bold text-lg text-color_4 mx-8 mt-5">Trẻ em</p></nuxt-link>
             </div>
             <hr class="border-t-1 border-gray-300" />
             <div>
@@ -58,11 +58,11 @@
                 <div v-for="(childItem, childIndex) in item.children" :key="childIndex">
                   <div class="space-y-4">
                     <div>
-                      <nuxt-link to="/khoa-hoc"><p class="font-bold text-lg text-color_4 mx-8 mt-5">Tất cả</p></nuxt-link>
+                      <nuxt-link to="/khoa-hoc"><p class="text-#333333 text-lg mx-8">Tất cả</p></nuxt-link>
                     </div>
                     <hr class="border-t-1 border-gray-300" />
                     <div>
-                      <nuxt-link to="/khoa-hoc/tre-em"><p class="text-#333333 text-lg mx-8">Trẻ em</p></nuxt-link>
+                      <nuxt-link to="/khoa-hoc/tre-em"><p class="font-bold text-lg text-color_4 mx-8 mt-5">Trẻ em</p></nuxt-link>
                     </div>
                     <hr class="border-t-1 border-gray-300" />
                     <div>
@@ -181,6 +181,7 @@ const menuItems = ref([
   {
     title: "Danh mục khoá học",
     icon: "i-mdi:format-list-bulleted text-2xl",
+    url: "/khoa-hoc",
     open: false,
     children: [
       {
@@ -195,7 +196,6 @@ const menuItems1 = ref([
   {
     title: "Hướng dẫn đăng kí khoá học",
     icon: "i-mdi:file-edit-outline text-2xl",
-    url: "/khoa-hoc",
     open: false,
     children: [
       {

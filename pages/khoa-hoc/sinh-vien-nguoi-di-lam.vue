@@ -17,7 +17,7 @@
           </div>
           <div class="space-y-4">
             <div>
-              <nuxt-link to="/khoa-hoc"><p class="font-bold text-lg text-color_4 mx-8 mt-5">Tất cả</p></nuxt-link>
+              <nuxt-link to="/khoa-hoc"><p class="text-#333333 text-lg mx-8">Tất cả</p></nuxt-link>
             </div>
             <hr class="border-t-1 border-gray-300" />
             <div>
@@ -29,7 +29,7 @@
             </div>
             <hr class="border-t-1 border-gray-300" />
             <div>
-              <nuxt-link to="/khoa-hoc/sinh-vien-nguoi-di-lam"><p class="text-#333333 text-lg mx-8">Sinh viên và người đi làm</p></nuxt-link>
+              <nuxt-link to="/khoa-hoc/sinh-vien-nguoi-di-lam"><p class="font-bold text-lg text-color_4 mx-8 mt-5">Sinh viên và người đi làm</p></nuxt-link>
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@
                 <div v-for="(childItem, childIndex) in item.children" :key="childIndex">
                   <div class="space-y-4">
                     <div>
-                      <nuxt-link to="/khoa-hoc"><p class="font-bold text-lg text-color_4 mx-8 mt-5">Tất cả</p></nuxt-link>
+                      <nuxt-link to="/khoa-hoc"><p class="text-#333333 text-lg mx-8">Tất cả</p></nuxt-link>
                     </div>
                     <hr class="border-t-1 border-gray-300" />
                     <div>
@@ -70,7 +70,7 @@
                     </div>
                     <hr class="border-t-1 border-gray-300" />
                     <div>
-                      <nuxt-link to="/khoa-hoc/sinh-vien-nguoi-di-lam"><p class="text-#333333 text-lg mx-8">Sinh viên và người đi làm</p></nuxt-link>
+                      <nuxt-link to="/khoa-hoc/sinh-vien-nguoi-di-lam"><p class="font-bold text-lg text-color_4 mx-8 mt-5">Sinh viên và người đi làm</p></nuxt-link>
                     </div>
                   </div>
                 </div>
