@@ -1,6 +1,6 @@
 <template>
-  <div class="p-10 bg-color_11">
-    <ul class="flex relative justify-between items-center max-w-750px mx-auto my-0">
+  <div class="w-full">
+    <ul class="flex relative justify-between items-center mt-10 max-w-750px mx-auto my-0">
       <li class="relative leading-6 text-center z-5">
         <div class="flex justify-center items-center w-30px bg-color_2 h-30px text-white font-bold text-lg rounded-50%">1</div>
         <div class="absolute -translate-x-2/4 w-72px text-color_2 mt-2 font-normal text-sm leading-18px text-center left-2/4"><a>Xác nhận thông tin</a></div>

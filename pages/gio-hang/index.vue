@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-color_11">
+  <div class="bg-color_11 w-full">
     <div v-if="courseItems.length === 0" class="bg-color_11">
       <div class="items-center justify-center flex">
         <img src="/img/cart/shopping-cart.svg" alt="" />
@@ -14,14 +14,14 @@
         <p class="text-color_8 font-normal text-xl leading-26px text-center">mà bạn muốn đăng kí!</p>
       </div>
     </div>
-    <div v-else class="bg-color_11 px-15 pt-5 pb-15">
-      <div class="flex gap-2 pl-5 items-center">
+    <div v-else class="bg-color_11 pt-5 pb-15">
+      <div class="flex gap-2 items-center">
         <p>Giỏ hàng:</p>
         <p class="font-bold">{{ selectedItems.length }}</p>
         <p>sản phẩm,</p>
         <p class="text-color_4 font-bold text-4">{{ formatCurrency(selectedTotalPrice) }}</p>
       </div>
-      <div class="p-5 flex">
+      <div class="py-5 flex">
         <div class="w-full">
           <div class="bg-white flex rounded-lg p-5">
             <div class="flex items-center cursor-pointer text-16px text-color_6">
@@ -71,16 +71,14 @@
         </div>
       </div>
     </div>
-    <div class="relative mt-80 md:mt-20 lg:mt-36 xl:mt-110 mb-0 md:mb-50">
-      <div class="absolute w-screen left-1/2 -translate-x-1/2 -translate-y-full md:mt-50 bg-white h-160 flex flex-col items-center">
-        <div class="w-full lg:w-225 xl:(w-300 h-250px) 2xl:(w-340 h-280px) mx-auto my-auto">
-          <div class="flex text-center items-center gap-2">
-            <div class="i-mdi:cog-outline text-color_4 font-300 text-10"></div>
-            <div class="text-color_4 font-bold text-3xl">KHÓA HỌC CÙNG LĨNH VỰC</div>
-          </div>
-          <SlideCourse class="mt-5" />
-        </div>
+  </div>
+  <div class="bg-white w-screen mt-20">
+    <div class="lg:(w-225 px-0) xl:(w-320) 2xl:(w-340) mx-auto">
+      <div class="flex text-center items-center gap-2 mt-10">
+        <div class="i-mdi:cog-outline text-color_4 font-300 text-10"></div>
+        <div class="text-color_4 font-bold text-3xl">KHÓA HỌC CÙNG LĨNH VỰC</div>
       </div>
+      <SlideCourse class="mt-5" />
     </div>
   </div>
 </template>
