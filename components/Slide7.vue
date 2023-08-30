@@ -24,13 +24,9 @@ const products = [
     src: "/img/gioithieu/gioithieu.png",
   },
   {
-    src: "/img/gioithieu/gioithieu1.jpg",
+    src: "/img/gioithieu/gioithieu.jpg",
   },
 ]
-let mySwiper = ref({})
-const setSwiper = xswiper => {
-  mySwiper.value = xswiper
-}
 </script>
 
 <style scoped>

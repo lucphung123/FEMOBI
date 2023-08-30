@@ -8,6 +8,8 @@
   </div>
   <div>
     <Slide7 />
+  </div>
+  <div>
     <div class="text-center mt-20">
       <p class="text-36px text-color_4 font-bold">mobiEdu - Nền tảng chuyển đổi số giáo dục toàn diện</p>
       <p class="text-20px text-color_8 px-65">mobiEdu là hệ sinh thái giáo dục, cung cấp giải pháp dạy học & quản lí trường học trực tuyến, phân phối các nội dung học tập tới người học ở mọi lứa tuổi.</p>
@@ -35,9 +37,46 @@
         </div>
       </div>
     </div>
+    <div class="mt-10">
+      <nav class="w-210 h-10 flex text-center relative shadow-xl rounded-[5px] bg-white">
+        <div class="absolute h-full w-25% transition-all duration-400 ease-in-out z-5 rounded-[5px] left-0 top-0 bg-color_4" :style="{ left: sliderLeft }"></div>
+        <label class="w-full h-full leading-10 text-lg font-normal text-color_4 relative z-6 cursor-pointer transition-all duration-300 ease-in-out mx-1 rounded-[5px] hover:(bg-color_4 text-white)" v-for="(tab, index) in tabs" :key="index" :for="tab.id" :class="activeTab === tab.id ? '!text-white' : ''" @click="moveSlider(index)">
+          {{ tab.label }}
+        </label>
+      </nav>
+    </div>
+    <div class="mt-8">
+      <div v-if="activeTab === '1'"><h2 class="text-2xl font-bold">tab1</h2></div>
+      <div v-else-if="activeTab === '2'">
+        <h2 class="text-2xl font-bold">tab2</h2>
+      </div>
+      <div v-else-if="activeTab === '3'">
+        <h2 class="text-2xl font-bold">3</h2>
+      </div>
+      <div v-else-if="activeTab === '4'">
+        <h2 class="text-2xl font-bold">2</h2>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
 import Slide7 from "../../components/Slide7.vue"
+import { ref, computed } from "vue"
+
+const tabs = [
+  { id: "1", label: "Tiền tiểu học " },
+  { id: "2", label: "Tin học - lập trình" },
+  { id: "3", label: "Tiếng anh" },
+  { id: "4", label: "Kỹ năng văn phòng" },
+]
+
+const activeTab = ref("1")
+const sliderLeft = computed(() => {
+  const tabWidth = 100 / tabs.length
+  return tabWidth * tabs.findIndex(tab => tab.id === activeTab.value) + "%"
+})
+function moveSlider(index) {
+  activeTab.value = tabs[index].id
+}
 </script>
