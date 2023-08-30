@@ -11,25 +11,22 @@
     <div class="w-full flex items-center space-x-15">
       <div class="w-1/4">
         <div class="space-y-5">
-          <div class="flex items-center text-color_4 space-x-2 border-b border-gray-300 pb-3">
-            <div class="i-mdi:format-list-bulleted text-2xl"></div>
+          <div class="flex items-center text-color_4 space-x-2">
+            <div class="i-mdi:menu text-2xl"></div>
             <div class="font-bold text-xl">DANH MỤC KHOÁ HỌC</div>
           </div>
-          <div class="space-y-4">
-            <div>
-              <nuxt-link to="/khoa-hoc"><p class="text-#333333 text-lg mx-8">Tất cả</p></nuxt-link>
+          <div class="">
+            <div class="border-y-1.5 border-gray-300 py-4 hover:bg-color_10">
+              <NuxtLink to="/khoa-hoc" class="text-#333333 text-lg mx-8">Tất cả</NuxtLink>
             </div>
-            <hr class="border-t-1 border-gray-300" />
-            <div>
-              <nuxt-link to="/khoa-hoc/tre-em"><p class="text-#333333 text-lg mx-8">Trẻ em</p></nuxt-link>
+            <div class="border-b-1 border-gray-300 py-4 hover:bg-color_10">
+              <NuxtLink to="/khoa-hoc/tre-em" class="text-#333333 text-lg mx-8">Trẻ em</NuxtLink>
             </div>
-            <hr class="border-t-1 border-gray-300" />
-            <div>
-              <nuxt-link to="/khoa-hoc/hoc-sinh-pho-thong"><p class="font-bold text-lg text-color_4 mx-8 mt-5">Học sinh phổ thông</p></nuxt-link>
+            <div class="border-gray-300 py-4 hover:bg-color_10">
+              <NuxtLink to="/khoa-hoc/hoc-sinh-pho-thong" class="font-bold text-lg text-color_4 mx-8">Học sinh phổ thông</NuxtLink>
             </div>
-            <hr class="border-t-1 border-gray-300" />
-            <div>
-              <nuxt-link to="/khoa-hoc/sinh-vien-nguoi-di-lam"><p class="text-#333333 text-lg mx-8">Sinh viên và người đi làm</p></nuxt-link>
+            <div class="border-t-1.5 border-gray-300 py-4 hover:bg-color_10">
+              <NuxtLink to="/khoa-hoc/sinh-vien-nguoi-di-lam" class="text-#333333 text-lg mx-8">Sinh viên và người đi làm</NuxtLink>
             </div>
           </div>
         </div>
@@ -56,21 +53,18 @@
               </div>
               <div class="overflow-auto transition-all scrollbar-hide" :class="item.open && index === 0 ? 'h-60 duration-500' : 'h-0 duration-500'">
                 <div v-for="(childItem, childIndex) in item.children" :key="childIndex">
-                  <div class="space-y-4">
-                    <div>
-                      <nuxt-link to="/khoa-hoc"><p class="text-#333333 text-lg mx-8">Tất cả</p></nuxt-link>
+                  <div class="mt-3">
+                    <div class="border-y-1.5 border-gray-300 py-4 hover:bg-color_10">
+                      <NuxtLink to="/khoa-hoc" class="text-#333333 text-lg mx-8">Tất cả</NuxtLink>
                     </div>
-                    <hr class="border-t-1 border-gray-300" />
-                    <div>
-                      <nuxt-link to="/khoa-hoc/tre-em"><p class="text-#333333 text-lg mx-8">Trẻ em</p></nuxt-link>
+                    <div class="border-b-1 border-gray-300 py-4 hover:bg-color_10">
+                      <NuxtLink to="/khoa-hoc/tre-em" class="text-#333333 text-lg mx-8">Trẻ em</NuxtLink>
                     </div>
-                    <hr class="border-t-1 border-gray-300" />
-                    <div>
-                      <nuxt-link to="/khoa-hoc/hoc-sinh-pho-thong"><p class="font-bold text-lg text-color_4 mx-8 mt-5">Học sinh phổ thông</p></nuxt-link>
+                    <div class="border-gray-300 py-4 hover:bg-color_10">
+                      <NuxtLink to="/khoa-hoc/hoc-sinh-pho-thong" class="font-bold text-lg text-color_4 mx-8">Học sinh phổ thông</NuxtLink>
                     </div>
-                    <hr class="border-t-1 border-gray-300" />
-                    <div>
-                      <nuxt-link to="/khoa-hoc/sinh-vien-nguoi-di-lam"><p class="text-#333333 text-lg mx-8">Sinh viên và người đi làm</p></nuxt-link>
+                    <div class="border-t-1.5 border-gray-300 py-4 hover:bg-color_10">
+                      <NuxtLink to="/khoa-hoc/sinh-vien-nguoi-di-lam" class="text-#333333 text-lg mx-8">Sinh viên và người đi làm</NuxtLink>
                     </div>
                   </div>
                 </div>
@@ -78,7 +72,7 @@
             </li>
           </ul>
         </div>
-        <div class="flex bg-white sticky flex-col transition duration-[all] ease-[ease-in-out] w-full top-30 rd-2 shadow-md mt-10">
+        <div class="flex bg-white sticky flex-col transition duration-[all] ease-[ease-in-out] w-full top-30 rd-2 shadow-md mt-6">
           <div class="flex items-center mx-5 my-5 space-x-3 border-b border-gray-300 pb-3 border-b-1">
             <div class="i-mdi:filter-outline text-2xl bg-color_4"></div>
             <div class="text-xl font-500 font-18px leading-6 text-color_4">LỌC KHOÁ HỌC</div>
@@ -180,7 +174,7 @@ const loadMore = () => {
 const menuItems = ref([
   {
     title: "Danh mục khoá học",
-    icon: "i-mdi:format-list-bulleted text-2xl",
+    icon: "i-mdi:menu text-2xl",
     open: false,
     children: [
       {
