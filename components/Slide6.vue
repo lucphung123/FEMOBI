@@ -1,5 +1,5 @@
 <template>
-  <swiper :modules="modules" :slides-per-view="1" autoplay :pagination="{ clickable: true }" :scrollbar="{ draggable: true }">
+  <swiper :modules="modules" :slides-per-view="1" autoplay :pagination="{ clickable: true }" :scrollbar="{ draggable: true }" class="w-full md:w-210">
     <swiper-slide v-for="(product, index) in products" :key="index">
       <div class="flex justify-center items-center">
         <div class="h-full rounded-5 flex justify-center items-center p-7">

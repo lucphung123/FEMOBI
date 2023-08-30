@@ -30,7 +30,9 @@
         <div class="flex-col space-y-3 p-2">
           <div class="flex gap-10 text-gray-600 font-600 justify-end">
             <div class="flex gap-10">
-              <p class="cursor-pointer">Về mobiEdu</p>
+              <nuxt-link to="/gioi-thieu" class="cursor-pointer">
+                <p class="cursor-pointer">Về mobiEdu</p>
+              </nuxt-link>
               <nuxt-link to="/ho-tro-khach-hang" class="cursor-pointer">
                 <p>Hỗ trợ</p>
               </nuxt-link>

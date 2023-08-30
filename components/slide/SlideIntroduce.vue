@@ -1,6 +1,6 @@
 <template>
   <div class="w-full mx-auto md:(w-full mx-0) flex justify-between items-center">
-    <div class="border-2 rounded-full h-13 p-2 cursor-pointer duration-300" @click="back()" :class="mySwiper.isBeginning ? 'border-[#999999]/50 text-[#999999]/50' : 'border-[#F57D87] bg-[#F57D87] text-white'">
+    <div class="p-2 cursor-pointer duration-300 hover:text-color_5" @click="back()" :class="mySwiper.isBeginning ? 'border-[#999999]/50 text-[#999999]/50' : ''">
       <div class="text-8 i-mdi:chevron-left" :class="mySwiper.isBeginning ? 'border-[#999999]/50 text-[#999999]/50' : ''"></div>
     </div>
 
@@ -10,36 +10,36 @@
           <div>
             <div class="bg-white flex gap-5">
               <div class="items-center flex justify-center">
-                <img class="w-30 h-40 hover:scale-105 duration-300" :src="product.imgSrc" alt="" />
+                <img class="w-30 h-40 hover:scale-105 duration-300" :src="product.data1.imgSrc" alt="" />
               </div>
               <div class="flex justify-center items-center">
                 <div>
                   <p class="h-5 mt-2 text-color_8 font-bold text-sm">
-                    {{ product.title }}
+                    {{ product.data1.title }}
                   </p>
                   <p class="mt-7 text-color_7 text-sm">
-                    {{ product.author }}
+                    {{ product.data1.author }}
                   </p>
                   <p class="mt-5 text-color_4 font-bold text-sm">
-                    {{ product.price }}
+                    {{ product.data1.price }}
                   </p>
                 </div>
               </div>
             </div>
             <div class="bg-white flex gap-5 mt-10">
               <div class="items-center flex justify-center">
-                <img class="w-30 h-40 hover:scale-105 duration-300" :src="product.imgSrc" alt="" />
+                <img class="w-30 h-40 hover:scale-105 duration-300" :src="product.data2.imgSrc" alt="" />
               </div>
               <div class="flex justify-center items-center">
                 <div>
                   <p class="h-5 mt-2 text-color_8 font-bold text-sm">
-                    {{ product.title }}
+                    {{ product.data2.title }}
                   </p>
                   <p class="mt-7 text-color_7 text-sm">
-                    {{ product.author }}
+                    {{ product.data2.author }}
                   </p>
                   <p class="mt-5 text-color_4 font-bold text-sm">
-                    {{ product.price }}
+                    {{ product.data2.price }}
                   </p>
                 </div>
               </div>
@@ -48,7 +48,7 @@
         </swiper-slide>
       </swiper>
     </div>
-    <div class="border-2 rounded-full h-13 p-2 cursor-pointer duration-300" :class="mySwiper.isEnd ? 'border-[#999999]/50 text-[#999999]/50' : 'border-[#F57D87] bg-[#F57D87] text-white'" @click="next()">
+    <div class="p-2 cursor-pointer duration-300 hover:text-color_5" :class="mySwiper.isEnd ? 'border-[#999999]/50 text-[#999999]/50' : ''" @click="next()">
       <div class="text-8 i-mdi:chevron-right" :class="mySwiper.isEnd ? 'border-[#999999]/50 text-[#999999]/50' : ''"></div>
     </div>
   </div>
@@ -62,64 +62,154 @@ import "swiper/css/autoplay"
 const modules = [EffectCards, Autoplay]
 const products = [
   {
-    imgSrc: "/img/product/1.png",
-    title: "Nhập môn cờ vua cho người mới bắt đầu",
-    author: "Nguyễn Thanh Hằng",
-    price: "1.296.000 đ/tháng",
+    id: 1,
+    data1: {
+      imgSrc: "/img/product/1.png",
+      title: "Nhập môn cờ vua cho người mới bắt đầu",
+      author: "Nguyễn Thanh Hằng",
+      price: "1.296.000 đ/tháng",
+    },
+    data2: {
+      imgSrc: "/img/product/2.png",
+      title: "Nhập môn cờ vua cho người mới bắt đầu",
+      author: "Nguyễn Thanh Hằng",
+      price: "1.296.000 đ/tháng",
+    },
   },
   {
-    imgSrc: "/img/product/2.png",
-    title: "Đọc sách siêu tốc",
-    author: "Nguyễn Thanh Hằng",
-    price: "1.296.000 đ/tháng",
+    id: 1,
+    data1: {
+      imgSrc: "/img/product/3.png",
+      title: "Nhập môn cờ vua cho người mới bắt đầu",
+      author: "Nguyễn Thanh Hằng",
+      price: "1.296.000 đ/tháng",
+    },
+    data2: {
+      imgSrc: "/img/product/1.png",
+      title: "Nhập môn cờ vua cho người mới bắt đầu",
+      author: "Nguyễn Thanh Hằng",
+      price: "1.296.000 đ/tháng",
+    },
   },
   {
-    imgSrc: "/img/product/3.png",
-    title: "Đọc sách siêu tốc",
-    author: "Nguyễn Thanh Hằng",
-    price: "1.296.000 đ/tháng",
+    id: 1,
+    data1: {
+      imgSrc: "/img/product/1.png",
+      title: "Nhập môn cờ vua cho người mới bắt đầu",
+      author: "Nguyễn Thanh Hằng",
+      price: "1.296.000 đ/tháng",
+    },
+    data2: {
+      imgSrc: "/img/product/2.png",
+      title: "Nhập môn cờ vua cho người mới bắt đầu",
+      author: "Nguyễn Thanh Hằng",
+      price: "1.296.000 đ/tháng",
+    },
   },
   {
-    imgSrc: "/img/product/1.png",
-    title: "Đọc sách siêu tốc",
-    author: "Nguyễn Thanh Hằng",
-    price: "1.296.000 đ/tháng",
+    id: 1,
+    data1: {
+      imgSrc: "/img/product/3.png",
+      title: "Nhập môn cờ vua cho người mới bắt đầu",
+      author: "Nguyễn Thanh Hằng",
+      price: "1.296.000 đ/tháng",
+    },
+    data2: {
+      imgSrc: "/img/product/1.png",
+      title: "Nhập môn cờ vua cho người mới bắt đầu",
+      author: "Nguyễn Thanh Hằng",
+      price: "1.296.000 đ/tháng",
+    },
   },
   {
-    imgSrc: "/img/product/2.png",
-    title: "Đọc sách siêu tốc",
-    author: "Nguyễn Thanh Hằng",
-    price: "1.296.000 đ/tháng",
+    id: 1,
+    data1: {
+      imgSrc: "/img/product/1.png",
+      title: "Nhập môn cờ vua cho người mới bắt đầu",
+      author: "Nguyễn Thanh Hằng",
+      price: "1.296.000 đ/tháng",
+    },
+    data2: {
+      imgSrc: "/img/product/2.png",
+      title: "Nhập môn cờ vua cho người mới bắt đầu",
+      author: "Nguyễn Thanh Hằng",
+      price: "1.296.000 đ/tháng",
+    },
   },
   {
-    imgSrc: "/img/product/1.png",
-    title: "Đọc sách siêu tốc",
-    author: "Nguyễn Thanh Hằng",
-    price: "1.296.000 đ/tháng",
+    id: 1,
+    data1: {
+      imgSrc: "/img/product/3.png",
+      title: "Nhập môn cờ vua cho người mới bắt đầu",
+      author: "Nguyễn Thanh Hằng",
+      price: "1.296.000 đ/tháng",
+    },
+    data2: {
+      imgSrc: "/img/product/1.png",
+      title: "Nhập môn cờ vua cho người mới bắt đầu",
+      author: "Nguyễn Thanh Hằng",
+      price: "1.296.000 đ/tháng",
+    },
   },
   {
-    imgSrc: "/img/product/2.png",
-    title: "Đọc sách siêu tốc",
-    author: "Nguyễn Thanh Hằng",
-    price: "1.296.000 đ/tháng",
+    id: 1,
+    data1: {
+      imgSrc: "/img/product/1.png",
+      title: "Nhập môn cờ vua cho người mới bắt đầu",
+      author: "Nguyễn Thanh Hằng",
+      price: "1.296.000 đ/tháng",
+    },
+    data2: {
+      imgSrc: "/img/product/2.png",
+      title: "Nhập môn cờ vua cho người mới bắt đầu",
+      author: "Nguyễn Thanh Hằng",
+      price: "1.296.000 đ/tháng",
+    },
   },
   {
-    imgSrc: "/img/product/3.png",
-    title: "Đọc sách siêu tốc",
-    author: "Nguyễn Thanh Hằng",
-    price: "1.296.000 đ/tháng",
+    id: 1,
+    data1: {
+      imgSrc: "/img/product/3.png",
+      title: "Nhập môn cờ vua cho người mới bắt đầu",
+      author: "Nguyễn Thanh Hằng",
+      price: "1.296.000 đ/tháng",
+    },
+    data2: {
+      imgSrc: "/img/product/1.png",
+      title: "Nhập môn cờ vua cho người mới bắt đầu",
+      author: "Nguyễn Thanh Hằng",
+      price: "1.296.000 đ/tháng",
+    },
   },
   {
-    imgSrc: "/img/product/1.png",
-    title: "Đọc sách siêu tốc",
-    author: "Nguyễn Thanh Hằng",
-    price: "1.296.000 đ/tháng",
+    id: 1,
+    data1: {
+      imgSrc: "/img/product/1.png",
+      title: "Nhập môn cờ vua cho người mới bắt đầu",
+      author: "Nguyễn Thanh Hằng",
+      price: "1.296.000 đ/tháng",
+    },
+    data2: {
+      imgSrc: "/img/product/2.png",
+      title: "Nhập môn cờ vua cho người mới bắt đầu",
+      author: "Nguyễn Thanh Hằng",
+      price: "1.296.000 đ/tháng",
+    },
   },
   {
-    imgSrc: "/img/product/2.png",
-    title: "Đọc sách siêu tốc",
-    author: "Nguyễn Thanh Hằng",
-    price: "1.296.000 đ/tháng",
+    id: 1,
+    data1: {
+      imgSrc: "/img/product/3.png",
+      title: "Nhập môn cờ vua cho người mới bắt đầu",
+      author: "Nguyễn Thanh Hằng",
+      price: "1.296.000 đ/tháng",
+    },
+    data2: {
+      imgSrc: "/img/product/1.png",
+      title: "Nhập môn cờ vua cho người mới bắt đầu",
+      author: "Nguyễn Thanh Hằng",
+      price: "1.296.000 đ/tháng",
+    },
   },
 ]
 const mySwiper = ref({})
