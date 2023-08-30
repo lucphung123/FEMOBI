@@ -1,38 +1,69 @@
 <template>
-  <div class="flex justify-center items-center">
-    <swiper :modules="modules" :slides-per-view="5" autoplay :navigation="true" :pagination="{ clickable: true }" :scrollbar="{ draggable: true }" @swiper="onSwiper" @slideChange="onSlideChange">
-      <swiper-slide v-for="(product, index) in products" :key="index">
-        <div class="bg-white p-5">
-          <div class="items-center flex justify-center">
-            <img class="w-40 hover:scale-105 duration-300" :src="product.imgSrc" alt="" />
+  <div class="w-full mx-auto md:(w-full mx-0) flex justify-between items-center">
+    <div class="border-2 rounded-full h-13 p-2 cursor-pointer duration-300" @click="back()" :class="mySwiper.isBeginning ? 'border-[#999999]/50 text-[#999999]/50' : 'border-[#F57D87] bg-[#F57D87] text-white'">
+      <div class="text-8 i-mdi:chevron-left" :class="mySwiper.isBeginning ? 'border-[#999999]/50 text-[#999999]/50' : ''"></div>
+    </div>
+
+    <div class="w-full">
+      <swiper @swiper="setSwiper" :slides-per-view="3" autoplay :grabCursor="true" :modules="modules" class="w-full md:w-300 my-8">
+        <swiper-slide class="bg-white shadow !text-black rounded-2 p-5" v-for="(product, index) in products" :key="index">
+          <div>
+            <div class="bg-white flex gap-5">
+              <div class="items-center flex justify-center">
+                <img class="w-30 h-40 hover:scale-105 duration-300" :src="product.imgSrc" alt="" />
+              </div>
+              <div class="flex justify-center items-center">
+                <div>
+                  <p class="h-5 mt-2 text-color_8 font-bold text-sm">
+                    {{ product.title }}
+                  </p>
+                  <p class="mt-7 text-color_7 text-sm">
+                    {{ product.author }}
+                  </p>
+                  <p class="mt-5 text-color_4 font-bold text-sm">
+                    {{ product.price }}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-white flex gap-5 mt-10">
+              <div class="items-center flex justify-center">
+                <img class="w-30 h-40 hover:scale-105 duration-300" :src="product.imgSrc" alt="" />
+              </div>
+              <div class="flex justify-center items-center">
+                <div>
+                  <p class="h-5 mt-2 text-color_8 font-bold text-sm">
+                    {{ product.title }}
+                  </p>
+                  <p class="mt-7 text-color_7 text-sm">
+                    {{ product.author }}
+                  </p>
+                  <p class="mt-5 text-color_4 font-bold text-sm">
+                    {{ product.price }}
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <p class="h-5 mt-2 text-color_8 font-bold text-sm leading-5 ml-9">
-            {{ product.title }}
-          </p>
-          <p class="mt-2 text-color_7 text-sm leading-5 ml-9">
-            {{ product.author }}
-          </p>
-          <p class="mt-2 text-color_4 font-bold text-sm leading-5 ml-9">
-            {{ product.price }}
-          </p>
-        </div>
-      </swiper-slide>
-    </swiper>
+        </swiper-slide>
+      </swiper>
+    </div>
+    <div class="border-2 rounded-full h-13 p-2 cursor-pointer duration-300" :class="mySwiper.isEnd ? 'border-[#999999]/50 text-[#999999]/50' : 'border-[#F57D87] bg-[#F57D87] text-white'" @click="next()">
+      <div class="text-8 i-mdi:chevron-right" :class="mySwiper.isEnd ? 'border-[#999999]/50 text-[#999999]/50' : ''"></div>
+    </div>
   </div>
 </template>
 <script setup>
 import { Swiper, SwiperSlide } from "swiper/vue"
-import { EffectCards, Autoplay, Navigation } from "swiper"
+import { EffectCards, Autoplay } from "swiper"
 import "swiper/css"
 import "swiper/css/effect-cards"
-import "swiper/css/navigation"
 import "swiper/css/autoplay"
-
-const modules = [EffectCards, Autoplay, Navigation]
+const modules = [EffectCards, Autoplay]
 const products = [
   {
     imgSrc: "/img/product/1.png",
-    title: "Đọc sách siêu tốc",
+    title: "Nhập môn cờ vua cho người mới bắt đầu",
     author: "Nguyễn Thanh Hằng",
     price: "1.296.000 đ/tháng",
   },
@@ -91,5 +122,16 @@ const products = [
     price: "1.296.000 đ/tháng",
   },
 ]
+const mySwiper = ref({})
+function setSwiper(xswiper) {
+  mySwiper.value = xswiper
+}
+function back() {
+  mySwiper.value?.slidePrev()
+}
+
+function next() {
+  mySwiper.value?.slideNext()
+}
 </script>
 <style scoped></style>

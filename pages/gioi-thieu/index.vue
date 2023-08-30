@@ -46,7 +46,11 @@
       </nav>
     </div>
     <div class="mt-8">
-      <div v-if="activeTab === '1'"><h2 class="text-2xl font-bold">tab1</h2></div>
+      <div v-if="activeTab === '1'">
+        <div>
+          <SlideCourse />
+        </div>
+      </div>
       <div v-else-if="activeTab === '2'">
         <h2 class="text-2xl font-bold">tab2</h2>
       </div>
@@ -61,7 +65,6 @@
 </template>
 
 <script setup>
-import Slide7 from "../../components/Slide7.vue"
 import { ref, computed } from "vue"
 
 const tabs = [
