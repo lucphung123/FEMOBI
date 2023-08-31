@@ -2143,10 +2143,10 @@ casdoor-js-sdk@^0.8.0:
   resolved "https://registry.yarnpkg.com/casdoor-js-sdk/-/casdoor-js-sdk-0.8.0.tgz#ce32c49fdfe7f24a8139d676a341ad7e78c50f38"
   integrity sha512-sxriNa3kG7AIkmJaRnQ554dZozRx+JOCcbqNvp9gxJmbdnMKYSGjg2SU/HaRpnyKtd1GW+ntfK+f2y/wYmnxRg==
 
-casdoor-vue-sdk@^1.3.0:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/casdoor-vue-sdk/-/casdoor-vue-sdk-1.5.2.tgz#7c1853327bfc2abd3fe53fb5477a2fe8e77497e7"
-  integrity sha512-9Ryg9YPUIlqizO/OLbisS2St4L9N6R4MrmUVFwR+SvAB6gqkpnC/zozKuC2vDjruYTeRTdy/skXq4rrs0ME72w==
+casdoor-vue-sdk@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/casdoor-vue-sdk/-/casdoor-vue-sdk-1.6.0.tgz#a578e093fb5f8f1376ec728eb165a22e9fdf90b1"
+  integrity sha512-MEamUJnTIq4gjJlKco8hXSEc7GdyLJ/OXlzmT4M1ntUucYox4UA77iCyEtNoJTNTzYjwl0IVFDVQHU/rq+aRxw==
   dependencies:
     "@babel/runtime" "^7.21.0"
     casdoor-js-sdk "^0.8.0"
