@@ -16,30 +16,20 @@
         <nuxt-link to="/giai-phap/truong-mam-non-tieu-hoc" class="w1/4">
           <img class="hover:border-5px hover:border-color_5 border-rd-4" src="/img/giai-phap/G4.jpg" alt="" />
         </nuxt-link>
-        <nuxt-link to="/giai-phap/truong-pho-thong" class="w-1/4"><img class="border-5px border-color_5 border-rd-4" src="/img/giai-phap/G5.png" alt="" /></nuxt-link>
+        <nuxt-link to="/giai-phap/truong-pho-thong" class="w-1/4"><img class="hover:border-5px border-color_5 border-rd-4" src="/img/giai-phap/G5.png" alt="" /></nuxt-link>
         <nuxt-link to="/giai-phap/truong-dai-hoc" class="w-1/4"><img class="hover:border-5px hover:border-color_5 border-rd-4" src="/img/giai-phap/G6.png" alt="" /></nuxt-link>
-        <nuxt-link to="/giai-phap/doanh-nghiep" class="w-1/4"><img class="hover:border-5px hover:border-color_5 border-rd-4" src="/img/giai-phap/G7.png" alt="" /></nuxt-link>
+        <nuxt-link to="/giai-phap/doanh-nghiep" class="w-1/4"><img class="border-5px border-color_5 border-rd-4" src="/img/giai-phap/G7.png" alt="" /></nuxt-link>
       </div>
       <div class="flex items-center justify-between p-10">
         <div class="flex items-center my-10 space-x-10">
           <div class="i-mdi:chevron-left text-4xl bg-gray-600"></div>
           <div class="flex items-center">
-            <div class="space-x-25 flex">
-              <nuxt-link to="/giai-phap/truong-pho-thong" class="space-y-3">
-                <div class="bg-white w-150px h-150px rd-full shadow-2xl flex justify-center items-center border-3px border-color_4">
-                  <img src="/img/giai-phap/G9.png" alt="" class="h-23" />
-                </div>
-                <div><p class="text-center">mobiEdu mSchool</p></div>
-              </nuxt-link>
-              <nuxt-link to="/giai-phap/truong-pho-thong/mobiedu-tkb" class="space-y-3">
-                <img src="/img/giai-phap/G8.jpg" alt="" class="rd-full w-60% shadow-2xl" />
-                <p class="text-center w-60%">mobiEdu TKB</p>
-              </nuxt-link>
+            <div class="space-y-3">
+              <div class="bg-white w-150px h-150px rd-full shadow-2xl flex justify-center items-center border-3px border-color_4">
+                <img src="/img/giai-phap/G9.png" alt="" class="h-23" />
+              </div>
+              <div><p class="text-center text-blue-600">mobiEdu mSchool</p></div>
             </div>
-            <nuxt-link to="/giai-phap/truong-pho-thong/on-luyen" class="space-y-3">
-              <img src="/img/giai-phap/G10.png" alt="" class="rd-full shadow-2xl" />
-              <p class="text-center">Onluyen.vn</p>
-            </nuxt-link>
           </div>
         </div>
         <div class="i-mdi:chevron-right text-4xl mx-10 bg-gray-500"></div>
@@ -49,28 +39,28 @@
   <div class="flex flex-col bg-gray-100 w-screen top-23">
     <div class="w-full lg:w-225 xl:(w-300) 2xl:(w-340) mx-auto flex items-center justify-center mt-15">
       <div class="flex flex-col text-center space-y-6 justify-center items-center">
-        <p class="text-4xl text-color_4 font-600">mobiEdu mSchool - Giải pháp dạy & học toàn diện của MobiFone</p>
-        <p class="w-5/6">mSchool giúp nhà trường, giáo viên tạo website giảng dạy online, với hệ thống lớp học ảo, tổ chức thi online và quản lý trường học toàn diện. Giải pháp tạo website dạy học dễ dàng - bảo mật chỉ và tùy biến theo nhu cầu khách hàng.</p>
+        <p class="text-4xl text-color_4 font-600">mSchool Doanh nghiệp - Giải pháp quản lí toàn diện của MobiFone</p>
+        <p class="w-5/6">mSchool giúp doanh nghiệp tạo website giảng dạy online, với hệ thống lớp học ảo, tổ chức thi online và quản lý doanh nghiệp toàn diện. Giải pháp tạo website dạy học dễ dàng - bảo mật chỉ và tùy biến theo nhu cầu khách hàng.</p>
       </div>
     </div>
     <div class="flex justify-center items-center w-full lg:w-225 xl:(w-300) 2xl:(w-340) mx-auto space-x-25 my-10">
       <div class="flex flex-col items-center justify-center space-y-5">
         <div class="bg-white rd-full w-150px h-150px flex justify-center items-center">
-          <img src="/img/giai-phap/G11.png" alt="" />
+          <img src="/img/giai-phap/G49.png" alt="" />
         </div>
         <div class="text-16px font-600 flex justify-center items-center">Quản trị học tập</div>
         <div class="flex justify-center items-center text-center">Hợp nhất các nghiệp vụ quản lý đào tạo trên 1 cổng duy nhất, giúp tiết kiệm thời gian, chuyên nghiệp hóa.</div>
       </div>
       <div class="flex flex-col items-center justify-center space-y-5">
         <div class="bg-white rd-full w-150px h-150px flex justify-center items-center">
-          <img src="/img/giai-phap/G12.png" alt="" />
+          <img src="/img/giai-phap/G50.png" alt="" />
         </div>
         <div class="text-16px font-600">Giảng dạy thông minh</div>
         <div class="text-center">Dễ dàng dạy & học đa nền tảng trên Web & Mobile App. Tạo phòng học tương tác trực tiếp, điểm danh và quản lý học viên tham gia lớp.</div>
       </div>
       <div class="flex flex-col items-center justify-center space-y-5">
         <div class="bg-white rd-full w-150px h-150px flex justify-center items-center">
-          <img src="/img/giai-phap/G13.png" alt="" />
+          <img src="/img/giai-phap/G51.png" alt="" />
         </div>
         <div class="text-16px font-600">Kiểm tra, đánh giá dễ dàng</div>
         <div class="text-center">Tạo và quản lý ngân hàng câu hỏi đề thi một cách đơn giản, nhanh chóng. Học sinh làm bài thi và nhận kết quả trực tiếp trên hệ thống.</div>
@@ -81,7 +71,7 @@
     <div class="text-center text-4xl text-color_4 font-700">ĐIỂM NỔI BẬT</div>
     <div class="flex items-center justify-center">
       <div class="w-4/7">
-        <img src="/img/giai-phap/G14.png" alt="" />
+        <img src="/img/giai-phap/G52.png" alt="" />
       </div>
       <div class="w-2/7 space-y-3">
         <div class="text-2xl font-bold text-color_4">Khởi tạo website miễn phí</div>
@@ -94,12 +84,12 @@
         <div>Nền tảng vận hành tuyệt vời trên tất cả các thiết bị khác nhau như: PC, laptop, máy tính bảng, smartphone, trên nhiều hệ điều hành và trình duyệt khác nhau</div>
       </div>
       <div class="w-4/7">
-        <img src="/img/giai-phap/G15.png" alt="" />
+        <img src="/img/giai-phap/G53.png" alt="" />
       </div>
     </div>
     <div class="flex items-center justify-center">
       <div class="w-4/7">
-        <img src="/img/giai-phap/G16.png" alt="" />
+        <img src="/img/giai-phap/G54.png" alt="" />
       </div>
       <div class="w-2/7 space-y-3">
         <div class="text-2xl font-bold text-color_4">Chuyển đổi tên miền</div>
@@ -115,12 +105,12 @@
         <div>Từ file docx, pdf đến video clip có thể tạo bài giảng ở nhiều định dạng khác nhau phù hợp với yêu cầu giảng dạy và học tập. Lớp học ảo giúp giảng viên và học viên có thể tương tác trực tiếp với nhau trong mỗi buổi học trực tuyến.</div>
       </div>
       <div class="w-4/7">
-        <img src="/img/giai-phap/G17.png" alt="" />
+        <img src="/img/giai-phap/G55.png" alt="" />
       </div>
     </div>
     <div class="flex items-center justify-center">
       <div class="w-4/7">
-        <img src="/img/giai-phap/G18.png" alt="" />
+        <img src="/img/giai-phap/G56.png" alt="" />
       </div>
       <div class="w-2/7 space-y-3">
         <div class="text-2xl font-bold text-color_4">Bảo mật tuyệt đối</div>
