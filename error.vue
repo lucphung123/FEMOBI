@@ -39,26 +39,8 @@
 </template>
 <script setup>
 import Logo404 from "~~/components/icon/Logo404.vue"
-import { useCasdoor } from "casdoor-vue-sdk"
-import { useUserStore } from "~~/stores/userStore"
-const userStore = useUserStore()
 const props = defineProps({
   error: Object,
-})
-if (props.error.statusCode !== undefined && props.error.statusCode === 401) {
-  userStore.logout()
-}
-
-let sign_in = () => {}
-let sign_up = () => {}
-onMounted(() => {
-  const { getSigninUrl, getSignupUrl } = useCasdoor()
-  sign_in = () => {
-    window.location.href = getSigninUrl()
-  }
-  sign_up = () => {
-    window.location.href = getSignupUrl()
-  }
 })
 </script>
 <style scoped>

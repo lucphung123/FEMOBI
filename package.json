@@ -11,6 +11,7 @@
   "devDependencies": {
     "@css-render/vue3-ssr": "^0.15.10",
     "@nuxt/devtools": "^0.7.6",
+    "@pinia-plugin-persistedstate/nuxt": "^1.1.1",
     "@pinia/nuxt": "^0.4.6",
     "@unocss/nuxt": "^0.52.7",
     "naive-ui": "^2.31.0",
