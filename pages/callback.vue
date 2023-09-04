@@ -1,13 +1,6 @@
-<template>
-  <div class="flex justify-center items-center w-screen h-screen">
-    <n-spin :show="true">
-      <template #description> {{ Xác minh đăng nhập }}</template>
-    </n-spin>
-  </div>
-</template>
+<template></template>
 <script setup>
 import { useUserStore } from "~~/stores/userStore"
-definePageMeta({ layout: "empty" })
 const userStore = useUserStore()
 const route = useRoute()
 const router = useRouter()
@@ -29,7 +22,6 @@ onMounted(async () => {
     userStore.setUser(loginData.value.data)
     userStore.setToken(loginData.value.data?.accessToken)
     userStore.setNotificationToken(loginData.value.data?.notificationToken)
-    console.log("Login: " + JSON.stringify(loginData.value))
     if (url_callback.value !== undefined && url_callback.value !== "") {
       url_callback.value = ""
       await navigateTo(backup_url)
@@ -37,8 +29,6 @@ onMounted(async () => {
       router.push("/")
     }
   } else {
-    console.error("Login failed: " + JSON.stringify(loginData.value))
-    console.log("code", route.query.code)
     if (url_callback.value !== undefined && url_callback.value !== "") {
       url_callback.value = ""
       navigateTo(backup_url)

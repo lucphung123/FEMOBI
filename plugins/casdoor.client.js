@@ -8,5 +8,4 @@ export default defineNuxtPlugin(nuxtApp => {
     redirectPath: "/callback",
   }
   nuxtApp.vueApp.use(Casdoor, config)
-  // nuxtApp.provide('Casdoor', nuxtApp.vueApp.use(Casdoor,config))
 })
