@@ -33,14 +33,13 @@
         </div>
       </div>
       <div class="w-65% ml-5">
-        <Slide6 />
+        <SlideSlide6 />
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import Slide6 from "../components/Slide6.vue"
 // layouts
 definePageMeta({
   layout: "course",
