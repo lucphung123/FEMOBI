@@ -29,7 +29,7 @@
         </div>
       </div>
       <div class="w-2/3">
-        <Slide6 />
+        <SlideSlide61 />
       </div>
     </div>
     <div class="space-x-15 mt-10 flex">
@@ -143,8 +143,6 @@
 
 <script setup>
 import { ref, computed } from "vue"
-import Slide6 from "../components/slide/slide6.vue"
-import Slide7 from "../components/slide/Slide7.vue"  
 
 const products = [
   {

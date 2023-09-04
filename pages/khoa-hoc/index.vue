@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="w-2/3">
-        <Slide4 />
+        <SlideSlide4 />
       </div>
     </div>
     <div class="flex space-x-15 mt-10">

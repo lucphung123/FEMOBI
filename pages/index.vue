@@ -3,7 +3,7 @@
     <div class="relative mt-60 md:mt-20 lg:mt-36 xl:mt-100 mb-0 md:mb-50 w-full">
       <div class="absolute w-screen left-1/2 -translate-x-1/2 -translate-y-full md:mt-43 bg-[url(/img/bg/bg-banner.jpg)] bg-bottom bg-cover">
         <div class="w-full mx-auto flex items-center justify-between">
-          <Slide1 />
+          <SlideSlide1 />
         </div>
       </div>
     </div>
@@ -55,7 +55,7 @@
               </div>
             </div>
             <div>
-              <Slide2 />
+              <SlideSlide2 />
             </div>
             <div class="flex justify-center">
               <button class="text-blue-900 bg-white border-1px border-blue font-bold text-center p-2 rd-20px w-150px">XEM THÊM</button>
@@ -65,7 +65,7 @@
       </div>
     </div>
     <div class="my-15">
-      <Gift></Gift>
+      <Gift />
     </div>
     <div class="relative mt-80 md:mt-20 lg:mt-36 xl:mt-210 mb-0">
       <div class="absolute w-screen left-1/2 -translate-x-1/2 -translate-y-full bg-[url(/img/bg/bg-home-4.png)] bg-cover bg-top h-200 flex flex-col items-center">

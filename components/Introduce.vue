@@ -42,7 +42,7 @@
     </div>
   </div>
   <div class="p10">
-    <Slide3 />
+    <SlideSlide3 />
   </div>
   <div class="text-center">
     <button class="text-blue-900 bg-white border-1px border-blue font-bold p-2 rd-20px w-150px">XEM THÊM</button>

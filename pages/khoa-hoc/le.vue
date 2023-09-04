@@ -7,7 +7,7 @@
   <div class="w-full flex space-x-8">
     <div class="w-3/7 space-y-5">
       <a href="https://www.youtube.com/watch?v=L05glUV_ibI&amp;ab_channel=mobiEdu" data-fancybox=""><img class="rd-2" src="/img/1.jpg" alt="" /></a>
-      <Slide5 />
+      <SlideSlide5/>
     </div>
     <div class="bg-[#E3EFF9] rd-3">
       <div class="p-8 space-y-7">
