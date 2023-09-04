@@ -1,34 +1,22 @@
 <template>
-  <div class="loading-container">
-    <div class="loading"></div>
-  </div>
+  <div class="loader"></div>
 </template>
 
 <script setup></script>
 
 <style scoped>
-.loading-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.loading {
+/* HTML: <div class="loader"></div> */
+.loader {
   width: 50px;
-  height: 50px;
-  border: 4px solid rgba(0, 0, 0, 0.1);
-  border-top: 4px solid #3498db;
+  aspect-ratio: 1;
   border-radius: 50%;
-  animation: spin 1s linear infinite;
+  background: radial-gradient(farthest-side, #ffa516 94%, #0000) top/8px 8px no-repeat, conic-gradient(#0000 30%, #ffa516);
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+  animation: l13 1s infinite linear;
 }
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
+@keyframes l13 {
   100% {
-    transform: rotate(360deg);
+    transform: rotate(1turn);
   }
 }
 </style>

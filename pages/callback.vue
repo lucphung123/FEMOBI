@@ -1,8 +1,12 @@
 <template>
-  <div></div>
+  <div class="flex justify-center items-center w-screen h-screen"><Loading /></div>
 </template>
 <script setup>
 import { useUserStore } from "~~/stores/userStore"
+// layouts
+definePageMeta({
+  layout: "none",
+})
 const userStore = useUserStore()
 const route = useRoute()
 const { RestApi } = useApi()
