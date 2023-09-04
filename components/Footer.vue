@@ -4,28 +4,28 @@
       <div class="flex justify-between">
         <div>
           <p class="relative text-color_8 font-bold text-lg leading-6">VỀ MOBIEDU</p>
-          <ul class="pb-[22px] border-solid mt-5">
-            <li>
-              <a class="flex items-center text-color_9 text-base leading-9" href="#">Giới thiệu</a>
-            </li>
-            <li>
-              <a class="flex items-center text-color_9 text-base leading-9" href="#">Khóa học</a>
-            </li>
-            <li>
-              <a class="flex items-center text-color_9 text-base leading-9" href="#">Giải pháp</a>
-            </li>
-            <li>
-              <a class="flex items-center text-color_9 text-base leading-9" href="#">Cổng thi</a>
-            </li>
-          </ul>
+          <div class="pb-[22px] border-solid mt-5">
+            <div>
+              <p class="flex items-center text-color_9 text-base leading-9">Giới thiệu</p>
+            </div>
+            <div>
+              <p class="flex items-center text-color_9 text-base leading-9">Khóa học</p>
+            </div>
+            <div>
+              <p class="flex items-center text-color_9 text-base leading-9">Giải pháp</p>
+            </div>
+            <div>
+              <p class="flex items-center text-color_9 text-base leading-9">Cổng thi</p>
+            </div>
+          </div>
         </div>
         <div>
           <p class="relative text-color_8 font-bold text-lg leading-6">ĐỐI TÁC & KHÁCH HÀNG</p>
-          <ul class="pb-[22px] border-solid mt-5">
-            <li>
-              <a class="flex items-center text-color_9 text-base leading-9" href="#">Dành cho đại lý</a>
-            </li>
-          </ul>
+          <div class="pb-[22px] border-solid mt-5">
+            <div>
+              <a class="flex items-center text-color_9 text-base leading-9">Dành cho đại lý</a>
+            </div>
+          </div>
         </div>
         <div>
           <p class="relative text-color_8 font-bold text-lg leading-6">TẢI ỨNG DỤNG MOBIEDU NGAY</p>
@@ -33,66 +33,66 @@
             <div class="mr-[18px] pr-[23px] border-r border-solid">
               <img src="/img/qr-code.png" alt="" />
             </div>
-            <ul class="pb-[22px] border-solid">
-              <li>
-                <a class="flex items-center text-color_9 text-base leading-9" href="#">
+            <div class="pb-[22px] border-solid">
+              <div>
+                <div class="flex items-center text-color_9 text-base leading-9">
                   <img class="mr-3" src="/img/icon/app-store.png" alt="" />
-                  <span>App Store</span></a
-                >
-              </li>
-              <li>
-                <a class="flex items-center text-color_9 text-base leading-9" href="#"> <img class="mr-3" src="/img/icon/google-play.png" alt="" /><span>Google Play</span></a>
-              </li>
-            </ul>
+                  <span>App Store</span>
+                </div>
+              </div>
+              <div>
+                <div class="flex items-center text-color_9 text-base leading-9"><img class="mr-3" src="/img/icon/google-play.png" alt="" /><span>Google Play</span></div>
+              </div>
+            </div>
           </div>
         </div>
         <div>
           <p class="relative text-color_8 font-bold text-lg leading-6">THANH TOÁN</p>
-          <ul class="pb-[22px] border-solid mt-5">
-            <li>
-              <a class="flex items-center text-color_9 text-base leading-9" href="#"> <img class="mr-3" src="/img/icon/momo.png" alt="" /><span>Ví Momo</span></a>
-            </li>
-            <li>
-              <a class="flex items-center text-color_9 text-base leading-9" href="#"> <img class="mr-3" src="/img/icon/zalo-pay.png" alt="" /><span>Zalo Pay</span></a>
-            </li>
-          </ul>
+          <div class="pb-[22px] border-solid mt-5">
+            <div>
+              <div class="flex items-center text-color_9 text-base leading-9"><img class="mr-3" src="/img/icon/momo.png" alt="" /><span>Ví Momo</span></div>
+            </div>
+            <div>
+              <div class="flex items-center text-color_9 text-base leading-9"><img class="mr-3" src="/img/icon/zalo-pay.png" alt="" /><span>Zalo Pay</span></div>
+            </div>
+          </div>
         </div>
         <div>
           <p class="relative text-color_8 font-bold text-lg leading-6">THEO DÕI MOBIEDU</p>
-          <ul class="pb-[22px] border-solid mt-5">
-            <li>
-              <a class="flex items-center text-color_9 text-base leading-9" href="#"> <img class="mr-3" src="/img/icon/facebook.png" alt="" /><span>Facebook</span></a>
-            </li>
-            <li>
-              <a class="flex items-center text-color_9 text-base leading-9" href="#"> <img class="mr-3" src="/img/icon/youtube.png" alt="" /><span>Youtube</span></a>
-            </li>
-            <li>
+          <div class="pb-[22px] border-solid mt-5">
+            <div>
+              <div class="flex items-center text-color_9 text-base leading-9"><img class="mr-3" src="/img/icon/facebook.png" alt="" /><span>Facebook</span></div>
+            </div>
+            <div>
+              <div class="flex items-center text-color_9 text-base leading-9"><img class="mr-3" src="/img/icon/youtube.png" alt="" /><span>Youtube</span></div>
+            </div>
+            <div>
               <nuxt-link to="/lien-he">
-                <a class="flex items-center text-color_9 text-base leading-9" href="#"> <img class="mr-3" src="/img/icon/exclamation.png" alt="" /><span>Liên hệ </span></a>
+                <div class="flex items-center text-color_9 text-base leading-9"><img class="mr-3" src="/img/icon/exclamation.png" alt="" /><span>Liên hệ </span></div>
               </nuxt-link>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div>
-      <ul class="flex justify-between border-y">
-        <li>
-          <nuxt-link to="/text">
-            <a class="flex ml-35 text-color_2 text-lg leading-6 uppercase py-[13px] hover:text-color_1" href="#">CHÍNH SÁCH BẢO MẬT</a>
-          </nuxt-link>
-        </li>
+      <div class="flex justify-between border-y">
+        <div>
+          <NuxtLink to="/text">
+            <p class="flex ml-35 text-color_2 text-lg leading-6 uppercase py-[13px] hover:text-color_1">CHÍNH SÁCH BẢO MẬT</p>
+          </NuxtLink>
+        </div>
 
-        <li>
-          <a class="flex text-color_2 text-lg leading-6 uppercase py-[13px] hover:text-color_1" href="#">ĐIỀU KHOẢN SỬ DỤNG</a>
-        </li>
-        <li>
-          <a class="flex text-color_2 text-lg leading-6 uppercase py-[13px] hover:text-color_1" href="#">GIẢI QUYẾT TRANH CHẤP</a>
-        </li>
-        <li>
-          <a class="flex mr-35 text-color_2 text-lg leading-6 uppercase py-[13px] hover:text-color_1" href="#">QUY CHẾ HOẠT ĐỘNG</a>
-        </li>
-      </ul>
+        <div>
+          <p class="flex text-color_2 text-lg leading-6 uppercase py-[13px] hover:text-color_1">ĐIỀU KHOẢN SỬ DỤNG</p>
+        </div>
+        <div>
+          <p class="flex text-color_2 text-lg leading-6 uppercase py-[13px] hover:text-color_1">GIẢI QUYẾT TRANH CHẤP</p>
+        </div>
+        <div>
+          <p class="flex mr-35 text-color_2 text-lg leading-6 uppercase py-[13px] hover:text-color_1">QUY CHẾ HOẠT ĐỘNG</p>
+        </div>
+      </div>
     </div>
     <div class="flex justify-between p-10">
       <div>

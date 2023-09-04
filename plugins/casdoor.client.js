@@ -1,12 +1,11 @@
-import Casdoor from "casdoor-vue-sdk";
-export default defineNuxtPlugin((nuxtApp) => {
+import Casdoor from "casdoor-vue-sdk"
+export default defineNuxtPlugin(nuxtApp => {
   const config = {
     serverUrl: "https://sso.codeinet.com",
-    clientId: "60e8e794e26b484ac3ea",
+    clientId: "599ac1aaf88d969e9ed7",
     organizationName: "mobiedu_id",
-    appName: "cambridge",
+    appName: "moocs",
     redirectPath: "/callback",
-  };
-  nuxtApp.vueApp.use(Casdoor, config);
-  // nuxtApp.provide('Casdoor', nuxtApp.vueApp.use(Casdoor,config))
-});
+  }
+  nuxtApp.vueApp.use(Casdoor, config)
+})

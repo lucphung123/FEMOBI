@@ -1,3 +1,3 @@
 export const useFunction = () => {
-  console.log("code function here");
-};
+  console.log("code function here")
+}
