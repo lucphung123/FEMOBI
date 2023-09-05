@@ -82,7 +82,9 @@
               <p class="mt-2 text-color_7 text-sm leading-5">
                 {{ product.author }}
               </p>
-              <button class="hover:bg-color_5 hover:text-color_6 mt-3 bg-light-100cursor-pointer bg-color_4 h-10 text-[white] text-sm px-[20px] rounded-[20px] font-bold">VÀO HỌC</button>
+              <nuxt-link to="/vao-hoc">
+                <button class="hover:bg-color_5 hover:text-color_6 mt-3 bg-light-100cursor-pointer bg-color_4 h-10 text-[white] text-sm px-[20px] rounded-[20px] font-bold">VÀO HỌC</button>
+              </nuxt-link>
             </div>
           </div>
         </div>
