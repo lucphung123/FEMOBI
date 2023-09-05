@@ -1,6 +1,6 @@
 <template>
   <div class="bg-color_11 w-full">
-    <div v-if="courseItems.length === 0" class="bg-color_11">
+    <div v-if="courseItems.length === 0" class="bg-color_11 mt-10">
       <div class="items-center justify-center flex">
         <img src="/img/cart/shopping-cart.svg" alt="" />
       </div>

@@ -1,14 +1,23 @@
-<template>
-  <label class="flex items-center space-x-2 cursor-pointer">
-    <input type="checkbox" v-model="isChecked" class="hidden" />
-    <span class="w-14 h-8 bg-gray-400 rounded-full p-1 transition-transform duration-300 ease-in-out transform" :class="{ 'bg-green-500': isChecked }">
-      <span class="block w-6 h-6 bg-white rounded-full shadow-lg transform translate-x-0 transition-transform duration-300 ease-in-out" :class="{ 'translate-x-full': isChecked }"></span>
-    </span>
-  </label>
-</template>
+<template></template>
 
 <script setup>
-import { ref } from "vue"
+const { RestApi } = useApi()
 
-const isChecked = ref(false)
+const pagination = ref({
+  page: 1,
+  limit: 10,
+  total: 0,
+})
+const query = computed(() => {
+  let query = {
+    page: pagination.value.page - 1,
+    per_page: pagination.value.limit,
+  }
+  return query
+})
+const { data: courseData, pending: coursePending, error: courseError } = await RestApi.course.getByUser({ query: query })
+console.log(courseData)
+
+const { data: dataCheckOut } = await RestApi.cart.validate_check_out({})
+console.log(dataCheckOut)
 </script>

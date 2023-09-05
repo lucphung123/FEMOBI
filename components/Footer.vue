@@ -35,13 +35,13 @@
             </div>
             <div class="pb-[22px] border-solid">
               <div>
-                <div class="flex items-center text-color_9 text-base leading-9">
+                <a href="https://apps.apple.com/vn/app/mobiedu-h%E1%BB%8Dc-vi%C3%AAn/id1506933069" target="_blank" class="flex items-center text-color_9 cursor-pointer text-base leading-9">
                   <img class="mr-3" src="/img/icon/app-store.png" alt="" />
                   <span>App Store</span>
-                </div>
+                </a>
               </div>
               <div>
-                <div class="flex items-center text-color_9 text-base leading-9"><img class="mr-3" src="/img/icon/google-play.png" alt="" /><span>Google Play</span></div>
+                <a target="_blank" href="https://play.google.com/store/apps/details?id=mobifone.edu&hl=vi&gl=US" class="flex items-center text-color_9 text-base leading-9"><img class="mr-3" src="/img/icon/google-play.png" alt="" /><span>Google Play</span></a>
               </div>
             </div>
           </div>
@@ -50,10 +50,10 @@
           <p class="relative text-color_8 font-bold text-lg leading-6">THANH TOÁN</p>
           <div class="pb-[22px] border-solid mt-5">
             <div>
-              <div class="flex items-center text-color_9 text-base leading-9"><img class="mr-3" src="/img/icon/momo.png" alt="" /><span>Ví Momo</span></div>
+              <div class="flex items-center cursor-pointer text-color_9 text-base leading-9"><img class="mr-3" src="/img/icon/momo.png" alt="" /><span>Ví Momo</span></div>
             </div>
             <div>
-              <div class="flex items-center text-color_9 text-base leading-9"><img class="mr-3" src="/img/icon/zalo-pay.png" alt="" /><span>Zalo Pay</span></div>
+              <div class="flex items-center cursor-pointer text-color_9 text-base leading-9"><img class="mr-3" src="/img/icon/zalo-pay.png" alt="" /><span>Zalo Pay</span></div>
             </div>
           </div>
         </div>
@@ -61,10 +61,10 @@
           <p class="relative text-color_8 font-bold text-lg leading-6">THEO DÕI MOBIEDU</p>
           <div class="pb-[22px] border-solid mt-5">
             <div>
-              <div class="flex items-center text-color_9 text-base leading-9"><img class="mr-3" src="/img/icon/facebook.png" alt="" /><span>Facebook</span></div>
+              <a target="_blank" href="https://www.facebook.com/mobiedu.vn" class="flex items-center text-color_9 text-base leading-9"><img class="mr-3" src="/img/icon/facebook.png" alt="" /><span>Facebook</span></a>
             </div>
             <div>
-              <div class="flex items-center text-color_9 text-base leading-9"><img class="mr-3" src="/img/icon/youtube.png" alt="" /><span>Youtube</span></div>
+              <a target="_blank" href="https://www.youtube.com/c/mobiEdu_vn" class="flex items-center text-color_9 text-base leading-9"><img class="mr-3" src="/img/icon/youtube.png" alt="" /><span>Youtube</span></a>
             </div>
             <div>
               <nuxt-link to="/lien-he">
@@ -82,16 +82,21 @@
             <p class="flex ml-35 text-color_2 text-lg leading-6 uppercase py-[13px] hover:text-color_1">CHÍNH SÁCH BẢO MẬT</p>
           </NuxtLink>
         </div>
-
-        <div>
-          <p class="flex text-color_2 text-lg leading-6 uppercase py-[13px] hover:text-color_1">ĐIỀU KHOẢN SỬ DỤNG</p>
-        </div>
-        <div>
-          <p class="flex text-color_2 text-lg leading-6 uppercase py-[13px] hover:text-color_1">GIẢI QUYẾT TRANH CHẤP</p>
-        </div>
-        <div>
-          <p class="flex mr-35 text-color_2 text-lg leading-6 uppercase py-[13px] hover:text-color_1">QUY CHẾ HOẠT ĐỘNG</p>
-        </div>
+        <NuxtLink to="/text">
+          <div>
+            <p class="flex text-color_2 text-lg leading-6 uppercase py-[13px] hover:text-color_1">ĐIỀU KHOẢN SỬ DỤNG</p>
+          </div>
+        </NuxtLink>
+        <NuxtLink to="/text">
+          <div>
+            <p class="flex text-color_2 text-lg leading-6 uppercase py-[13px] hover:text-color_1">GIẢI QUYẾT TRANH CHẤP</p>
+          </div>
+        </NuxtLink>
+        <NuxtLink to="/text">
+          <div>
+            <p class="flex mr-35 text-color_2 text-lg leading-6 uppercase py-[13px] hover:text-color_1">QUY CHẾ HOẠT ĐỘNG</p>
+          </div>
+        </NuxtLink>
       </div>
     </div>
     <div class="flex justify-between p-10">
