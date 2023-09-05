@@ -2,11 +2,11 @@
   <div class="w-full flex flex-col justify-center items-center">
     <div class="w-full">
       <div class="w-full flex justify-between">
-        <div class="flex items-center justify-center px-0 py-2">
+        <div class="flex items-center justify-center">
           <div class="flex items-center space-x-5 w-full">
             <nuxt-link to="/"><img src="/img/logo.png" alt="" /></nuxt-link>
             <div class="dropdown-trigger" @mouseenter="showDropdown" @mouseleave="hideDropdown">
-              <div class="dropdown flex items-center">
+              <div class="dropdown flex items-center mt-4">
                 <nuxt-link to="/khoa-hoc"><p class="text-lg font-600">Khoá học</p></nuxt-link>
                 <div class="i-mdi:chevron-down text-xl"></div>
               </div>
@@ -20,10 +20,10 @@
               </div>
             </div>
             <div>
-              <nuxt-link to="/giai-phap"> <p class="text-lg font-600 cursor-pointer hover:text-color_4">Giải pháp</p></nuxt-link>
+              <nuxt-link to="/giai-phap"> <p class="text-lg font-600 cursor-pointer hover:text-color_4 mt-4">Giải pháp</p></nuxt-link>
             </div>
             <div>
-              <nuxt-link to="/cong-thi"> <p class="text-lg font-600 cursor-pointer hover:text-color_4">Cổng thi</p></nuxt-link>
+              <nuxt-link to="/cong-thi"> <p class="text-lg font-600 cursor-pointer hover:text-color_4 mt-4">Cổng thi</p></nuxt-link>
             </div>
           </div>
         </div>

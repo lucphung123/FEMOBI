@@ -7,34 +7,32 @@
   <div class="w-full flex space-x-8">
     <div class="w-3/7 space-y-5">
       <a href="https://www.youtube.com/watch?v=L05glUV_ibI&amp;ab_channel=mobiEdu" data-fancybox=""><img class="rd-2" src="/img/1.jpg" alt="" /></a>
-      <SlideSlide5/>
+      <SlideSlide5 />
     </div>
     <div class="bg-[#E3EFF9] rd-3">
       <div class="p-8 space-y-7">
         <p class="border-b border-blue-300 pb-3 font-700 text-2xl leading-7">Gói luyện thi Học thủ khoa, gói luyện thi Học thủ khoa gói luyện thi Học thủ khoa gói luyện thi Học thủ khoa gói luyện thi</p>
         <div>
-          <p class="mt-3 text-lg text-gray-500">Nguyễn Thanh Hằng</p>
           <div class="flex items-center space-x-5">
-            <p class="font-700 leading-5 text-2xl text-color_4">18.000.000 đ</p>
+            <p class="font-700 leading-5 text-2xl text-color_4">6.000 đ/Ngày</p>
             <p class="text-gray-4 line-through">20.000.000 đ</p>
-            <p class="bg-red-500 p1 rd-1 text-white font-600">-50%</p>
           </div>
+          <p class="text-sm text-black">Tặng 500MB data tốc độ cao và 10 phút gọi nội mạng mỗi ngày</p>
         </div>
         <div class="flex items-center space-x-7">
           <button class="text-white rd-full text-sm font-semibold hover:bg-color_5 hover:text-white bg-color_4 px-7 py-2">ĐĂNG KÍ HỌC NGAY</button>
-          <button class="text-color_4 bg-white px-7 py-2 hover:bg-color_5 hover:text-black rd-full font-700 text-sm text-color_4 leading-[1.375] border-color_4 border-1">THÊM VÀO GIỎ HÀNG</button>
         </div>
         <div class="flex space-x-12">
           <div class="space-y-3">
-            <p class="text-xl text-gray-500">Số lượng bài học</p>
-            <p class="font-bold text-xl">20</p>
+            <p class="text-xl text-gray-500">Hình thức học </p>
+            <p class="font-bold text-xl">Học trên Website</p>
           </div>
           <div class="space-y-3">
-            <p class="text-xl text-gray-500">Thời lượng</p>
+            <p class="text-xl text-gray-500">Thời lượng:</p>
             <p class="font-bold text-xl">02 giờ 50 phút</p>
           </div>
           <div class="space-y-3">
-            <p class="text-xl text-gray-500">Lĩnh vực</p>
+            <p class="text-xl text-gray-500">Lĩnh vực:</p>
             <p class="font-bold text-xl">Sức khỏe</p>
           </div>
         </div>
@@ -185,24 +183,24 @@ function toggleText() {
 }
 
 const longText = `Khóa học sẽ giúp các bạn hiểu tường tận về việc xây dựng website cần các yếu tố nào. Các bạn sẽ học từ việc mua tên miền, hosting thế nào cho chuẩn tới cách thiết kế giao diện website đẹp, chuẩn SEO, chạy nhanh và thân thiện với người dùng, quản trị nhiều website cùng lúc.
-
-
-Tham gia khóa học các bạn sẽ được thực hành trên giao diện website tin tức và bán hàng cụ thể giúp các bạn có thể thiết kế được nhiều dạng website khác nhau.
-
-
-Khóa học hướng dẫn trực quan, chi tiết, giúp các bạn hiểu được bản chất để tự thiết kế sáng tạo. Không theo lối mòn, không cần biết code, bạn chỉ cần một chút sáng tạo là có thể thiết kế được nhiều giao diện đẹp.
-
-
-Lộ trình học tập:
-
-
-Khóa học sẽ giúp các bạn hiểu tường tận về việc xây dựng website cần các yếu tố nào. Các bạn sẽ học từ việc mua tên miền, hosting thế nào cho chuẩn tới cách thiết kế giao diện website đẹp, chuẩn SEO, chạy nhanh và thân thiện với người dùng, quản trị nhiều website cùng lúc.
-
-
-Tham gia khóa học các bạn sẽ được thực hành trên giao diện website tin tức và bán hàng cụ thể giúp các bạn có thể thiết kế được nhiều dạng website khác nhau.
-
-
-Khóa học hướng dẫn trực quan, chi tiết, giúp các bạn hiểu được bản chất để tự thiết kế sáng tạo. Không theo lối mòn, không cần biết code, bạn chỉ cần một chút sáng tạo là có thể thiết kế được nhiều giao diện đẹp.`
+    
+    
+    Tham gia khóa học các bạn sẽ được thực hành trên giao diện website tin tức và bán hàng cụ thể giúp các bạn có thể thiết kế được nhiều dạng website khác nhau.
+    
+    
+    Khóa học hướng dẫn trực quan, chi tiết, giúp các bạn hiểu được bản chất để tự thiết kế sáng tạo. Không theo lối mòn, không cần biết code, bạn chỉ cần một chút sáng tạo là có thể thiết kế được nhiều giao diện đẹp.
+    
+    
+    Lộ trình học tập:
+    
+    
+    Khóa học sẽ giúp các bạn hiểu tường tận về việc xây dựng website cần các yếu tố nào. Các bạn sẽ học từ việc mua tên miền, hosting thế nào cho chuẩn tới cách thiết kế giao diện website đẹp, chuẩn SEO, chạy nhanh và thân thiện với người dùng, quản trị nhiều website cùng lúc.
+    
+    
+    Tham gia khóa học các bạn sẽ được thực hành trên giao diện website tin tức và bán hàng cụ thể giúp các bạn có thể thiết kế được nhiều dạng website khác nhau.
+    
+    
+    Khóa học hướng dẫn trực quan, chi tiết, giúp các bạn hiểu được bản chất để tự thiết kế sáng tạo. Không theo lối mòn, không cần biết code, bạn chỉ cần một chút sáng tạo là có thể thiết kế được nhiều giao diện đẹp.`
 
 const menuItems = ref([
   {

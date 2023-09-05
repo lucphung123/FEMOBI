@@ -12,10 +12,39 @@
         <div class="i-mdi:bookmark-outline text-4xl bg-blue-900"></div>
         <div class="text-3xl text-blue-900 font-700">KHÓA HỌC TIÊU BIỂU</div>
       </div>
-      <div>
-        <div class="flex flex-wrap mx-10">
-          <button v-for="tab of tabs" :key="tab.id" text class="p-x-4 text-lg text-black" :class="activeTab === tab.id && '!text-white bg-blue-900'" @click="handleActiveTab(tab.id)">{{ tab.title }}</button>
-        </div>
+      <div class="py-10">
+        <nav class="w-[600px] h-[60px] flex text-center relative shadow-xl rounded-[5px] bg-white">
+          <div class="absolute h-full w-[20%] transition-all duration-400 ease-in-out z-10 rounded-[5px] left-0 top-0 bg-color_4" :style="{ left: sliderLeft }"></div>
+          <label class="w-full h-full leading-[60px] text-lg font-normal text-color_4 relative z-99 cursor-pointer transition-all duration-300 ease-in-out mx-[5px] my-0 rounded-[5px] hover:(bg-color_4 text-white)" v-for="(tab, index) in tabs" :key="index" :for="tab.id" :class="activeTab === tab.id ? '!text-white' : ''" @click="moveSlider(index)">
+            {{ tab.label }}
+          </label>
+        </nav>
+      </div>
+      <div class="w-full flex space-x-10">
+        <nuxt-link to="/khoa-hoc/le" class="w-1/6 space-y-4">
+          <img src="/img/product/1.png" alt="" />
+          <div>
+            <p class="font-600">Ôn luyện chứng chỉ</p>
+            <p class="text-gray-400">Tư Hoàng Thông</p>
+            <p class="text-color_4 font-600">5.000 đ/ngày</p>
+          </div>
+        </nuxt-link>
+        <nuxt-link to="/khoa-hoc/combo" class="w-1/6 space-y-4">
+          <img src="/img/product/2.png" alt="" />
+          <div>
+            <p class="font-600">Eduplus mSkill</p>
+            <p class="text-gray-400">20 Khoá học</p>
+            <p class="text-color_4 font-600">5.000 đ/ngày</p>
+          </div>
+        </nuxt-link>
+        <nuxt-link to="/khoa-hoc/khoa-hoc-api" class="w-1/6 space-y-4">
+          <img src="/img/product/3.png" alt="" />
+          <div>
+            <p class="font-600">Ôn luyện chứng chỉ</p>
+            <p class="text-gray-400">Học trên Website</p>
+            <p class="text-color_4 font-600">5.000 đ/ngày</p>
+          </div>
+        </nuxt-link>
       </div>
     </div>
     <div class="relative mt-80 md:mt-20 lg:mt-36 xl:mt-80 mb-0 md:mb-50">
@@ -97,39 +126,44 @@
 </template>
 
 <script setup>
-const isLoading = ref(true)
-setTimeout(() => {
-  isLoading.value = false
-}, 1000)
-const activeTab = ref(0)
-function handleActiveTab(key) {
-  const courseId = courses.value?.[activeBtn.value]?.id
-  const groupId = groups.value?.[activeBtn.value]?.[key]?.id
-  activeTab.value = key
-  getTabData(courseId, groupId)
-}
+import { ref, computed } from "vue"
+
 const tabs = [
-  {
-    id: 0,
-    title: "Tất cả",
-  },
-  {
-    id: 1,
-    title: "Trẻ em",
-  },
-  {
-    id: 2,
-    title: "Học sinh phổ thông",
-  },
-  {
-    id: 3,
-    title: "Sinh viên và người đi làm",
-  },
-  {
-    id: 4,
-    title: "Của bạn",
-  },
+  { id: "1", label: "Tất cả" },
+  { id: "2", label: "Trẻ em" },
+  { id: "3", label: "Học sinh" },
+  { id: "4", label: "Sinh viên" },
 ]
+const activeTab = ref("home")
+const sliderLeft = computed(() => {
+  const tabWidth = 100 / tabs.length
+  return tabWidth * tabs.findIndex(tab => tab.id === activeTab.value) + "%"
+})
+function moveSlider(index) {
+  activeTab.value = tabs[index].id
+}
+// const tabs = [
+//   {
+//     id: 0,
+//     title: "Tất cả",
+//   },
+//   {
+//     id: 1,
+//     title: "Trẻ em",
+//   },
+//   {
+//     id: 2,
+//     title: "Học sinh phổ thông",
+//   },
+//   {
+//     id: 3,
+//     title: "Sinh viên và người đi làm",
+//   },
+//   {
+//     id: 4,
+//     title: "Của bạn",
+//   },
+// ]
 </script>
 <style scoped>
 .swiper-slide-content {
