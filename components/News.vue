@@ -1,5 +1,5 @@
 <template>
-  <div class="p-20 w-full space-y-10">
+  <div class="my-20 w-full space-y-10">
     <div>
       <p class="text-color_4 font-700 text-4xl">TIN TỨC & SỰ KIỆN</p>
     </div>

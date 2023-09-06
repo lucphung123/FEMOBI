@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@iconify-json/mdi": "^1.1.50",
+    "@vueuse/core": "^10.4.1",
     "casdoor-vue-sdk": "^1.6.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",

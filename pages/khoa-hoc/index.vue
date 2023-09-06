@@ -1,8 +1,5 @@
 <template>
-  <div v-if="isLoading">
-    <Loading />
-  </div>
-  <div v-else class="w-full lg:px-0 flex flex-col">
+  <div class="w-full lg:px-0 flex flex-col">
     <div class="flex space-x-4 my-5 mt-7">
       <nuxt-link to="/" class="text-gray-400">Trang chủ</nuxt-link>
       <p class="font-bold text-gray-500">></p>
@@ -140,11 +137,6 @@
 
 <script setup>
 import { ref, computed } from "vue"
-const isLoading = ref(true)
-setTimeout(() => {
-  isLoading.value = false
-}, 1000)
-// layouts
 definePageMeta({
   layout: "course",
 })

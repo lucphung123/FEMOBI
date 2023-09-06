@@ -12,10 +12,10 @@
         <div class="i-mdi:bookmark-outline text-4xl bg-blue-900"></div>
         <div class="text-3xl text-blue-900 font-700">KHÓA HỌC TIÊU BIỂU</div>
       </div>
-      <div class="py-10">
-        <nav class="w-[600px] h-[60px] flex text-center relative shadow-xl rounded-[5px] bg-white">
-          <div class="absolute h-full w-[20%] transition-all duration-400 ease-in-out z-10 rounded-[5px] left-0 top-0 bg-color_4" :style="{ left: sliderLeft }"></div>
-          <label class="w-full h-full leading-[60px] text-lg font-normal text-color_4 relative z-99 cursor-pointer transition-all duration-300 ease-in-out mx-[5px] my-0 rounded-[5px] hover:(bg-color_4 text-white)" v-for="(tab, index) in tabs" :key="index" :for="tab.id" :class="activeTab === tab.id ? '!text-white' : ''" @click="moveSlider(index)">
+      <div class="mb-10 w-full">
+        <nav class="w-280 h-[60px] flex text-center relative shadow-xl rounded-[5px] bg-white">
+          <div class="absolute h-full w-20% transition-all duration-400 ease-in-out z-4 rounded-[5px] left-0 top-0 bg-color_4" :style="{ left: sliderLeft }"></div>
+          <label class="w-full h-full leading-[60px] text-lg font-normal text-color_4 relative z-5 cursor-pointer transition-all duration-300 ease-in-out mx-[5px] my-0 rounded-[5px] hover:(bg-color_4 text-white)" v-for="(tab, index) in tabs" :key="index" :for="tab.id" :class="activeTab === tab.id ? '!text-white' : ''" @click="moveSlider(index)">
             {{ tab.label }}
           </label>
         </nav>
@@ -113,28 +113,65 @@
     </div>
 
     <div class="relative mt-80 md:mt-20 lg:mt-36 xl:mt-80 mb-0 md:mb-50">
-      <div class="absolute w-screen left-1/2 -translate-x-1/2 -translate-y-full md:mt-50 bg-[url(/img/bg/bg-home-5.png)] bg-cover bg-bottom h-120 flex flex-col items-center">
-        <div class="w-full lg:w-225 xl:(w-300 h-250px) 2xl:(w-340 h-280px) mx-auto flex items-center my-auto">
-          <Advertise />
-        </div>
-      </div>
+      <div class="absolute w-screen left-1/2 -translate-x-1/2 -translate-y-full md:mt-50 bg-[url(/img/banner/banner-1.png)] bg-cover bg-bottom h-120 flex flex-col items-center"></div>
     </div>
     <div>
       <News />
     </div>
+  </div>
+  <div class="bg-red">
+    {{ courseData }}
   </div>
 </template>
 
 <script setup>
 import { ref, computed } from "vue"
 
+const { RestApi } = useApi()
+const route = useRoute()
+const filter_value = ref({
+  time: null,
+  rating: null,
+  type: 1,
+  isFree: false,
+  isSale: false,
+})
+const query = computed(() => {
+  let query = {
+    page: pagination.value.page - 1,
+    limit: pagination.value.limit,
+    category: route.params.slug ? route.params.slug : "",
+    rating: filter_value.value.rating,
+    isFree: filter_value.value.isFree,
+    isSale: filter_value.value.isSale,
+    IdPosition: filter_value.value.type,
+  }
+  return query
+})
+const pagination = ref({
+  page: 1,
+  limit: 12,
+  total: 0,
+})
+const { data: courseData, pending: coursePending, error: courseError } = await RestApi.course.get({ query: query })
+let data = computed(() => {
+  if (courseData.value?.status) {
+    pagination.value.total = courseData.value.total
+    return courseData.value.item
+  } else {
+    return []
+  }
+})
+console.log(courseData)
+
 const tabs = [
-  { id: "1", label: "Tất cả" },
-  { id: "2", label: "Trẻ em" },
-  { id: "3", label: "Học sinh" },
-  { id: "4", label: "Sinh viên" },
+  { id: "0", label: "Tất cả" },
+  { id: "1", label: "Trẻ em" },
+  { id: "2", label: "Học sinh phổ thông" },
+  { id: "3", label: "Sinh viên và người đi làm" },
+  { id: "4", label: "Của bạn" },
 ]
-const activeTab = ref("home")
+const activeTab = ref("0")
 const sliderLeft = computed(() => {
   const tabWidth = 100 / tabs.length
   return tabWidth * tabs.findIndex(tab => tab.id === activeTab.value) + "%"
@@ -142,28 +179,6 @@ const sliderLeft = computed(() => {
 function moveSlider(index) {
   activeTab.value = tabs[index].id
 }
-// const tabs = [
-//   {
-//     id: 0,
-//     title: "Tất cả",
-//   },
-//   {
-//     id: 1,
-//     title: "Trẻ em",
-//   },
-//   {
-//     id: 2,
-//     title: "Học sinh phổ thông",
-//   },
-//   {
-//     id: 3,
-//     title: "Sinh viên và người đi làm",
-//   },
-//   {
-//     id: 4,
-//     title: "Của bạn",
-//   },
-// ]
 </script>
 <style scoped>
 .swiper-slide-content {
