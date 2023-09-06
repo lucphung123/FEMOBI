@@ -20,7 +20,7 @@
               </div>
             </div>
             <div>
-              <nuxt-link to="/giai-phap"> <p class="text-lg font-600 cursor-pointer hover:text-color_4 mt-4">Giải pháp</p></nuxt-link>
+              <nuxt-link to="/giai-phap"><p class="text-lg font-600 cursor-pointer hover:text-color_4 mt-4">Giải pháp</p></nuxt-link>
             </div>
             <div>
               <nuxt-link to="/cong-thi"> <p class="text-lg font-600 cursor-pointer hover:text-color_4 mt-4">Cổng thi</p></nuxt-link>
