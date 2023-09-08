@@ -13,14 +13,14 @@
         <div class="text-3xl text-blue-900 font-700">KHÓA HỌC TIÊU BIỂU</div>
       </div>
       <div class="mb-10 w-full">
-        <nav class="w-280 h-[60px] flex text-center relative shadow-xl rounded-[5px] bg-white">
+        <nav class="w-280 h-[40px] flex text-center relative rounded-[5px] bg-gray-200">
           <div class="absolute h-full w-20% transition-all duration-400 ease-in-out z-4 rounded-[5px] left-0 top-0 bg-color_4" :style="{ left: sliderLeft }"></div>
-          <label class="w-full h-full leading-[60px] text-lg font-normal text-color_4 relative z-5 cursor-pointer transition-all duration-300 ease-in-out mx-[5px] my-0 rounded-[5px] hover:(bg-color_4 text-white)" v-for="(tab, index) in tabs" :key="index" :for="tab.id" :class="activeTab === tab.id ? '!text-white' : ''" @click="moveSlider(index)">
+          <label class="w-full h-full leading-[40px] text-lg font-normal text-black relative z-5 cursor-pointer transition-all duration-300 ease-in-out mx-[5px] my-0 rounded-[5px] hover:(bg-color_4 text-white)" v-for="(tab, index) in tabs" :key="index" :for="tab.id" :class="activeTab === tab.id ? '!text-white' : ''" @click="moveSlider(index)">
             {{ tab.label }}
           </label>
         </nav>
       </div>
-      <div class="w-full flex space-x-10">
+      <!-- <div class="w-full flex space-x-10">
         <nuxt-link to="/khoa-hoc/le" class="w-1/6 space-y-4">
           <img src="/img/product/1.png" alt="" />
           <div>
@@ -45,6 +45,19 @@
             <p class="text-color_4 font-600">5.000 đ/ngày</p>
           </div>
         </nuxt-link>
+      </div> -->
+      <div class="w-full grid grid-cols-1 sm:grid-cols-2 gap-6 md:(grid-cols-4) lg:grid-cols-6">
+        <div v-for="course in courseData.item" :key="course.id" class="mb-2">
+          <img v-if="course.image_url !== null && course.image_url !== ''" class="w-full h-70 object-cover mb-2 rd-2" :src="course.image_url" alt="image_cover" />
+          <img v-else class="w-full h-70 object-cover mb-2 rd-2" src="/img/empty.jpg" alt="image_cover" />
+          <p class="text-md font-700 mb-1 mt-4 truncate">{{ course.title }}</p>
+          <p class="text-gray-600 mb-1 text-sm">{{ course.owner.name }}</p>
+          <p v-if="course.price > 0" class="mb-2">
+            <span class="text-color_4 font-700">{{ course.sale_price }} đ</span><br />
+            <span class="text-gray-600 line-through">{{ course.price }} đ</span>
+          </p>
+          <p v-else class="text-green-500 mb-2">Miễn phí</p>
+        </div>
       </div>
     </div>
     <div class="relative mt-80 md:mt-20 lg:mt-36 xl:mt-80 mb-0 md:mb-50">
@@ -111,7 +124,6 @@
       </div>
       <div><Review /></div>
     </div>
-
     <div class="relative mt-80 md:mt-20 lg:mt-36 xl:mt-80 mb-0 md:mb-50">
       <div class="absolute w-screen left-1/2 -translate-x-1/2 -translate-y-full md:mt-50 bg-[url(/img/banner/banner-1.png)] bg-cover bg-bottom h-120 flex flex-col items-center"></div>
     </div>
@@ -119,11 +131,7 @@
       <News />
     </div>
   </div>
-  <div class="bg-red">
-    {{ courseData }}
-  </div>
 </template>
-
 <script setup>
 import { ref, computed } from "vue"
 
@@ -150,7 +158,7 @@ const query = computed(() => {
 })
 const pagination = ref({
   page: 1,
-  limit: 12,
+  limit: 120,
   total: 0,
 })
 const { data: courseData, pending: coursePending, error: courseError } = await RestApi.course.get({ query: query })
