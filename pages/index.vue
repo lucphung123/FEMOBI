@@ -144,6 +144,7 @@ const filter_value = ref({
   isFree: false,
   isSale: false,
 })
+
 const query = computed(() => {
   let query = {
     page: pagination.value.page - 1,
@@ -170,7 +171,6 @@ let data = computed(() => {
     return []
   }
 })
-console.log(courseData)
 
 const tabs = [
   { id: "0", label: "Tất cả" },
