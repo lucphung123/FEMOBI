@@ -5,8 +5,8 @@ const cartStore = useCartStore()
 const router = useRouter()
 const route = useRoute()
 const router_push = (slug, id) => {
-  if (route.path === "/khoa-hoc/combo") {
-    return "/khoa-hoc/combo" + slug
+  if (route.path === "/khoa-hoc/le") {
+    return "/khoa-hoc/le" + slug
   } else {
     return "/khoa-hoc/" + slug + "-" + id
   }
@@ -29,13 +29,11 @@ const props = defineProps({
 const addItemCart = item => {
   cartStore.addItemCart(item)
 }
-const removeItemCart = item => {
-  cartStore.removeItemCart(item)
-}
+
 </script>
 <template>
   <NuxtLink :to="router_push(props.item_course.slug, props.item_course.id)" class="bg-white rounded overflow-hidden shadow-md hover:(!shadow-lg !shadow-blue-400) cursor-pointer duration-300 flex flex-col">
-    <img class="w-full h-40 object-cover" preset="cover" :src="props.item_course.image_url !== '' ? props.item_course.image_url : '/img/empty.jpg'" placeholder="/img/empty.jpg" alt="image_course" />
+    <img class="w-full h-60 object-cover" preset="cover" :src="props.item_course.image_url !== '' ? props.item_course.image_url : '/img/empty.jpg'" placeholder="/img/empty.jpg" alt="image_course" />
     <div class="p-2 flex flex-col flex-1">
       <div class="flex-1">
         <span class="font-semibold text-lg line-clamp-1">

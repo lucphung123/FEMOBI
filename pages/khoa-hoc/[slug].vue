@@ -1,62 +1,78 @@
 <template>
-  <div class="w-full mx-auto container h-full xs:px-0 bg-white">
-    <div class="flex p-2">
-      <div class="w-full">
-        <div class="pl-3">
-          <div v-if="data.length > 0" class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:(grid-cols-3) lg:grid-cols-4">
-            <CourseImageTextSquare class="bg-white rounded overflow-hidden shadow-md hover:(shadow-lg shadow-blue-400) cursor-pointer duration-300" v-for="(item, index) in data" :key="index" :item_course="item" />
-          </div>
-        </div>
-      </div>
-    </div>
+  <div v-for="detail in detailData.item" :key="detail.id">
+    <h1 class="bg-red text-3xl">
+      {{ detail.title }}
+    </h1>
   </div>
+  {{ detailData }}
 </template>
 
 <script setup>
-import { useSettingStore } from "~~/stores/settingStore"
-const settingStore = useSettingStore()
-
-const route = useRoute()
 const { RestApi } = useApi()
-
-const filter_value = ref({
-  time: null,
-  rating: null,
-  type: 1,
-  isFree: false,
-  isSale: false,
-})
-const pagination = ref({
-  page: 1,
-  limit: 27,
-  total: 0,
-})
-const renderLabelRate = option => {
-  return h(NRate, {
-    defaultValue: option.value,
-    readonly: true,
-    size: "small",
-  })
-}
+const route = useRoute()
+const router = useRouter()
 const query = computed(() => {
-  let query = {
-    page: pagination.value.page - 1,
-    limit: pagination.value.limit,
-    category: route.params.slug ? route.params.slug : "",
-    rating: filter_value.value.rating,
-    isFree: filter_value.value.isFree,
-    isSale: filter_value.value.isSale,
-    IdPosition: filter_value.value.type,
+  const str = route.params.slug
+  const arr = str.split("-")
+  const lastElement = arr[arr.length - 1]
+  const remainingElements = arr.slice(0, arr.length - 1).join("-")
+  return {
+    slug: remainingElements,
+    id: lastElement,
   }
-  return query
 })
-const { data: courseData, pending: coursePending, error: courseError } = await RestApi.course.get({ query: query })
-let data = computed(() => {
-  if (courseData.value?.status) {
-    pagination.value.total = courseData.value.total
-    return courseData.value.item
+const { data: detailData, pending: detailPending, error: detailError, refresh: detailRefresh } = await RestApi.course.getDetailsFull({ query: query })
+const course = computed(() => {
+  if (detailData.value.error) {
+    throw createError({
+      statusCode: detailData.value.code,
+      message: detailData.value.message,
+      fatal: true,
+    })
   } else {
-    return []
+    let data = detailData.value.data
+    return {
+      id: data?.id || 0,
+      slug: data.slug || "",
+      title: data?.title || "",
+      teacher: {
+        name: data?.teacher.name || "",
+        avatar: data?.teacher.avatar,
+        description: data?.teacher.description || "",
+        total_courses: data?.teacher.totalCourses || 0,
+        total_students: data?.teacher.totalStudents || 0,
+        facebook: data?.teacher.facebook || "",
+        youtube: data?.teacher.youtube || "",
+        id: data?.owner.id || 0,
+      },
+      review: {
+        star: data?.review.star || 0,
+        total: data?.review.total || 0,
+        reviewRate: data?.review.reviewRate.map(item_review => {
+          return {
+            percent: item_review.percent,
+            rate: item_review.rate,
+            totalRate: item_review.totalRate,
+          }
+        }),
+      },
+      price: data?.price || 0,
+      sale_price: data?.sale_price || 0,
+      url_video: data?.video_url || "",
+      url_image: data?.cover_url || "",
+      learn_what: data?.learn_what || "",
+      description: data?.description || 0,
+      short_description: data?.short_description || "",
+      number_lesson: data?.number_lesson || 0,
+      duration: data?.duration || "",
+      related_courses: data?.relatedCourses || [],
+      isMapping: data?.isMapping || false,
+    }
   }
 })
 </script>
+<style scoped>
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+</style>
