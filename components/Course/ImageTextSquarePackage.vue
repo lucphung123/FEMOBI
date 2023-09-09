@@ -40,6 +40,6 @@ const props = defineProps({
   },
 })
 const router_push = (slug, id) => {
-  return "/course_combo/" + slug + "-" + id
+  return "/combo/" + slug + "-" + id
 }
 </script>

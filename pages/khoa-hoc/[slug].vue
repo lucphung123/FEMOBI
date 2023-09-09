@@ -1,10 +1,24 @@
 <template>
-  <div v-for="detail in detailData.item" :key="detail.id">
+  <div>
     <h1 class="bg-red text-3xl">
-      {{ detail.title }}
+      {{ course.title }}
     </h1>
+    <img :src="course.url_image" alt="Course Image" />
+    <p>Giá gốc: {{ course.price }}</p>
+    <p>Giá khuyến mãi: {{ course.sale_price }}</p>
+    <p>Giáo viên: {{ course.teacher.name }}</p>
+
+    <div v-for="chapter in detailData.data.lesson" :key="chapter.id">
+      <h2>{{ chapter.label }}</h2>
+      <ul>
+        <li v-for="lesson in chapter.children" :key="lesson.id">
+          {{ lesson.label }}
+          <span v-if="lesson.type">({{ lesson.type }})</span>
+          <video v-if="lesson.type === 'Video'" :src="lesson.data" controls></video>
+        </li>
+      </ul>
+    </div>
   </div>
-  {{ detailData }}
 </template>
 
 <script setup>
@@ -71,6 +85,7 @@ const course = computed(() => {
   }
 })
 </script>
+
 <style scoped>
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
