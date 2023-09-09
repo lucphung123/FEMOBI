@@ -1,24 +1,4 @@
 <template>
-  <!-- <div>
-    <h1 class="bg-red text-3xl">
-      {{ course.title }}
-    </h1>
-    <img :src="course.url_image" alt="Course Image" />
-    <p>Giá gốc: {{ course.price }}</p>
-    <p>Giá khuyến mãi: {{ course.sale_price }}</p>
-    <p>Giáo viên: {{ course.teacher.name }}</p>
-
-    <div v-for="chapter in detailData.data.lesson" :key="chapter.id">
-      <h2>{{ chapter.label }}</h2>
-      <ul>
-        <li v-for="lesson in chapter.children" :key="lesson.id">
-          {{ lesson.label }}
-          <span v-if="lesson.type">({{ lesson.type }})</span>
-          <video v-if="lesson.type === 'Video'" :src="lesson.data" controls></video>
-        </li>
-      </ul>
-    </div>
-  </div> -->
   <div class="flex space-x-4 my-5 mt-7 items-center w-full">
     <nuxt-link to="/" class="text-gray-400">Trang chủ</nuxt-link>
     <div class="i-mdi:chevron-right bg-gray"></div>
@@ -43,7 +23,8 @@
         </div>
         <div class="flex items-center space-x-7">
           <button class="text-white rd-full text-sm font-semibold hover:bg-color_5 hover:text-white bg-color_4 px-7 py-2">ĐĂNG KÍ HỌC NGAY</button>
-          <button class="text-color_4 bg-white px-7 py-2 hover:bg-color_5 hover:text-black rd-full font-700 text-sm text-color_4 leading-[1.375] border-color_4 border-1">THÊM VÀO GIỎ HÀNG</button>
+          <button @click.prevent.stop="addItemCart(course)" v-if="cartStore.cart.filter(item => item.id == course.id).length == 0" class="text-color_4 bg-white px-7 py-2 hover:bg-color_5 hover:text-black rd-full font-700 text-sm text-color_4 leading-[1.375] border-color_4">THÊM VÀO GIỎ HÀNG</button>
+          <button @click.prevent.stop="removeItemCart(course)" v-else class="text-color_4 bg-white px-7 py-2 hover:bg-color_5 hover:text-black rd-full font-700 text-sm text-color_4 leading-[1.375] border-color_4">ĐÃ THÊM VÀO GIỎ HÀNG</button>
         </div>
         <div class="flex space-x-12">
           <div class="space-y-3">
@@ -136,6 +117,8 @@
 <script setup>
 import { ref } from "vue"
 import SlideCourse from "../../components/slide/SlideCourse.vue"
+import { useCartStore } from "~~/stores/cartStore"
+const cartStore = useCartStore()
 const { RestApi } = useApi()
 const route = useRoute()
 const router = useRouter()
@@ -198,7 +181,6 @@ const course = computed(() => {
     }
   }
 })
-// layouts
 const tabs = ["Tab1", "Tab2", "Tab3"]
 const data_tab = [
   {
@@ -214,29 +196,52 @@ const data_tab = [
     name: "Đánh giá",
   },
 ]
+const addItemCart = item => {
+  let item_cart = {
+    id: item.id,
+    type: "course",
+    active: false,
+    image_url: item.url_image,
+    teacher: {
+      id: item.teacher.id,
+      name: item.teacher.name,
+    },
+    price: item.price,
+    sale_price: item.sale_price,
+    slug: item.slug,
+    title: item.title,
+  }
+  cartStore.addItemCart(item_cart)
+}
+const removeItemCart = item => {
+  let item_cart = {
+    id: item.id,
+    type: "course",
+    active: false,
+    image_url: item.url_image,
+    teacher: {
+      id: item.teacher.id,
+      name: item.teacher.name,
+    },
+    price: item.price,
+    sale_price: item.sale_price,
+    slug: item.slug,
+    title: item.title,
+  }
+  cartStore.removeItemCart(item_cart)
+}
 const tab_selected = ref()
 
-
 const activeTab = computed(() => {
-  console.log(tab_selected.value)
-  // const targetPosition = targetElement.getBoundingClientRect().top
-  // const currentPosition = window.innerHeight - offset
-
-  // if (targetPosition < currentPosition) {
-  //   console.log("Đã cuộn tới phần tử mong muốn")
-  //   // Thực hiện các hành động bạn muốn ở đây
-  // }
   return
 })
 
 function changeTab(tab) {
-  console.log("🚀 ~ file: le.vue:115 ~ changeTab ~ tab:", tab)
   tab_selected.value = tab.id
   let x = ""
   switch (tab.id) {
     case 1:
       const tab_1 = document.getElementById("1")
-      console.log("🚀 ~ file: le.vue:134 ~ changeTab ~ tab_1:", tab_1)
       tab_1.scrollIntoView({ behavior: "smooth", block: "start", inline: "center" })
       break
     default:
@@ -251,8 +256,6 @@ function scrollToTab(tab) {
     tabRef.scrollIntoView({ behavior: "smooth", block: "start" })
   }
 }
-
-
 
 const menuItems = ref([
   {

@@ -39,7 +39,7 @@
             </div>
             <nuxt-link to="/gio-hang" class="ml-5 flex items-center relative">
               <div class="i-mdi:cart text-lg"></div>
-              <div class="absolute -top-1 -right-3 bg-red-500 text-white rounded-full text-sm w-4 h-4 flex items-center justify-center">1</div>
+              <div class="absolute -top-1 -right-3 bg-red-500 text-white rounded-full text-sm w-4 h-4 flex items-center justify-center">{{ cartItemCount }}</div>
             </nuxt-link>
           </div>
           <div class="flex items-ceter gap-2 pb-2">
@@ -109,9 +109,9 @@ async function logout() {
   userStore.logout()
   await navigateTo("/")
 }
-// const cartItemCount = computed(() => {
-//   return cartStore.items
-// })
+
+const cartItemCount = computed(() => cartStore.totalItems)
+console.log(cartStore.cart, "ádasdasd")
 </script>
 
 <style scoped>
