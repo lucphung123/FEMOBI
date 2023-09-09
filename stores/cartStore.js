@@ -9,18 +9,15 @@ export const useCartStore = defineStore("cart", {
     },
     addItemCart(value) {
       this.cart = this.cart.concat([value])
-      localStorage.setItem("cart", JSON.stringify(this.cart))
     },
     removeItemCart(value) {
       let index = this.cart.findIndex(item_cart => item_cart.id === value.id)
       if (index > -1) {
         this.cart.splice(index, 1)
-        localStorage.setItem("cart", JSON.stringify(this.cart))
       }
     },
     removeAllItems() {
       this.cart = []
-      localStorage.setItem("cart", JSON.stringify(this.cart))
     },
     changeActive(value) {
       let item = this.cart.find(item_cart => item_cart.id === value.id)
@@ -29,14 +26,13 @@ export const useCartStore = defineStore("cart", {
       }
       console.log("change active")
     },
-    saveCart() {
-      localStorage.setItem("cart", JSON.stringify(this.cart))
-    },
+    // saveCart() {
+    //   localStorage.setItem("cart", JSON.stringify(this.cart))
+    // },
     removeActive() {
-      var filteredArray = this.cart.filter(function (element) {
+      let filteredArray = this.cart.filter(function (element) {
         return element.active !== true
       })
-      localStorage.setItem("cart", JSON.stringify(filteredArray))
       this.cart = filteredArray
     },
     registerNow(value) {
@@ -49,7 +45,6 @@ export const useCartStore = defineStore("cart", {
         return item
       })
       this.cart.push(value)
-      localStorage.setItem("cart", JSON.stringify(this.cart))
     },
   },
   getters: {
@@ -77,4 +72,5 @@ export const useCartStore = defineStore("cart", {
       return this.cart.filter(item_cart => item_cart.active == true)
     },
   },
+  persist: true,
 })

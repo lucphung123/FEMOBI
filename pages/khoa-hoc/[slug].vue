@@ -196,7 +196,7 @@ const data_tab = [
     name: "Đánh giá",
   },
 ]
-const addItemCart = item => {
+function addItemCart(item) {
   let item_cart = {
     id: item.id,
     type: "course",
