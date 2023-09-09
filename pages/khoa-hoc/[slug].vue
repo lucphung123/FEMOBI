@@ -6,12 +6,12 @@
     <div class="i-mdi:chevron-right bg-gray"></div>
     <div class="font-bold text-gray-500">{{ course.title }}</div>
   </div>
-  <div class="w-full flex space-x-8">
+  <div class="flex space-x-8 w-full">
     <div class="w-3/7 space-y-5">
-      <a href="https://www.youtube.com/watch?v=L05glUV_ibI&amp;ab_channel=mobiEdu" data-fancybox=""><img class="rd-2 w-100%" :src="course.url_image" /></a>
+      <a href="https://www.youtube.com/watch?v=L05glUV_ibI&amp;ab_channel=mobiEdu" data-fancybox=""><img class="rd-2 w-" :src="course.url_image" /></a>
       <SlideSlide5 />
     </div>
-    <div class="bg-[#E3EFF9] rd-3 w-4/7">
+    <div class="bg-[#E3EFF9] rd-3 w-4/7 h-auto">
       <div class="p-8 space-y-7">
         <div class="border-b border-blue-300 pb-3 font-700 text-2xl leading-7">{{ course.title }}</div>
         <div>
@@ -37,7 +37,7 @@
           </div>
           <div class="space-y-3">
             <p class="text-xl text-gray-500">Lĩnh vực</p>
-            <p class="font-bold text-xl">Sức khỏe</p>
+            <!-- <p class="font-bold text-xl">Sức khỏe</p> -->
           </div>
         </div>
       </div>
@@ -65,35 +65,22 @@
           <div class="text-lg">
             <div v-html="course.description" />
           </div>
-          <div class="text-3xl text-color_4 font-600">Lợi ích</div>
-
+          <div class="text-3xl text-color_4 font-600">Danh sách</div>
           <div>
-            <ul>
-              <li class="cursor-pointer" v-for="(item, index) in menuItems" :key="index">
-                <div class="flex items-center justify-between text-base leading-6 bg-[#E3EFF9] p-5 text-xl" @click="toggleItem(item)">
-                  <div class="flex items-center">
-                    <div class="ml-2">
-                      <NuxtLink :to="item.url">
-                        {{ item.title }}
-                      </NuxtLink>
-                    </div>
-                  </div>
-                  <div v-if="item.children && item.children.length" :class="item.open ? 'i-mdi:chevron-up md:text-2xl' : 'i-mdi:chevron-down md:text-xl'"></div>
+            <div v-for="chapter in detailData.data.lesson" :key="chapter.id">
+              <div class="flex justify-between items-center space-y-2">
+                <button class="w-full outline-none text-xl text-left" @click="toggle(chapter.id)">
+                  <div>{{ chapter.label }}</div>
+                </button>
+                <div :class="arrowIcon(chapter.id)"></div>
+              </div>
+              <div class="leading-10" :class="contentClasses(chapter.id)">
+                <div class="mx-10" v-for="lesson in chapter.children" :key="lesson.id">
+                  {{ lesson.label }}
                 </div>
-                <div class="overflow-auto transition-all scrollbar-hide" :class="item.open && index === 0 ? 'h-32 duration-500' : 'h-0 duration-500'">
-                  <div v-for="(childItem, childIndex) in item.children" :key="childIndex">
-                    <div class="flex items-center text-base leading-6 p-5 ml-8">
-                      <div :class="item.icon"></div>
-                      <NuxtLink :to="childItem.url">
-                        {{ childItem.title }}
-                      </NuxtLink>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
-          <div class="text-3xl text-color_4 font-600">ĐÁNH GIÁ</div>
         </div>
       </div>
       <div class="w-2/7 my-15 space-y-5 sticky top-23 ease-[ease-in-out]">
@@ -111,14 +98,32 @@
   <div class="w-full">
     <SlideCourse />
   </div>
-  {{ detailData }}
 </template>
-
 <script setup>
 import { ref } from "vue"
 import SlideCourse from "../../components/slide/SlideCourse.vue"
 import { useCartStore } from "~~/stores/cartStore"
 const cartStore = useCartStore()
+
+const activeSection = ref(-1)
+
+const toggle = sectionIndex => {
+  if (activeSection.value === sectionIndex) {
+    activeSection.value = -1
+  } else {
+    activeSection.value = sectionIndex
+  }
+}
+
+const contentClasses = sectionIndex => {
+  const baseClasses = "overflow-hidden transition-all  duration-700"
+  const activeClasses = activeSection.value === sectionIndex ? "max-h-100" : "max-h-0"
+  return `${baseClasses} ${activeClasses}`
+}
+
+const arrowIcon = sectionIndex => {
+  return activeSection.value === sectionIndex ? "i-mdi:chevron-up md:text-3xl" : "i-mdi:chevron-down md:text-3xl"
+}
 const { RestApi } = useApi()
 const route = useRoute()
 const router = useRouter()
@@ -191,10 +196,6 @@ const data_tab = [
     id: 2,
     name: "Danh sách",
   },
-  {
-    id: 3,
-    name: "Đánh giá",
-  },
 ]
 function addItemCart(item) {
   let item_cart = {
@@ -255,31 +256,6 @@ function scrollToTab(tab) {
   if (tabRef) {
     tabRef.scrollIntoView({ behavior: "smooth", block: "start" })
   }
-}
-
-const menuItems = ref([
-  {
-    title: "Phần 1: Học phần 1",
-    icon: "i-mdi:lead-pencil text-xl bg-red-500",
-    url: "",
-    open: false,
-    children: [
-      {
-        title: "Hồ sơ của tôi",
-        children: [],
-        url: "",
-      },
-      {
-        title: "Kích hoạt khóa học",
-        children: [],
-        url: "",
-      },
-    ],
-  },
-])
-
-function toggleItem(item) {
-  item.open = !item.open
 }
 </script>
 
