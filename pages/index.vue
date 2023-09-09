@@ -46,17 +46,11 @@
           </div>
         </nuxt-link>
       </div> -->
-      <div class="w-full grid grid-cols-1 sm:grid-cols-2 gap-6 md:(grid-cols-4) lg:grid-cols-6">
-        <div v-for="course in courseData.item" :key="course.id" class="mb-2">
-          <img v-if="course.image_url !== null && course.image_url !== ''" class="w-full h-70 object-cover mb-2 rd-2" :src="course.image_url" alt="image_cover" />
-          <img v-else class="w-full h-70 object-cover mb-2 rd-2" src="/img/empty.jpg" alt="image_cover" />
-          <p class="text-md font-700 mb-1 mt-4 truncate">{{ course.title }}</p>
-          <p class="text-gray-600 mb-1 text-sm">{{ course.owner.name }}</p>
-          <p v-if="course.price > 0" class="mb-2">
-            <span class="text-color_4 font-700">{{ course.sale_price }} đ</span><br />
-            <span class="text-gray-600 line-through">{{ course.price }} đ</span>
-          </p>
-          <p v-else class="text-green-500 mb-2">Miễn phí</p>
+      <div class="w-full mx-auto container h-full xs:px-0 bg-white">
+        <div class="flex p-2">
+          <nuxt-link v-if="data.length > 0" class="w-full grid grid-cols-1 sm:grid-cols-2 gap-6 md:(grid-cols-4) lg:grid-cols-6">
+            <CourseImageTextSquare class="bg-white rounded overflow-hidden shadow-md hover:(shadow-lg shadow-blue-400) cursor-pointer duration-300" v-for="(item, index) in data" :key="index" :item_course="item" />
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -134,7 +128,8 @@
 </template>
 <script setup>
 import { ref, computed } from "vue"
-
+import { useSettingStore } from "~~/stores/settingStore"
+const settingStore = useSettingStore()
 const { RestApi } = useApi()
 const route = useRoute()
 const filter_value = ref({
