@@ -37,8 +37,9 @@
                 <p>Hỗ trợ</p>
               </nuxt-link>
             </div>
-            <nuxt-link to="/gio-hang" class="ml-5 flex items-center">
+            <nuxt-link to="/gio-hang" class="ml-5 flex items-center relative">
               <div class="i-mdi:cart text-lg"></div>
+              <div class="absolute -top-1 -right-3 bg-red-500 text-white rounded-full text-sm w-4 h-4 flex items-center justify-center">1</div>
             </nuxt-link>
           </div>
           <div class="flex items-ceter gap-2 pb-2">
@@ -80,7 +81,8 @@
 import { ref } from "vue"
 import { useCasdoor } from "casdoor-vue-sdk"
 import { useUserStore } from "~~/stores/userStore"
-
+import { useCartStore } from "~~/stores/cartStore"
+const cartStore = useCartStore()
 const dropdownVisible = ref(false)
 const dropdownVisible1 = ref(false)
 const userStore = useUserStore()
@@ -107,6 +109,9 @@ async function logout() {
   userStore.logout()
   await navigateTo("/")
 }
+// const cartItemCount = computed(() => {
+//   return cartStore.items
+// })
 </script>
 
 <style scoped>
