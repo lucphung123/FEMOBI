@@ -20,32 +20,7 @@
           </label>
         </nav>
       </div>
-      <!-- <div class="w-full flex space-x-10">
-        <nuxt-link to="/khoa-hoc/le" class="w-1/6 space-y-4">
-          <img src="/img/product/1.png" alt="" />
-          <div>
-            <p class="font-600">Ôn luyện chứng chỉ</p>
-            <p class="text-gray-400">Tư Hoàng Thông</p>
-            <p class="text-color_4 font-600">5.000 đ/ngày</p>
-          </div>
-        </nuxt-link>
-        <nuxt-link to="/khoa-hoc/combo" class="w-1/6 space-y-4">
-          <img src="/img/product/2.png" alt="" />
-          <div>
-            <p class="font-600">Eduplus mSkill</p>
-            <p class="text-gray-400">20 Khoá học</p>
-            <p class="text-color_4 font-600">5.000 đ/ngày</p>
-          </div>
-        </nuxt-link>
-        <nuxt-link to="/khoa-hoc/khoa-hoc-api" class="w-1/6 space-y-4">
-          <img src="/img/product/3.png" alt="" />
-          <div>
-            <p class="font-600">Ôn luyện chứng chỉ</p>
-            <p class="text-gray-400">Học trên Website</p>
-            <p class="text-color_4 font-600">5.000 đ/ngày</p>
-          </div>
-        </nuxt-link>
-      </div> -->
+
       <div class="w-full mx-auto container h-full xs:px-0 bg-white">
         <div class="flex p-2">
           <nuxt-link v-if="data.length > 0" class="w-full grid grid-cols-1 sm:grid-cols-2 gap-6 md:(grid-cols-4) lg:grid-cols-6">
