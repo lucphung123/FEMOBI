@@ -38,11 +38,9 @@ function close_modal() {
 }
 function delete_topic() {
   if (props.id !== null) {
-    console.log(props.id)
     let x = items.value.filter((x, index) => {
       return index !== props.id
     })
-    console.log(x)
     items.value = x
   }
   close_modal()

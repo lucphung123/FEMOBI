@@ -24,7 +24,7 @@
         </div>
         <div class="flex space-x-12">
           <div class="space-y-3">
-            <p class="text-xl text-gray-500">Hình thức học </p>
+            <p class="text-xl text-gray-500">Hình thức học</p>
             <p class="font-bold text-xl">Học trên Website</p>
           </div>
           <div class="space-y-3">
@@ -144,25 +144,21 @@ const shortenedText = computed(() => {
 })
 
 const activeTab = computed(() => {
-  console.log(tab_selected.value)
   // const targetPosition = targetElement.getBoundingClientRect().top
   // const currentPosition = window.innerHeight - offset
 
   // if (targetPosition < currentPosition) {
-  //   console.log("Đã cuộn tới phần tử mong muốn")
   //   // Thực hiện các hành động bạn muốn ở đây
   // }
   return
 })
 
 function changeTab(tab) {
-  console.log("🚀 ~ file: le.vue:115 ~ changeTab ~ tab:", tab)
   tab_selected.value = tab.id
   let x = ""
   switch (tab.id) {
     case 1:
       const tab_1 = document.getElementById("1")
-      console.log("🚀 ~ file: le.vue:134 ~ changeTab ~ tab_1:", tab_1)
       tab_1.scrollIntoView({ behavior: "smooth", block: "start", inline: "center" })
       break
     default:

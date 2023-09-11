@@ -24,7 +24,6 @@ export const useCartStore = defineStore("cart", {
       if (item !== undefined) {
         item.active = !item.active
       }
-      console.log("change active")
     },
     // saveCart() {
     //   localStorage.setItem("cart", JSON.stringify(this.cart))

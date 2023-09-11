@@ -80,10 +80,8 @@ class Request {
         // userStore.logout()
       },
       onResponse({ request, response, options }) {
-        // console.log(response._data.code, process.client)
         // if (!response._data.status) {
         // throw createError({ statusCode:response._data.code ,message:response._data.message, fatal: true })
-        // console.log("resAPI", response._data)
         //   userStore.logout();
         //   await navigateTo("/");
         // const userStore = useUserStore();
@@ -92,15 +90,11 @@ class Request {
         // }
         return response._data
       },
-      onResponseError({ request, response, options }) {
-        // console.log("🚀 ~ file: useApi.js:72 ~ Request ~ onResponseError ~ error:", response)
-      },
+      onResponseError({ request, response, options }) {},
     }
 
     // if (process.server) {
-    //   console.log(useRequestHeaders().host)
     // } else {
-    //   console.log(window.location.host)
     // }
     if (process.client) {
       const userStore = useUserStore()
