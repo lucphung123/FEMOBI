@@ -201,7 +201,6 @@ const menuItems1 = ref([
   },
 ])
 function toggleItem(item) {
-  console.log("🚀 ~ file: UserProfile.vue:99 ~ toggleItem ~ item:", item)
   item.open = !item.open
 }
 </script>

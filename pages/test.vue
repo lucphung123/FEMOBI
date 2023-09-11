@@ -15,7 +15,6 @@
 </template>
 
 <script setup>
-import { ref } from "vue"
 const activeSection = ref(-1)
 const toggle = sectionIndex => {
   if (activeSection.value === sectionIndex) {

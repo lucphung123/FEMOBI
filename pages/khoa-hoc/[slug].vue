@@ -22,9 +22,16 @@
           </div>
         </div>
         <div class="flex items-center space-x-7">
-          <button class="text-white rd-full text-sm font-semibold hover:bg-color_5 hover:text-white bg-color_4 px-7 py-2">ĐĂNG KÍ HỌC NGAY</button>
-          <button @click.prevent.stop="addItemCart(course)" v-if="cartStore.cart.filter(item => item.id == course.id).length == 0" class="text-color_4 bg-white px-7 py-2 hover:bg-color_5 hover:text-black rd-full font-700 text-sm text-color_4 leading-[1.375] border-color_4">THÊM VÀO GIỎ HÀNG</button>
-          <button @click.prevent.stop="removeItemCart(course)" v-else class="text-color_4 bg-white px-7 py-2 hover:bg-color_5 hover:text-black rd-full font-700 text-sm text-color_4 leading-[1.375] border-color_4">ĐÃ THÊM VÀO GIỎ HÀNG</button>
+          <div v-if="course.sale_price === 0">
+            <NuxtLink :to="'/vao-hoc/' + route.params.slug">
+              <button class="text-white rd-full text-sm font-semibold hover:bg-color_5 hover:text-white bg-color_4 px-7 py-2">VÀO HỌC</button>
+            </NuxtLink>
+          </div>
+          <div v-else>
+            <button @click="handleRegister" class="text-white rd-full text-sm font-semibold hover:bg-color_5 hover:text-white bg-color_4 px-7 py-2">ĐĂNG KÍ HỌC NGAY</button>
+            <button @click.prevent.stop="addItemCart(course)" v-if="cartStore.cart.filter(item => item.id == course.id).length == 0" class="text-color_4 bg-white px-7 py-2 hover:bg-color_5 hover:text-black rd-full font-700 text-sm text-color_4 leading-[1.375] border-color_4">THÊM VÀO GIỎ HÀNG</button>
+            <button @click.prevent.stop="removeItemCart(course)" v-else class="text-color_4 bg-white px-7 py-2 hover:bg-color_5 hover:text-black rd-full font-700 text-sm text-color_4 leading-[1.375] border-color_4">ĐÃ THÊM VÀO GIỎ HÀNG</button>
+          </div>
         </div>
         <div class="flex space-x-12">
           <div class="space-y-3">
@@ -68,7 +75,7 @@
           <div class="text-3xl text-color_4 font-600">Danh sách</div>
           <div>
             <div v-for="chapter in detailData.data.lesson" :key="chapter.id">
-              <div class="flex justify-between items-center space-y-2">
+              <div class="flex justify-between bg-white items-center space-y-2">
                 <button class="w-full outline-none text-xl text-left" @click="toggle(chapter.id)">
                   <div>{{ chapter.label }}</div>
                 </button>
@@ -236,7 +243,12 @@ const tab_selected = ref()
 const activeTab = computed(() => {
   return
 })
-
+function handleRegister() {
+  router.push("/gio-hang")
+}
+function goToLearn() {
+  router.push("/vao-hoc")
+}
 function changeTab(tab) {
   tab_selected.value = tab.id
   let x = ""

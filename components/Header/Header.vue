@@ -111,7 +111,6 @@ async function logout() {
 }
 
 const cartItemCount = computed(() => cartStore.totalItems)
-console.log(cartStore.cart, "ádasdasd")
 </script>
 
 <style scoped>

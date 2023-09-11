@@ -7,7 +7,7 @@
   <div class="w-full flex space-x-8">
     <div class="w-3/7 space-y-5">
       <a href="https://www.youtube.com/watch?v=L05glUV_ibI&amp;ab_channel=mobiEdu" data-fancybox=""><img class="rd-2" src="/img/1.jpg" alt="" /></a>
-      <SlideSlide5/>
+      <SlideSlide5 />
     </div>
     <div class="bg-[#E3EFF9] rd-3">
       <div class="p-8 space-y-7">
@@ -146,25 +146,21 @@ const shortenedText = computed(() => {
 })
 
 const activeTab = computed(() => {
-  console.log(tab_selected.value)
   // const targetPosition = targetElement.getBoundingClientRect().top
   // const currentPosition = window.innerHeight - offset
 
   // if (targetPosition < currentPosition) {
-  //   console.log("Đã cuộn tới phần tử mong muốn")
   //   // Thực hiện các hành động bạn muốn ở đây
   // }
   return
 })
 
 function changeTab(tab) {
-  console.log("🚀 ~ file: le.vue:115 ~ changeTab ~ tab:", tab)
   tab_selected.value = tab.id
   let x = ""
   switch (tab.id) {
     case 1:
       const tab_1 = document.getElementById("1")
-      console.log("🚀 ~ file: le.vue:134 ~ changeTab ~ tab_1:", tab_1)
       tab_1.scrollIntoView({ behavior: "smooth", block: "start", inline: "center" })
       break
     default:
