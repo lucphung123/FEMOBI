@@ -73,12 +73,21 @@
             <div v-html="course.description" />
           </div>
           <div class="text-3xl text-color_4 font-600">Danh sách</div>
+          <!-- <div>
+            <div v-for="i in detailData.data.lesson">
+              <div class="bg-white flex justify-between items-center space-y-2">
+                <div class="w-full outline-none text-xl text-left" @click="toggle(chapter.id)">
+                  <div>{{ chapter.label }}</div>
+                </div>
+              </div>
+            </div>
+          </div> -->
           <div>
             <div v-for="chapter in detailData.data.lesson" :key="chapter.id">
               <div class="flex justify-between bg-white items-center space-y-2">
-                <button class="w-full outline-none text-xl text-left" @click="toggle(chapter.id)">
+                <div class="w-full outline-none text-xl text-left" @click="toggle(chapter.id)">
                   <div>{{ chapter.label }}</div>
-                </button>
+                </div>
                 <div :class="arrowIcon(chapter.id)"></div>
               </div>
               <div class="leading-10" :class="contentClasses(chapter.id)">

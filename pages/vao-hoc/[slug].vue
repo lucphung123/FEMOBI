@@ -14,7 +14,7 @@
       </div>
       <div :class="contentClasses(index)">
         <div v-for="child in lesson.children" :key="child.id">
-          <span @click="showVideo(child.data)">{{ child.label }}</span>
+          <span @click="showVideo(child)">{{ child.label }}</span>
         </div>
       </div>
     </div>
@@ -36,8 +36,14 @@ const toggle = sectionIndex => {
   }
 }
 
-const showVideo = videoUrl => {
-  selectedVideo.value = videoUrl
+async function showVideo(item) {
+  selectedVideo.value = item.data
+  await navigateTo({
+    path: "/vao-hoc/khoa-hoc-free-199",
+    query: {
+      id: item.id,
+    },
+  })
 }
 
 const contentClasses = sectionIndex => {

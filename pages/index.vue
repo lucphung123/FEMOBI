@@ -13,12 +13,13 @@
         <div class="text-3xl text-blue-900 font-700">KHÓA HỌC TIÊU BIỂU</div>
       </div>
       <div class="mb-10 w-full">
-        <nav class="w-280 h-[40px] flex text-center relative rounded-[5px] bg-gray-200">
-          <div class="absolute h-full w-20% transition-all duration-400 ease-in-out z-4 rounded-[5px] left-0 top-0 bg-color_4" :style="{ left: sliderLeft }"></div>
-          <label class="w-full h-full leading-[40px] text-lg font-normal text-black relative z-5 cursor-pointer transition-all duration-300 ease-in-out mx-[5px] my-0 rounded-[5px] hover:(bg-color_4 text-white)" v-for="(tab, index) in tabs" :key="index" :for="tab.id" :class="activeTab === tab.id ? '!text-white' : ''" @click="moveSlider(index)">
+        {{ sliderLeft }}
+        <div class="w-200 h-[30px] flex justify-between text-center relative rounded-[5px] bg-gray-200">
+          <div id="bigwidth" class="absolute h-full transition-all duration-400 ease-in-out z-4 rounded-[5px] left-0 top-0 bg-color_4" :class="persentwidth" :style="{ left: sliderLeft }"></div>
+          <div class="h-full leading-[30px] text-lg font-normal text-black relative z-5 cursor-pointer transition-all duration-300 ease-in-out mx-[5px] my-0 rounded-[5px] hover:(bg-color_4 text-white)" v-for="(tab, index) in tabs" :key="index" :for="tab.id" :class="activeTab === tab.id ? '!text-white' : ''" @click="moveSlider($event, index)">
             {{ tab.label }}
-          </label>
-        </nav>
+          </div>
+        </div>
       </div>
 
       <div class="w-full mx-auto container h-full xs:px-0 bg-white">
@@ -114,7 +115,9 @@ const filter_value = ref({
   isFree: false,
   isSale: false,
 })
-
+const persentwidth = computed(() => {
+  return `${(offWidth.value / 4800) * 100}%`
+})
 const query = computed(() => {
   let query = {
     page: pagination.value.page - 1,
@@ -132,8 +135,9 @@ const pagination = ref({
   limit: 120,
   total: 0,
 })
+const offWidth = ref("")
 const { data: courseData, pending: coursePending, error: courseError } = await RestApi.course.get({ query: query })
-let data = computed(() => {
+const data = computed(() => {
   if (courseData.value?.status) {
     pagination.value.total = courseData.value.total
     return courseData.value.item
@@ -151,11 +155,14 @@ const tabs = [
 ]
 const activeTab = ref("0")
 const sliderLeft = computed(() => {
-  const tabWidth = 100 / tabs.length
+  const tabWidth = (offWidth.value / 4800) * 100
   return tabWidth * tabs.findIndex(tab => tab.id === activeTab.value) + "%"
 })
-function moveSlider(index) {
+function moveSlider(e, index) {
+  console.log("🚀 ~ file: index.vue:159 ~ moveSlider ~ e:", e.srcElement.offsetWidth)
+  console.log("🚀 ~ file: index.vue:159 ~ moveSlider ~ index:", index)
   activeTab.value = tabs[index].id
+  offWidth.value = e.srcElement.offsetWidth
 }
 </script>
 <style scoped>

@@ -87,6 +87,9 @@ const dropdownVisible = ref(false)
 const dropdownVisible1 = ref(false)
 const userStore = useUserStore()
 let login = () => {}
+
+const cartItemCount = computed(() => cartStore.totalItems)
+
 onMounted(() => {
   const { getSigninUrl, getSignupUrl } = useCasdoor()
   login = () => {
@@ -107,10 +110,9 @@ function hideDropdown1() {
 }
 async function logout() {
   userStore.logout()
+  cartStore.cart = []
   await navigateTo("/")
 }
-
-const cartItemCount = computed(() => cartStore.totalItems)
 </script>
 
 <style scoped>
