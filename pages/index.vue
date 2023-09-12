@@ -13,15 +13,13 @@
         <div class="text-3xl text-blue-900 font-700">KHÓA HỌC TIÊU BIỂU</div>
       </div>
       <div class="mb-10 w-full">
-        {{ sliderLeft }}
-        <div class="w-200 h-[30px] flex justify-between text-center relative rounded-[5px] bg-gray-200">
-          <div id="bigwidth" class="absolute h-full transition-all duration-400 ease-in-out z-4 rounded-[5px] left-0 top-0 bg-color_4" :class="persentwidth" :style="{ left: sliderLeft }"></div>
-          <div class="h-full leading-[30px] text-lg font-normal text-black relative z-5 cursor-pointer transition-all duration-300 ease-in-out mx-[5px] my-0 rounded-[5px] hover:(bg-color_4 text-white)" v-for="(tab, index) in tabs" :key="index" :for="tab.id" :class="activeTab === tab.id ? '!text-white' : ''" @click="moveSlider($event, index)">
+        <div class="relative w-141.1 bg-gray-200 rounded">
+          <div class="absolute h-full transition-all duration-400 ease-in-out rounded-[5px] left-0 top-0 bg-color_4 text-white" :style="{ width: sliderWidth, left: sliderLeft }"></div>
+          <div v-for="(tab, index) in tabs" :key="index" class="relative inline-block h-full text-center items-center cursor-pointer transition-all duration-300 ease-in-out rounded px-2 mr-0.5 hover:(bg-color_4 !text-white)" :class="activeTab === tab.id ? '!text-white' : ''" @click="moveSlider($event, index)">
             {{ tab.label }}
           </div>
         </div>
       </div>
-
       <div class="w-full mx-auto container h-full xs:px-0 bg-white">
         <div class="flex p-2">
           <nuxt-link v-if="data.length > 0" class="w-full grid grid-cols-1 sm:grid-cols-2 gap-6 md:(grid-cols-4) lg:grid-cols-6">
@@ -136,7 +134,9 @@ const pagination = ref({
   limit: 120,
   total: 0,
 })
-const offWidth = ref("")
+const offWidth = ref(0)
+const sliderWidth = ref("")
+const sliderLeft = ref("0%")
 const { data: courseData, pending: coursePending, error: courseError } = await RestApi.course.get({ query: query })
 const data = computed(() => {
   if (courseData.value?.status) {
@@ -146,7 +146,6 @@ const data = computed(() => {
     return []
   }
 })
-
 const tabs = [
   { id: "0", label: "Tất cả" },
   { id: "1", label: "Trẻ em" },
@@ -155,15 +154,15 @@ const tabs = [
   { id: "4", label: "Của bạn" },
 ]
 const activeTab = ref("0")
-const sliderLeft = computed(() => {
-  const tabWidth = (offWidth.value / 4800) * 100
-  return tabWidth * tabs.findIndex(tab => tab.id === activeTab.value) + "%"
-})
-function moveSlider(e, index) {
-  console.log("🚀 ~ file: index.vue:159 ~ moveSlider ~ e:", e.srcElement.offsetWidth)
-  console.log("🚀 ~ file: index.vue:159 ~ moveSlider ~ index:", index)
+function moveSlider(event, index) {
   activeTab.value = tabs[index].id
-  offWidth.value = e.srcElement.offsetWidth
+  const tabWidth = event.currentTarget.offsetWidth
+  sliderWidth.value = `${tabWidth}px`
+  const tabLeft = event.currentTarget.offsetLeft
+  sliderLeft.value = `${tabLeft}px`
+}
+function isActiveTab(index) {
+  return activeTab.value === tabs[index].id
 }
 </script>
 <style scoped>
