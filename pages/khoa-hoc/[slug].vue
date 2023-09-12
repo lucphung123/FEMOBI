@@ -83,12 +83,12 @@
             </div>
           </div> -->
           <div>
-            <div v-for="chapter in detailData.data.lesson" :key="chapter.id">
-              <div class="flex justify-between bg-white items-center space-y-2">
-                <div class="w-full outline-none text-xl text-left" @click="toggle(chapter.id)">
+            <div class="space-y-3 " v-for="chapter in detailData.data.lesson" :key="chapter.id">
+              <div class="flex bg-#E3EFF9 justify-between items-center space-y-3 rd-2" @click="toggle(chapter.id)">
+                <div class="w-full outline-none text-xl text-left cursor-pointer mx-3">
                   <div>{{ chapter.label }}</div>
                 </div>
-                <div :class="arrowIcon(chapter.id)"></div>
+                <div class="" :class="arrowIcon(chapter.id)"></div>
               </div>
               <div class="leading-10" :class="contentClasses(chapter.id)">
                 <div class="mx-10" v-for="lesson in chapter.children" :key="lesson.id">
