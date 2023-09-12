@@ -146,12 +146,7 @@ const shortenedText = computed(() => {
 })
 
 const activeTab = computed(() => {
-  // const targetPosition = targetElement.getBoundingClientRect().top
-  // const currentPosition = window.innerHeight - offset
-
-  // if (targetPosition < currentPosition) {
-  //   // Thực hiện các hành động bạn muốn ở đây
-  // }
+  console.log(tab_selected.value)
   return
 })
 

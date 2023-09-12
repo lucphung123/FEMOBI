@@ -8,11 +8,11 @@
         </span>
         <div>
           <div class="flex h-full items-center py-1">
-            <Icon name="ic:outline-folder" class="text-xl" />
-            <span>{{ $t("combo-course") }}</span>
+            <Icon name="mdi:folder-outline" class="i-mdi:folder-outline text-xl" />
+            <span>{{"Khoá học combo"}}</span>
           </div>
           <div class="flex h-full items-center py-1">
-            <Icon name="mdi:folder-open-outline" class="text-xl" />
+            <Icon name="mdi:folder-open-outline" class="i-mdi:folder-open-outline text-xl" />
             <span>{{ props.item_course.totalCourses }}</span>
           </div>
           <div class="grid grid-cols-2">
@@ -32,7 +32,6 @@
   </NuxtLink>
 </template>
 <script setup>
-import { useCartStore } from "~~/stores/cartStore"
 const props = defineProps({
   item_course: {
     type: Object,

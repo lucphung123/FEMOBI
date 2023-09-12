@@ -3,7 +3,7 @@
     <div class="flex space-x-4 my-5 mt-7">
       <nuxt-link to="/" class="text-gray-400">Trang chủ</nuxt-link>
       <div class="i-mdi:chevron-right bg-gray text-2xl"></div>
-      <p class="font-bold text-gray-500">khoá học</p>
+      <p class="font-bold text-gray-500">khoá học combo</p>
     </div>
     <div class="w-full flex space-x-15">
       <div class="w-1/4">
@@ -12,19 +12,13 @@
             <div class="i-mdi:menu text-2xl"></div>
             <div class="font-bold text-xl">DANH MỤC KHOÁ HỌC</div>
           </div>
-          <div>
+          <div class="">
             <div class="border-y-1.5 border-gray-300 py-4 hover:bg-color_10">
-              <NuxtLink to="/khoa-hoc" class="font-bold text-lg text-color_4 mx-8">Tất cả</NuxtLink>
+              <NuxtLink to="/khoa-hoc" class="text-#333333 text-lg mx-8">Tất cả</NuxtLink>
             </div>
             <div class="border-b-1 border-gray-300 py-4 hover:bg-color_10">
-              <NuxtLink to="/combo" class="text-#333333 text-lg mx-8">Khoá học combo</NuxtLink>
+              <NuxtLink to="/khoa-hoc/tre-em" class="font-bold text-lg text-color_4 mx-8">Khoá học combo</NuxtLink>
             </div>
-            <!-- <div class="border-gray-300 py-4 hover:bg-color_10">
-              <NuxtLink to="/khoa-hoc/hoc-sinh-pho-thong" class="text-#333333 text-lg mx-8">Học sinh phổ thông</NuxtLink>
-            </div>
-            <div class="border-t-1.5 border-gray-300 py-4 hover:bg-color_10">
-              <NuxtLink to="/khoa-hoc/sinh-vien-nguoi-di-lam" class="text-#333333 text-lg mx-8">Sinh viên và người đi làm</NuxtLink>
-            </div> -->
           </div>
         </div>
       </div>
@@ -52,10 +46,10 @@
                 <div v-for="(childItem, childIndex) in item.children" :key="childIndex">
                   <div class="mt-3">
                     <div class="border-y-1.5 border-gray-300 py-4 hover:bg-color_10">
-                      <NuxtLink to="/khoa-hoc" class="font-bold text-lg text-color_4 mx-8">Tất cả</NuxtLink>
+                      <NuxtLink to="/khoa-hoc" class="text-#333333 text-lg mx-8">Tất cả</NuxtLink>
                     </div>
                     <div class="border-b-1 border-gray-300 py-4 hover:bg-color_10">
-                      <NuxtLink to="/combo" class="text-#333333 text-lg mx-8">Khoá học combo</NuxtLink>
+                      <NuxtLink to="/khoa-hoc/tre-em" class="font-bold text-lg text-color_4 mx-8">Khoá học combo</NuxtLink>
                     </div>
                   </div>
                 </div>
@@ -63,7 +57,7 @@
             </li>
           </ul>
         </div>
-        <div class="flex bg-white sticky flex-col transition duration-[all] ease-[ease-in-out] w-full top-30 rd-2 shadow-md mt-7">
+        <div class="flex bg-white sticky flex-col transition duration-[all] ease-[ease-in-out] w-full top-30 rd-2 shadow-md mt-5">
           <div class="flex items-center mx-5 my-5 space-x-3 border-b border-gray-300 pb-3 border-b-1">
             <div class="i-mdi:filter-outline text-2xl bg-color_4"></div>
             <div class="text-xl font-500 font-18px leading-6 text-color_4">LỌC KHOÁ HỌC</div>
@@ -123,10 +117,8 @@
             </li>
           </ul>
         </div>
-        <div class="flex mt-3">
-          <nuxt-link v-if="data.length > 0" class="w-full grid grid-cols-1 sm:grid-cols-2 gap-6 md:(grid-cols-4)">
-            <CourseImageTextSquare class="bg-white rounded overflow-hidden shadow-md hover:(shadow-lg shadow-blue-400) cursor-pointer duration-300" v-for="(item, index) in data" :key="index" :item_course="item" />
-          </nuxt-link>
+        <div v-if="data.length > 0" class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:(grid-cols-3)">
+          <CourseImageTextSquarePackage class="bg-white rounded overflow-hidden shadow-md hover:(shadow-lg shadow-blue-400) cursor-pointer duration-300" v-for="(item, index) in data" :key="index" :item_course="item" />
         </div>
       </div>
     </div>
@@ -135,44 +127,29 @@
 
 <script setup>
 import { ref, computed } from "vue"
-definePageMeta({
-  layout: "course",
-})
 const { RestApi } = useApi()
-const route = useRoute()
-const filter_value = ref({
-  time: null,
-  rating: null,
-  type: 1,
-  isFree: false,
-  isSale: false,
+const pagination = ref({
+  page: 1,
+  limit: 12,
+  total: 0,
 })
-
 const query = computed(() => {
   let query = {
     page: pagination.value.page - 1,
-    limit: pagination.value.limit,
-    category: route.params.slug ? route.params.slug : "",
-    rating: filter_value.value.rating,
-    isFree: filter_value.value.isFree,
-    isSale: filter_value.value.isSale,
-    IdPosition: filter_value.value.type,
+    per_page: pagination.value.limit,
   }
   return query
 })
-const pagination = ref({
-  page: 1,
-  limit: 120,
-  total: 0,
-})
-const { data: courseData, pending: coursePending, error: courseError } = await RestApi.course.get({ query: query })
+const { data: courseData, pending: coursePending, error: courseError } = await RestApi.course.getPackage({ query: query })
+
 let data = computed(() => {
-  if (courseData.value?.status) {
-    pagination.value.total = courseData.value.total
-    return courseData.value.item
-  } else {
-    return []
-  }
+  pagination.value.total = courseData.value.pagination.total
+  return courseData.value.item
+})
+
+// layouts
+definePageMeta({
+  layout: "course",
 })
 const products = [
   {
@@ -215,7 +192,6 @@ const menuItems1 = ref([
   {
     title: "Hướng dẫn đăng kí khoá học",
     icon: "i-mdi:file-edit-outline text-2xl",
-    url: "/khoa-hoc",
     open: false,
     children: [
       {
@@ -226,7 +202,9 @@ const menuItems1 = ref([
     ],
   },
 ])
+
 function toggleItem(item) {
+  console.log("🚀 ~ file: UserProfile.vue:99 ~ toggleItem ~ item:", item)
   item.open = !item.open
 }
 </script>

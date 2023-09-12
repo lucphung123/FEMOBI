@@ -30,6 +30,7 @@
         </div>
       </div>
     </div>
+    <!-- {{ courseData }} -->
     <div class="relative mt-80 md:mt-20 lg:mt-36 xl:mt-80 mb-0 md:mb-50">
       <div class="absolute w-screen left-1/2 -translate-x-1/2 -translate-y-full md:mt-50 bg-[url(/img/bg/bg-footer.png)] bg-cover bg-top h-110 flex flex-col items-center">
         <div class="w-full lg:w-225 xl:(w-300 h-250px) 2xl:(w-340 h-280px) mx-auto flex items-center my-auto">
