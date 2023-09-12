@@ -59,9 +59,11 @@
             <p>Sửa</p>
           </nuxt-link>
         </div>
-        <div v-for="(item, index) in courseItems" :key="item.id" class="pb-[15px] border-b justify-between flex mt-5 text-xs">
-          <p class="text-color_6 font-normal">{{ item.name }}</p>
-          <p class="flex-1 text-color_4 font-bold text-right">{{ formatCurrency(item.price) }}</p>
+        <div v-for="course in cartStore.cart" :key="course.id" class="flex border-b pb-5 mt-5">
+          <div class="flex justify-between items-center w-full">
+            <p class="text-color_8 text-4 font-bold leading-4.5 font-medium break-words w-120%">{{ course.title }}</p>
+            <p class="text-color_4 font-bold text-4">{{ formatCurrency(course.sale_price) }}</p>
+          </div>
         </div>
         <div class="text-15px text-color_6 justify-between flex mt-5">
           <p class="font-normal">Tổng tiền hàng</p>
@@ -82,6 +84,8 @@
 
 <script setup>
 import { ref, reactive } from "vue"
+import { useCartStore } from "~~/stores/cartStore"
+const cartStore = useCartStore()
 // layouts
 definePageMeta({
   layout: "course",
@@ -90,18 +94,16 @@ definePageMeta({
 // const
 const hasSubmitted = ref(false)
 const edit = ref(false)
-const totalAmount = ref(0)
+const totalAmount = computed(() => {
+  return cartStore.cart.reduce((sum, course) => sum + course.sale_price, 0)
+})
 const discount = 0
 const info = reactive({
   name: "",
   email: "",
   number_phone: "",
 })
-const courseItems = ref([
-  { id: 1, name: "108 Tọa pháp Yoga - Bí mật trẻ mãi", price: 700000 },
-  { id: 2, name: "Nhập môn cờ vua cho người mới bắt đầu", price: 900000 },
-  { id: 3, name: "Nhập môn cờ vua cho người mới bắt đầu", price: 500000 },
-])
+
 //function
 function isValidEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -135,8 +137,5 @@ function saveChanges() {
 }
 function formatCurrency(value) {
   return new Intl.NumberFormat("vi-VN", { style: "currency", currency: "VND" }).format(value)
-}
-for (const item of courseItems.value) {
-  totalAmount.value += item.price
 }
 </script>
