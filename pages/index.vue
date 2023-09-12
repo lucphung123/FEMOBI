@@ -135,8 +135,8 @@ const pagination = ref({
   total: 0,
 })
 const offWidth = ref(0)
-const sliderWidth = ref("")
-const sliderLeft = ref("0%")
+const sliderWidth = ref("60px")
+const sliderLeft = ref("0px")
 const { data: courseData, pending: coursePending, error: courseError } = await RestApi.course.get({ query: query })
 const data = computed(() => {
   if (courseData.value?.status) {
