@@ -9,13 +9,13 @@
               <p class="flex items-center text-color_9 text-base leading-9">Giới thiệu</p>
             </div>
             <div>
-              <p class="flex items-center text-color_9 text-base leading-9">Khóa học</p>
+              <p class="flex items-center text-color_9 text-base leading-9">Sách</p>
             </div>
             <div>
               <p class="flex items-center text-color_9 text-base leading-9">Giải pháp</p>
             </div>
             <div>
-              <p class="flex items-center text-color_9 text-base leading-9">Cổng thi</p>
+              <p class="flex items-center text-color_9 text-base leading-9">Hướng đãn</p>
             </div>
           </div>
         </div>
@@ -99,7 +99,7 @@
         </NuxtLink>
       </div>
     </div>
-    <div class="flex justify-between p-10">
+    <!-- <div class="flex justify-between p-10">
       <div>
         <div>
           <div class="w-80">
@@ -136,7 +136,7 @@
           <p class="text-blue ml-1">9090 (200đ/phút).</p>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 <script></script>

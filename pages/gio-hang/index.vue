@@ -53,7 +53,7 @@
           </div>
           <div class="mt-5 flex gap-1 mt-5">
             <p class="text-black font-normal">Chọn thêm:</p>
-            <a class="text-[#21A6F1] font-bold underline" href="">Khóa học</a>
+            <a class="text-[#21A6F1] font-bold underline" href="">Sách</a>
           </div>
         </div>
         <div class="w-1/3 ml-10">

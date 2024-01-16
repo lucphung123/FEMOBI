@@ -7,13 +7,13 @@
             <nuxt-link to="/"><img src="/img/logo.png" alt="" /></nuxt-link>
             <div class="dropdown-trigger" @mouseenter="showDropdown" @mouseleave="hideDropdown">
               <div class="dropdown flex items-center mt-4">
-                <nuxt-link to="/khoa-hoc"><p class="text-lg font-600">Khoá học</p></nuxt-link>
+                <nuxt-link to="/khoa-hoc"><p class="text-lg font-600">Sách</p></nuxt-link>
                 <div class="i-mdi:chevron-down text-xl"></div>
               </div>
               <div class="dropdown-content w-60 h-25 duration-500 transition-all rounded-4" :class="{ active: dropdownVisible }">
                 <div class="cursor-pointer flex flex-col p-5 space-y-5 text-sm font-500">
                   <nuxt-link to="/khoa-hoc"> <p class="border-b cursor-pointer hover:text-color_4">Tất cả</p></nuxt-link>
-                  <nuxt-link to="/combo"> <p class="border-b cursor-pointer hover:text-color_4">khoá học combo</p></nuxt-link>
+                  <nuxt-link to="/combo"> <p class="border-b cursor-pointer hover:text-color_4">Sách combo</p></nuxt-link>
                   <!-- <nuxt-link to="/khoa-hoc/hoc-sinh-pho-thong"> <p class="border-b cursor-pointer hover:text-color_4">Học sinh phổ thông</p></nuxt-link>
                   <nuxt-link to="/khoa-hoc/sinh-vien-nguoi-di-lam"> <p class="border-b cursor-pointer hover:text-color_4">Sinh viên và người đi làm</p></nuxt-link> -->
                 </div>
@@ -23,7 +23,7 @@
               <nuxt-link to="/giai-phap"><p class="text-lg font-600 cursor-pointer hover:text-color_4 mt-4">Giải pháp</p></nuxt-link>
             </div>
             <div>
-              <nuxt-link to="/cong-thi"> <p class="text-lg font-600 cursor-pointer hover:text-color_4 mt-4">Cổng thi</p></nuxt-link>
+              <nuxt-link to="/cong-thi"> <p class="text-lg font-600 cursor-pointer hover:text-color_4 mt-4">Hướng Dẫn</p></nuxt-link>
             </div>
           </div>
         </div>

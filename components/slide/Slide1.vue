@@ -28,12 +28,12 @@ const products = [
   {
     src: "/img/1.jpg",
     name: "mobiEdu",
-    office: "Nền tảng chuyển đổi số toàn diện của mobiFone",
+    office: "Nền tảng bán sách đa dạng phù hợp mọi lứa tuổi",
   },
   {
     src: "/img/1.jpg",
     name: "mobiEdu",
-    office: "Nền tảng chuyển đổi số toàn diện của mobiFone",
+    office: "Nền tảng bán sách đa dạng phù hợp mọi lứa tuổi",
   },
 ]
 let mySwiper = ref({})

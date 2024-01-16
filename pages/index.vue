@@ -10,7 +10,7 @@
     <div class="">
       <div class="flex items-center py-10">
         <div class="i-mdi:bookmark-outline text-4xl bg-blue-900"></div>
-        <div class="text-3xl text-blue-900 font-700">KHÓA HỌC TIÊU BIỂU</div>
+        <div class="text-3xl text-blue-900 font-700">SÁCH TIÊU BIỂU</div>
       </div>
       <div class="mb-10 w-full">
         <div class="relative w-141.1 bg-gray-200 rounded">
@@ -59,7 +59,7 @@
             <div class="space-y-3 justify-center flex-col">
               <div class="flex items-center space-x-2">
                 <div class="i-mdi:view-list-outline text-4xl bg-white"></div>
-                <p class="text-white font-700 text-2xl">CỔNG THI MOBIEDU</p>
+                <p class="text-white font-700 text-2xl">Hướng dẫn MOBIEDU</p>
               </div>
               <div class="mx-2">
                 <p class="text-white text-lg">Trang wiki các kỳ thi tại Việt Nam, cung cấp thông tin cần thiết, kênh ôn luyện học tập, thi thử dành cho mọi đối tượng.</p>

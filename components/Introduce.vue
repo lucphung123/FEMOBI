@@ -1,7 +1,7 @@
 <template>
   <div class="flex-col flex items-center w-full space-y-5">
     <div class="text-center">
-      <p class="text-white font-700 text-4xl">mobiEdu - Nền tảng chuyển đổi số giáo dục toàn diện</p>
+      <p class="text-white font-700 text-4xl">mobiEdu - Nền tảng bán sách toàn diện</p>
     </div>
     <div class="w-3/5 text-center flex justify-center">
       <p class="text-white text-lg text-center">mobiEdu là hệ sinh thái giáo dục, cung cấp giải pháp dạy học & quản lí trường học trực tuyến, phân phối các nội dung học tập tới người học ở mọi lứa tuổi.</p>

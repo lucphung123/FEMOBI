@@ -3,21 +3,21 @@
     <div class="flex space-x-4 my-5 mt-7">
       <nuxt-link to="/" class="text-gray-400">Trang chủ</nuxt-link>
       <div class="i-mdi:chevron-right bg-gray text-2xl"></div>
-      <p class="font-bold text-gray-500">khoá học combo</p>
+      <p class="font-bold text-gray-500">Sách combo</p>
     </div>
     <div class="w-full flex space-x-15">
       <div class="w-1/4">
         <div class="space-y-5">
           <div class="flex items-center text-color_4 space-x-2">
             <div class="i-mdi:menu text-2xl"></div>
-            <div class="font-bold text-xl">DANH MỤC KHOÁ HỌC</div>
+            <div class="font-bold text-xl">DANH MỤC SÁCH</div>
           </div>
           <div class="">
             <div class="border-y-1.5 border-gray-300 py-4 hover:bg-color_10">
               <NuxtLink to="/khoa-hoc" class="text-#333333 text-lg mx-8">Tất cả</NuxtLink>
             </div>
             <div class="border-b-1 border-gray-300 py-4 hover:bg-color_10">
-              <NuxtLink to="/khoa-hoc/tre-em" class="font-bold text-lg text-color_4 mx-8">Khoá học combo</NuxtLink>
+              <NuxtLink to="/khoa-hoc/tre-em" class="font-bold text-lg text-color_4 mx-8">Sách combo</NuxtLink>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@
                       <NuxtLink to="/khoa-hoc" class="text-#333333 text-lg mx-8">Tất cả</NuxtLink>
                     </div>
                     <div class="border-b-1 border-gray-300 py-4 hover:bg-color_10">
-                      <NuxtLink to="/khoa-hoc/tre-em" class="font-bold text-lg text-color_4 mx-8">Khoá học combo</NuxtLink>
+                      <NuxtLink to="/khoa-hoc/tre-em" class="font-bold text-lg text-color_4 mx-8">Sách combo</NuxtLink>
                     </div>
                   </div>
                 </div>
@@ -60,7 +60,7 @@
         <div class="flex bg-white sticky flex-col transition duration-[all] ease-[ease-in-out] w-full top-30 rd-2 shadow-md mt-5">
           <div class="flex items-center mx-5 my-5 space-x-3 border-b border-gray-300 pb-3 border-b-1">
             <div class="i-mdi:filter-outline text-2xl bg-color_4"></div>
-            <div class="text-xl font-500 font-18px leading-6 text-color_4">LỌC KHOÁ HỌC</div>
+            <div class="text-xl font-500 font-18px leading-6 text-color_4">LỌC SÁCH</div>
           </div>
           <div class="mx-5 text-#333333 font-600 leading-6">CHỦ ĐỀ</div>
           <div class="mx-5 space-y-2 mt-3">
@@ -109,7 +109,7 @@
                   <div class="space-y-1 bg-white rd-2 p-8">
                     <div>3 bước để đăng kí ngay khoá học trên <span class="font-bold">mobiEdu</span></div>
                     <div><span class="font-bold">Bước 1 : </span>Đăng nhập hoặc đăng kí vào website mobiedu.vn</div>
-                    <div><span class="font-bold">Bước 2 : </span>Truy cập vào khóa học muốn đăng kí, chọn "Đăng kí học ngay"</div>
+                    <div><span class="font-bold">Bước 2 : </span>Truy cập vào sách muốn đăng kí, chọn "Đăng kí học ngay"</div>
                     <div><span class="font-bold">Bước 3 : </span>Lựa chọn hình thức thanh toán và làm theo hướng dẫn</div>
                   </div>
                 </div>
@@ -176,7 +176,7 @@ const loadMore = () => {
 }
 const menuItems = ref([
   {
-    title: "Danh mục khoá học",
+    title: "Danh mục Sách",
     icon: "i-mdi:menu text-2xl",
     open: false,
     children: [
@@ -190,7 +190,7 @@ const menuItems = ref([
 ])
 const menuItems1 = ref([
   {
-    title: "Hướng dẫn đăng kí khoá học",
+    title: "Hướng dẫn đăng kí Sách",
     icon: "i-mdi:file-edit-outline text-2xl",
     open: false,
     children: [
