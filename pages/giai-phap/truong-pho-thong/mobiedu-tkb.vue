@@ -10,7 +10,7 @@
         <SlideSlide8 />
       </div>
     </div>
-    <div class="text-center text-xl text-color_8 py-10">Hệ thống giải pháp dành cho Doanh nghiệp - Nhà trường của mobiEdu</div>
+    <div class="text-center text-xl text-color_8 py-10">Hệ thống giải pháp dành cho Doanh nghiệp - Nhà trường của edubook</div>
     <div class="flex flex-col justify-center w-full lg:w-225 xl:(w-300) mx-auto">
       <div class="flex">
         <nuxt-link to="/giai-phap/truong-mam-non-tieu-hoc" class="w1/4">
@@ -29,11 +29,11 @@
                 <div class="bg-white w-150px h-150px rd-full shadow-2xl flex justify-center items-center">
                   <img src="/img/giai-phap/G9.png" alt="" class="h-23" />
                 </div>
-                <div><p class="text-center">mobiEdu mSchool</p></div>
+                <div><p class="text-center">edubook mSchool</p></div>
               </nuxt-link>
               <nuxt-link to="/giai-phap/truong-pho-thong/mobiedu-tkb" class="space-y-3">
                 <img src="/img/giai-phap/G8.jpg" alt="" class="rd-full w-60% shadow-2xl  border-3px border-color_4" />
-                <p class="text-center w-60%">mobiEdu TKB</p>
+                <p class="text-center w-60%">edubook TKB</p>
               </nuxt-link>
             </div>
             <nuxt-link to="/giai-phap/truong-pho-thong/on-luyen" class="space-y-3">
@@ -49,8 +49,8 @@
   <div class="flex flex-col bg-gray-100 w-screen top-23">
     <div class="w-full lg:w-225 xl:(w-300) 2xl:(w-340) mx-auto flex items-center justify-center mt-15">
       <div class="flex flex-col text-center space-y-6 justify-center items-center">
-        <p class="text-4xl text-color_4 font-600">mobiEdu TKB - Giải pháp sắp xếp thời khóa biểu</p>
-        <p class="w-5/6">Phần mềm sắp xếp thời khóa biểu mobiEdu TKB cho phép tạo và quản lí dữ liệu thời khóa biểu của một nhà trường với tối đa 600 giáo viên và 300 lớp học mỗi buổi học tại 10 địa điểm khác nhau. Với thời gian xếp cực nhanh và kết quả xếp luôn làm hài lòng các khách hàng khó tính nhất.</p>
+        <p class="text-4xl text-color_4 font-600">edubook TKB - Giải pháp sắp xếp thời khóa biểu</p>
+        <p class="w-5/6">Phần mềm sắp xếp thời khóa biểu edubook TKB cho phép tạo và quản lí dữ liệu thời khóa biểu của một nhà trường với tối đa 600 giáo viên và 300 lớp học mỗi buổi học tại 10 địa điểm khác nhau. Với thời gian xếp cực nhanh và kết quả xếp luôn làm hài lòng các khách hàng khó tính nhất.</p>
       </div>
     </div>
     <div class="flex w-full lg:w-225 xl:(w-300) 2xl:(w-340) mx-auto space-x-25 my-10">

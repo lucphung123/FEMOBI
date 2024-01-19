@@ -15,7 +15,7 @@
       </div>
       <div class="w1/2">
         <p class="bg-color_11 w-20 h-7 p-1 text-center rounded-lg text-color_7">Tin tức</p>
-        <p class="mt-5 text-color_6 font-bold text-[40px] leading-[47px]">MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN</p>
+        <p class="mt-5 text-color_6 font-bold text-[40px] leading-[47px]">edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN</p>
         <div class="flex items-center mt-5 text-md text-color_7">
           <div class="i-mdi:calendar-range"></div>
           <div class="ml-3 border-r-3 mr-3 pr-3">19.08.2023</div>
@@ -28,26 +28,26 @@
     <div class="flex mt-10 justify-between gap-10 border-b pb-10">
       <div class="w1/4"></div>
       <div class="w1/2 text-base leading-normal">
-        <p class="italic">Chào mừng năm học mới 2023-2024, mobiEdu ra mắt chuyên trang Cộng đồng Hỏi đáp hoidap.mobiedu.vn. Đến với chuyên trang Hỏi đáp, các bạn học sinh không chỉ được giải đáp mọi thắc mắc mà còn được chia sẻ kiến thức và nhận nhiều phần quà cực hấp dẫn.</p>
-        <p class="mt-5">Với phương châm lấy người dùng làm trung tâm, cộng đồng hỏi đáp của mobiEdu sẽ đồng hành giúp các bạn tăng thêm 100% “công lực” cho năm học mới. Chuyên trang hỏi đáp sẽ là nơi giải đáp mọi kiến thức phổ thông của tất cả các bạn học sinh.</p>
+        <p class="italic">Chào mừng năm học mới 2023-2024, edubook ra mắt chuyên trang Cộng đồng Hỏi đáp hoidap.edubook.vn. Đến với chuyên trang Hỏi đáp, các bạn học sinh không chỉ được giải đáp mọi thắc mắc mà còn được chia sẻ kiến thức và nhận nhiều phần quà cực hấp dẫn.</p>
+        <p class="mt-5">Với phương châm lấy người dùng làm trung tâm, cộng đồng hỏi đáp của edubook sẽ đồng hành giúp các bạn tăng thêm 100% “công lực” cho năm học mới. Chuyên trang hỏi đáp sẽ là nơi giải đáp mọi kiến thức phổ thông của tất cả các bạn học sinh.</p>
         <img class="mt-5" src="/img/tintuc/tintuc1.jpg" alt="" />
-        <p class="mt-5 text-25px">Câu hỏi khó có cộng đồng Hỏi đáp của mobiEdu lo</p>
+        <p class="mt-5 text-25px">Câu hỏi khó có cộng đồng Hỏi đáp của edubook lo</p>
         <p class="mt-5 font-bold">Hỏi đáp MIỄN PHÍ</p>
-        <p class="mt-5">Chuyên trang cộng đồng Hỏi đáp của mobiEdu là chuyên trang giải đáp các thắc mắc về kiến thức phổ thông, bài tập liên quan đến kiến thức đã học trong sách giáo khoa, sách bài tập, sách tham khảo liên quan... dành cho các bạn học sinh từ lớp 1 đến lớp 12. Những câu hỏi của các bạn sẽ được hỗ trợ trả lời bởi cộng đồng những người tham gia. Các bạn học sinh sẽ được sử dụng MIỄN PHÍ toàn bộ tính năng hỏi - đáp. Chỉ cần đăng nhập vào chuyên trang hỏi đáp, các bạn sẽ được tham gia cộng đồng, đặt câu hỏi, trả lời câu hỏi, chia sẻ kiến thức.</p>
+        <p class="mt-5">Chuyên trang cộng đồng Hỏi đáp của edubook là chuyên trang giải đáp các thắc mắc về kiến thức phổ thông, bài tập liên quan đến kiến thức đã học trong sách giáo khoa, sách bài tập, sách tham khảo liên quan... dành cho các bạn học sinh từ lớp 1 đến lớp 12. Những câu hỏi của các bạn sẽ được hỗ trợ trả lời bởi cộng đồng những người tham gia. Các bạn học sinh sẽ được sử dụng MIỄN PHÍ toàn bộ tính năng hỏi - đáp. Chỉ cần đăng nhập vào chuyên trang hỏi đáp, các bạn sẽ được tham gia cộng đồng, đặt câu hỏi, trả lời câu hỏi, chia sẻ kiến thức.</p>
         <p class="mt-5 font-bold">Hỏi đáp MIỄN PHÍ</p>
-        <p class="mt-5">Chuyên trang cộng đồng Hỏi đáp của mobiEdu là chuyên trang giải đáp các thắc mắc về kiến thức phổ thông, bài tập liên quan đến kiến thức đã học trong sách giáo khoa, sách bài tập, sách tham khảo liên quan... dành cho các bạn học sinh từ lớp 1 đến lớp 12. Những câu hỏi của các bạn sẽ được hỗ trợ trả lời bởi cộng đồng những người tham gia. Các bạn học sinh sẽ được sử dụng MIỄN PHÍ toàn bộ tính năng hỏi - đáp. Chỉ cần đăng nhập vào chuyên trang hỏi đáp, các bạn sẽ được tham gia cộng đồng, đặt câu hỏi, trả lời câu hỏi, chia sẻ kiến thức.</p>
+        <p class="mt-5">Chuyên trang cộng đồng Hỏi đáp của edubook là chuyên trang giải đáp các thắc mắc về kiến thức phổ thông, bài tập liên quan đến kiến thức đã học trong sách giáo khoa, sách bài tập, sách tham khảo liên quan... dành cho các bạn học sinh từ lớp 1 đến lớp 12. Những câu hỏi của các bạn sẽ được hỗ trợ trả lời bởi cộng đồng những người tham gia. Các bạn học sinh sẽ được sử dụng MIỄN PHÍ toàn bộ tính năng hỏi - đáp. Chỉ cần đăng nhập vào chuyên trang hỏi đáp, các bạn sẽ được tham gia cộng đồng, đặt câu hỏi, trả lời câu hỏi, chia sẻ kiến thức.</p>
         <p class="mt-5 font-bold">Hỏi đáp MIỄN PHÍ</p>
-        <p class="mt-5">Chuyên trang cộng đồng Hỏi đáp của mobiEdu là chuyên trang giải đáp các thắc mắc về kiến thức phổ thông, bài tập liên quan đến kiến thức đã học trong sách giáo khoa, sách bài tập, sách tham khảo liên quan... dành cho các bạn học sinh từ lớp 1 đến lớp 12. Những câu hỏi của các bạn sẽ được hỗ trợ trả lời bởi cộng đồng những người tham gia. Các bạn học sinh sẽ được sử dụng MIỄN PHÍ toàn bộ tính năng hỏi - đáp. Chỉ cần đăng nhập vào chuyên trang hỏi đáp, các bạn sẽ được tham gia cộng đồng, đặt câu hỏi, trả lời câu hỏi, chia sẻ kiến thức.</p>
+        <p class="mt-5">Chuyên trang cộng đồng Hỏi đáp của edubook là chuyên trang giải đáp các thắc mắc về kiến thức phổ thông, bài tập liên quan đến kiến thức đã học trong sách giáo khoa, sách bài tập, sách tham khảo liên quan... dành cho các bạn học sinh từ lớp 1 đến lớp 12. Những câu hỏi của các bạn sẽ được hỗ trợ trả lời bởi cộng đồng những người tham gia. Các bạn học sinh sẽ được sử dụng MIỄN PHÍ toàn bộ tính năng hỏi - đáp. Chỉ cần đăng nhập vào chuyên trang hỏi đáp, các bạn sẽ được tham gia cộng đồng, đặt câu hỏi, trả lời câu hỏi, chia sẻ kiến thức.</p>
         <p class="mt-5 font-bold">Hỏi đáp MIỄN PHÍ</p>
-        <p class="mt-5">Chuyên trang cộng đồng Hỏi đáp của mobiEdu là chuyên trang giải đáp các thắc mắc về kiến thức phổ thông, bài tập liên quan đến kiến thức đã học trong sách giáo khoa, sách bài tập, sách tham khảo liên quan... dành cho các bạn học sinh từ lớp 1 đến lớp 12. Những câu hỏi của các bạn sẽ được hỗ trợ trả lời bởi cộng đồng những người tham gia. Các bạn học sinh sẽ được sử dụng MIỄN PHÍ toàn bộ tính năng hỏi - đáp. Chỉ cần đăng nhập vào chuyên trang hỏi đáp, các bạn sẽ được tham gia cộng đồng, đặt câu hỏi, trả lời câu hỏi, chia sẻ kiến thức.</p>
+        <p class="mt-5">Chuyên trang cộng đồng Hỏi đáp của edubook là chuyên trang giải đáp các thắc mắc về kiến thức phổ thông, bài tập liên quan đến kiến thức đã học trong sách giáo khoa, sách bài tập, sách tham khảo liên quan... dành cho các bạn học sinh từ lớp 1 đến lớp 12. Những câu hỏi của các bạn sẽ được hỗ trợ trả lời bởi cộng đồng những người tham gia. Các bạn học sinh sẽ được sử dụng MIỄN PHÍ toàn bộ tính năng hỏi - đáp. Chỉ cần đăng nhập vào chuyên trang hỏi đáp, các bạn sẽ được tham gia cộng đồng, đặt câu hỏi, trả lời câu hỏi, chia sẻ kiến thức.</p>
         <p class="mt-5 font-bold">Hỏi đáp MIỄN PHÍ</p>
         <img class="mt-5" src="/img/tintuc/tintuc1.jpg" alt="" />
-        <p class="mt-5 text-25px">Câu hỏi khó có cộng đồng Hỏi đáp của mobiEdu lo</p>
-        <p class="border-b pb-15">Chiến dịch “Hỏi nhanh - đáp gọn” với nhiều hoạt động và phần quà hấp dẫn được thiết kế riêng cho các học sinh tham gia https://hoidap.mobiedu.vn nhân dịp ra mắt. Cụ thể, từ ngày 21/08/2023 - 12/09/2023, các bạn học sinh có thể tham gia “Đua điểm tích quà” ngay trên trang Hỏi đáp để nhận những phần quà hấp dẫn. Chỉ cần truy cập https://hoidap.mobiedu.vn/ và tích lũy điểm bằng cách đặt câu hỏi, trả lời cũng như thực hiện nhiệm vụ theo từng tuần. Các bạn đạt điểm cao nhất sẽ nhận được những phần quà hấp dẫn, thiết thực, bổ trợ cho năm học mới như tài khoản học miễn phí, dụng cụ học tập... Bên cạnh đó, các bạn học sinh có thể tham gia trả lời các câu hỏi, minigame cũng như tìm hiểu thêm các kiến thức để chuẩn bị cho năm học mới bằng theo dõi fanpape mobiEdu.vn. Truy cập ngay https://hoidap.mobiedu.vn để tích điểm ngay bây giờ nhé.</p>
+        <p class="mt-5 text-25px">Câu hỏi khó có cộng đồng Hỏi đáp của edubook lo</p>
+        <p class="border-b pb-15">Chiến dịch “Hỏi nhanh - đáp gọn” với nhiều hoạt động và phần quà hấp dẫn được thiết kế riêng cho các học sinh tham gia https://hoidap.edubook.vn nhân dịp ra mắt. Cụ thể, từ ngày 21/08/2023 - 12/09/2023, các bạn học sinh có thể tham gia “Đua điểm tích quà” ngay trên trang Hỏi đáp để nhận những phần quà hấp dẫn. Chỉ cần truy cập https://hoidap.edubook.vn/ và tích lũy điểm bằng cách đặt câu hỏi, trả lời cũng như thực hiện nhiệm vụ theo từng tuần. Các bạn đạt điểm cao nhất sẽ nhận được những phần quà hấp dẫn, thiết thực, bổ trợ cho năm học mới như tài khoản học miễn phí, dụng cụ học tập... Bên cạnh đó, các bạn học sinh có thể tham gia trả lời các câu hỏi, minigame cũng như tìm hiểu thêm các kiến thức để chuẩn bị cho năm học mới bằng theo dõi fanpape edubook.vn. Truy cập ngay https://hoidap.edubook.vn để tích điểm ngay bây giờ nhé.</p>
         <div class="flex gap-4 mt-5 text-center text-color_8">
           <p class="bg-color_11 w-20 h-7 p-1 rounded-1 cursor-pointer hover:(bg-color_4 text-white)">#Học sinh</p>
           <p class="bg-color_11 w-20 h-7 p-1 rounded-1 cursor-pointer hover:(bg-color_4 text-white)">#Học tập</p>
-          <p class="bg-color_11 w-20 h-7 p-1 rounded-1 cursor-pointer hover:(bg-color_4 text-white)">#Mobiedu</p>
+          <p class="bg-color_11 w-20 h-7 p-1 rounded-1 cursor-pointer hover:(bg-color_4 text-white)">#edubook</p>
           <p class="bg-color_11 w-20 h-7 p-1 rounded-1 cursor-pointer hover:(bg-color_4 text-white)">#Hỏi đáp</p>
         </div>
       </div>
@@ -57,8 +57,8 @@
           <p class="text-color_4 font-bold text-lg leading-[26px]">NHIỀU NGƯỜI ĐỌC</p>
         </div>
         <p class="border-b pb-5 mt-5 text-color_2">NHỮNG ĐIỀU CẦN LƯU Ý KHI THAM GIA CHƯƠNG TRÌNH \'ĐUA ĐIỂM TÍCH QUÀ\'</p>
-        <p class="border-b pb-5 mt-5 text-color_2">TƯNG BỪNG MỪNG SINH NHẬT MOBIFONE VỚI MOBIEDU</p>
-        <p class="border-b pb-5 mt-5 text-color_2">Đáp án đề thi môn Hoá học tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại mobiEdu</p>
+        <p class="border-b pb-5 mt-5 text-color_2">TƯNG BỪNG MỪNG SINH NHẬT MOBIFONE VỚI edubook</p>
+        <p class="border-b pb-5 mt-5 text-color_2">Đáp án đề thi môn Hoá học tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại edubook</p>
       </div>
     </div>
     <div class="flex text-center items-center gap-2 mt-10">

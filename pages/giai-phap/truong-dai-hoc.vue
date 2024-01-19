@@ -10,7 +10,7 @@
         <SlideSlide8 />
       </div>
     </div>
-    <div class="text-center text-xl text-color_8 py-10">Hệ thống giải pháp dành cho Doanh nghiệp - Nhà trường của mobiEdu</div>
+    <div class="text-center text-xl text-color_8 py-10">Hệ thống giải pháp dành cho Doanh nghiệp - Nhà trường của edubook</div>
     <div class="flex flex-col justify-center w-full lg:w-225 xl:(w-300) mx-auto">
       <div class="flex">
         <nuxt-link to="/giai-phap/truong-mam-non-tieu-hoc" class="w1/4">

@@ -86,7 +86,7 @@
           <div class="space-y-8">
             <p class="text-xl font-bold">Cổng thi đại học</p>
             <div class="space-y-3">
-              <p class="text-color_8 font-400 text-14px">Tốt nghiệp THPT QG là kỳ thi quan trọng bậc nhất của học sinh phổ thông trước khi bước vào cánh cổng đại học. Chuyên trang thi đại học mobiEdu cung cấp 1 lộ trình đầy đủ cho thí sinh, bao gồm: Wiki đại học, Đánh giá năng lực, Ôn luyện cấp tốc/ chuyên sâu, Thi thử, Tra cứu điểm, MXH hỏi đáp bài tập.</p>
+              <p class="text-color_8 font-400 text-14px">Tốt nghiệp THPT QG là kỳ thi quan trọng bậc nhất của học sinh phổ thông trước khi bước vào cánh cổng đại học. Chuyên trang thi đại học Edubook cung cấp 1 lộ trình đầy đủ cho thí sinh, bao gồm: Wiki đại học, Đánh giá năng lực, Ôn luyện cấp tốc/ chuyên sâu, Thi thử, Tra cứu điểm, MXH hỏi đáp bài tập.</p>
               <button class="px-6 py-1 text-color_4 border-1px border-color_4 bg-white rounded-full font-600 text-sm hover:text-black hover:bg-color_5 hover:border-color_5 transition-all duration-300">CHI TIẾT</button>
             </div>
             <div class="space-x-2">
@@ -100,7 +100,7 @@
           <div class="space-y-8">
             <p class="text-xl font-bold">Chinh phục tiếng Anh - English Beat</p>
             <div class="space-y-3">
-              <p class="text-color_8 font-400 text-14px">Chinh phục tiếng Anh English Beat là sân chơi dành cho học sinh THPT, giúp các em học sinh nắm vững các kỹ năng tiếng Anh trong chương trình giáo dục phổ thông của Bộ GD&ĐT và định hướng theo các chương trình quốc tế (chứng chỉ IELTS). Sân chơi được tổ chức thường niên bởi mobiEdu thuộc Trung tâm dịch vụ số MobiFone phối hợp với các Sở GD&ĐT trong cả nước. Các thí sinh tham gia English Beat sẽ trải qua 3 vòng thi theo hai hình thức: thi Tuần, thi Tháng trực tuyến (online) tại website http://english.mobiedu.vn; vòng Chung kết được tổ chức dưới dạng sân thi đấu tại các địa phương. Năm 2022, lần đầu tiên English Beat được tổ chức tại Bình Thuận đã thu hút hàng chục nghìn em học sinh đến từ 23 trường THPT trên địa bàn và đã gây tiếng vang lớn không chỉ trong toàn tỉnh mà lan rộng ra các địa phương khác.</p>
+              <p class="text-color_8 font-400 text-14px">Chinh phục tiếng Anh English Beat là sân chơi dành cho học sinh THPT, giúp các em học sinh nắm vững các kỹ năng tiếng Anh trong chương trình giáo dục phổ thông của Bộ GD&ĐT và định hướng theo các chương trình quốc tế (chứng chỉ IELTS). Sân chơi được tổ chức thường niên bởi Edubook thuộc Trung tâm dịch vụ số MobiFone phối hợp với các Sở GD&ĐT trong cả nước. Các thí sinh tham gia English Beat sẽ trải qua 3 vòng thi theo hai hình thức: thi Tuần, thi Tháng trực tuyến (online) tại website http://english.Edubook.vn; vòng Chung kết được tổ chức dưới dạng sân thi đấu tại các địa phương. Năm 2022, lần đầu tiên English Beat được tổ chức tại Bình Thuận đã thu hút hàng chục nghìn em học sinh đến từ 23 trường THPT trên địa bàn và đã gây tiếng vang lớn không chỉ trong toàn tỉnh mà lan rộng ra các địa phương khác.</p>
               <button class="px-6 py-1 text-color_4 border-1px border-color_4 bg-white rounded-full font-600 text-sm hover:text-black hover:bg-color_5 hover:border-color_5 transition-all duration-300">CHI TIẾT</button>
             </div>
             <div class="space-x-2">

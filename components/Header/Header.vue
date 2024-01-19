@@ -4,7 +4,7 @@
       <div class="w-full flex justify-between">
         <div class="flex items-center justify-center">
           <div class="flex items-center space-x-5 w-full">
-            <nuxt-link to="/"><img src="/img/logo.png" alt="" /></nuxt-link>
+            <nuxt-link to="/"><img src="/img/logo1.png" class="object-contain w-40 h-30" alt="" /></nuxt-link>
             <div class="dropdown-trigger" @mouseenter="showDropdown" @mouseleave="hideDropdown">
               <div class="dropdown flex items-center mt-4">
                 <nuxt-link to="/khoa-hoc"><p class="text-lg font-600">Sách</p></nuxt-link>
@@ -31,7 +31,7 @@
           <div class="flex text-gray-600 font-600 justify-end">
             <div class="flex text-color_9">
               <nuxt-link to="/gioi-thieu" class="cursor-pointer mr-5 hover:text-color_4">
-                <p class="cursor-pointer">Về mobiEdu</p>
+                <p class="cursor-pointer">Về EduBook</p>
               </nuxt-link>
               <nuxt-link to="/ho-tro-khach-hang" class="cursor-pointer border-r pr-5 hover:text-color_4">
                 <p>Hỗ trợ</p>
@@ -67,8 +67,10 @@
                 </div>
               </div>
             </div>
-            <div v-else>
+            <div  v-else>
               <button class="text-white bg-color_4 rounded-full h-40px w-130px font-600 text-sm hover:(bg-color_5 text-black)" @click="login">ĐĂNG NHẬP</button>
+              <button class="text-black bg-white rounded-full h-40px w-130px font-600 text-sm hover:(bg-color_5 text-white) ml-5 border-color_4 border-1" >ĐĂNG KÝ</button>
+
             </div>
           </div>
         </div>

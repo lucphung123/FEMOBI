@@ -28,23 +28,23 @@ const modules = [EffectCards, Autoplay, Navigation]
 const products = [
   {
     src: "/img/10.png",
-    office: "MobiEdu có gói cước dịch vụ hợp lý lại đáp ứng trọn vẹn từ nhu cầu của một cá nhân muốn học tập, của một thầy, cô muốn giảng dạy; hay một nhà trường muốn quản lý, đào tạo trực tuyến chuyên nghiệp lâu dài... với chi phí hợp lý và khâu hậu mãi, chăm sóc khách hàng tốt.",
+    office: "EduBook có gói cước dịch vụ hợp lý lại đáp ứng trọn vẹn từ nhu cầu của một cá nhân muốn học tập, của một thầy, cô muốn giảng dạy; hay một nhà trường muốn quản lý, đào tạo trực tuyến chuyên nghiệp lâu dài... với chi phí hợp lý và khâu hậu mãi, chăm sóc khách hàng tốt.",
   },
   {
     src: "/img/10.png",
-    office: "MobiEdu có gói cước dịch vụ hợp lý lại đáp ứng trọn vẹn từ nhu cầu của một cá nhân muốn học tập, của một thầy, cô muốn giảng dạy; hay một nhà trường muốn quản lý, đào tạo trực tuyến chuyên nghiệp lâu dài... với chi phí hợp lý và khâu hậu mãi, chăm sóc khách hàng tốt.",
+    office: "EduBook có gói cước dịch vụ hợp lý lại đáp ứng trọn vẹn từ nhu cầu của một cá nhân muốn học tập, của một thầy, cô muốn giảng dạy; hay một nhà trường muốn quản lý, đào tạo trực tuyến chuyên nghiệp lâu dài... với chi phí hợp lý và khâu hậu mãi, chăm sóc khách hàng tốt.",
   },
   {
     src: "/img/10.png",
-    office: "MobiEdu có gói cước dịch vụ hợp lý lại đáp ứng trọn vẹn từ nhu cầu của một cá nhân muốn học tập, của một thầy, cô muốn giảng dạy; hay một nhà trường muốn quản lý, đào tạo trực tuyến chuyên nghiệp lâu dài... với chi phí hợp lý và khâu hậu mãi, chăm sóc khách hàng tốt.",
+    office: "EduBook có gói cước dịch vụ hợp lý lại đáp ứng trọn vẹn từ nhu cầu của một cá nhân muốn học tập, của một thầy, cô muốn giảng dạy; hay một nhà trường muốn quản lý, đào tạo trực tuyến chuyên nghiệp lâu dài... với chi phí hợp lý và khâu hậu mãi, chăm sóc khách hàng tốt.",
   },
   {
     src: "/img/10.png",
-    office: "MobiEdu có gói cước dịch vụ hợp lý lại đáp ứng trọn vẹn từ nhu cầu của một cá nhân muốn học tập, của một thầy, cô muốn giảng dạy; hay một nhà trường muốn quản lý, đào tạo trực tuyến chuyên nghiệp lâu dài... với chi phí hợp lý và khâu hậu mãi, chăm sóc khách hàng tốt.",
+    office: "EduBook có gói cước dịch vụ hợp lý lại đáp ứng trọn vẹn từ nhu cầu của một cá nhân muốn học tập, của một thầy, cô muốn giảng dạy; hay một nhà trường muốn quản lý, đào tạo trực tuyến chuyên nghiệp lâu dài... với chi phí hợp lý và khâu hậu mãi, chăm sóc khách hàng tốt.",
   },
   {
     src: "/img/10.png",
-    office: "MobiEdu có gói cước dịch vụ hợp lý lại đáp ứng trọn vẹn từ nhu cầu của một cá nhân muốn học tập, của một thầy, cô muốn giảng dạy; hay một nhà trường muốn quản lý, đào tạo trực tuyến chuyên nghiệp lâu dài... với chi phí hợp lý và khâu hậu mãi, chăm sóc khách hàng tốt.",
+    office: "EduBook có gói cước dịch vụ hợp lý lại đáp ứng trọn vẹn từ nhu cầu của một cá nhân muốn học tập, của một thầy, cô muốn giảng dạy; hay một nhà trường muốn quản lý, đào tạo trực tuyến chuyên nghiệp lâu dài... với chi phí hợp lý và khâu hậu mãi, chăm sóc khách hàng tốt.",
   },
 ]
 let mySwiper = ref({})

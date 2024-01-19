@@ -14,7 +14,7 @@
               <div class="i-mdi:calendar-range"></div>
               <p>19.08.2023</p>
             </div>
-            <p class="overflow-hidden text-3xl text-color_6 leading-45px font-540 mt-[10.21px] text-ellipsis w-90%">MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN</p>
+            <p class="overflow-hidden text-3xl text-color_6 leading-45px font-540 mt-[10.21px] text-ellipsis w-90%">edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN</p>
             <div class="flex mt-10 text-color_7 text-xl">
               <div class="border-r pr-5">Tin tức</div>
               <div class="flex items-center ml-5 gap-3">
@@ -32,21 +32,21 @@
             <div class="i-mdi:calendar-range"></div>
             <p>19.08.2023</p>
           </div>
-          <p class="mt-3 font-bold hover:(text-color_4) cursor-pointer">TƯNG BỪNG MỪNG SINH NHẬT MOBIFONE VỚI MOBIEDU</p>
+          <p class="mt-3 font-bold hover:(text-color_4) cursor-pointer">TƯNG BỪNG MỪNG SINH NHẬT MOBIFONE VỚI edubook</p>
         </div>
         <div class="bg-color_12 pt-15px pb-3 px-15px rounded-10px mt-5 hover1">
           <div class="flex items-center text-sm gap-3 text-color_7 w-full">
             <div class="i-mdi:calendar-range"></div>
             <p>19.08.2023</p>
           </div>
-          <p class="mt-3 font-bold hover:(text-color_4) cursor-pointer">TƯNG BỪNG MỪNG SINH NHẬT MOBIFONE VỚI MOBIEDU</p>
+          <p class="mt-3 font-bold hover:(text-color_4) cursor-pointer">TƯNG BỪNG MỪNG SINH NHẬT MOBIFONE VỚI edubook</p>
         </div>
         <div class="bg-color_12 pt-15px pb-3 px-15px rounded-10px mt-5 hover1">
           <div class="flex items-center text-sm gap-3 text-color_7 w-full">
             <div class="i-mdi:calendar-range"></div>
             <p>19.08.2023</p>
           </div>
-          <p class="mt-3 font-bold hover:(text-color_4) cursor-pointer">TƯNG BỪNG MỪNG SINH NHẬT MOBIFONE VỚI MOBIEDU</p>
+          <p class="mt-3 font-bold hover:(text-color_4) cursor-pointer">TƯNG BỪNG MỪNG SINH NHẬT MOBIFONE VỚI edubook</p>
         </div>
         <div class="inline-block bg-color_4 text-white text-xl leading-26px px-5 mt-5 py-3 rounded-5px w-60">Mới nhất</div>
         <div class="bg-color_12 pt-15px pb-3 px-15px rounded-10px mt-5 hover1">
@@ -54,14 +54,14 @@
             <div class="i-mdi:calendar-range"></div>
             <p>19.08.2023</p>
           </div>
-          <p class="mt-3 font-bold hover:(text-color_4) cursor-pointer">TƯNG BỪNG MỪNG SINH NHẬT MOBIFONE VỚI MOBIEDU</p>
+          <p class="mt-3 font-bold hover:(text-color_4) cursor-pointer">TƯNG BỪNG MỪNG SINH NHẬT MOBIFONE VỚI edubook</p>
         </div>
         <div class="bg-color_12 pt-15px pb-3 px-15px rounded-10px mt-5 hover1">
           <div class="flex items-center text-sm gap-3 text-color_7 w-full">
             <div class="i-mdi:calendar-range"></div>
             <p>19.08.2023</p>
           </div>
-          <p class="mt-3 font-bold hover:(text-color_4) cursor-pointer">TƯNG BỪNG MỪNG SINH NHẬT MOBIFONE VỚI MOBIEDU</p>
+          <p class="mt-3 font-bold hover:(text-color_4) cursor-pointer">TƯNG BỪNG MỪNG SINH NHẬT MOBIFONE VỚI edubook</p>
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@
             <div class="i-mdi:calendar-range"></div>
             <p>19.08.2023</p>
           </div>
-          <p class="overflow-hidden text-3xl text-color_6 leading-45px font-540 mt-[10.21px] text-ellipsis w-90%">MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN</p>
+          <p class="overflow-hidden text-3xl text-color_6 leading-45px font-540 mt-[10.21px] text-ellipsis w-90%">edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN</p>
           <div class="flex mt-10 text-color_7 text-xl">
             <div class="border-r pr-5">Tin tức</div>
             <div class="flex items-center ml-5 gap-3">
@@ -90,7 +90,7 @@
             <div class="i-mdi:calendar-range"></div>
             <p>19.08.2023</p>
           </div>
-          <p class="overflow-hidden text-3xl text-color_6 leading-45px font-540 mt-[10.21px] text-ellipsis w-90%">MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN</p>
+          <p class="overflow-hidden text-3xl text-color_6 leading-45px font-540 mt-[10.21px] text-ellipsis w-90%">edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN</p>
           <div class="flex mt-10 text-color_7 text-xl">
             <div class="border-r pr-5">Tin tức</div>
             <div class="flex items-center ml-5 gap-3">
@@ -107,7 +107,7 @@
             <div class="i-mdi:calendar-range"></div>
             <p>19.08.2023</p>
           </div>
-          <p class="overflow-hidden text-3xl text-color_6 leading-45px font-540 mt-[10.21px] text-ellipsis w-90%">MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN</p>
+          <p class="overflow-hidden text-3xl text-color_6 leading-45px font-540 mt-[10.21px] text-ellipsis w-90%">edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN</p>
           <div class="flex mt-10 text-color_7 text-xl">
             <div class="border-r pr-5">Tin tức</div>
             <div class="flex items-center ml-5 gap-3">
@@ -129,7 +129,7 @@
             <div class="i-mdi:calendar-range"></div>
             <p>19.08.2023</p>
           </div>
-          <p class="overflow-hidden text-3xl text-color_6 leading-45px font-540 mt-[10.21px] text-ellipsis w-90%">MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN</p>
+          <p class="overflow-hidden text-3xl text-color_6 leading-45px font-540 mt-[10.21px] text-ellipsis w-90%">edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN</p>
           <div class="flex mt-10 text-color_7 text-xl">
             <div class="border-r pr-5">Tin tức</div>
             <div class="flex items-center ml-5 gap-3">
@@ -148,7 +148,7 @@
             <div class="i-mdi:calendar-range"></div>
             <p>19.08.2023</p>
           </div>
-          <p class="overflow-hidden text-3xl text-color_6 leading-45px font-540 mt-[10.21px] text-ellipsis w-90%">MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN</p>
+          <p class="overflow-hidden text-3xl text-color_6 leading-45px font-540 mt-[10.21px] text-ellipsis w-90%">edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN</p>
           <div class="flex mt-10 text-color_7 text-xl">
             <div class="border-r pr-5">Tin tức</div>
             <div class="flex items-center ml-5 gap-3">
@@ -165,7 +165,7 @@
             <div class="i-mdi:calendar-range"></div>
             <p>19.08.2023</p>
           </div>
-          <p class="overflow-hidden text-3xl text-color_6 leading-45px font-540 mt-[10.21px] text-ellipsis w-90%">MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN</p>
+          <p class="overflow-hidden text-3xl text-color_6 leading-45px font-540 mt-[10.21px] text-ellipsis w-90%">edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN</p>
           <div class="flex mt-20 text-color_7 text-xl">
             <div class="border-r pr-5">Tin tức</div>
             <div class="flex items-center ml-5 gap-3">
@@ -178,7 +178,7 @@
     </div>
     <div class="mt-10 text-center">
       <p class="text-color_4 font-bold text-2xl leading-7">TẤT CẢ CÁC CHỦ ĐỀ</p>
-      <p class="text-sm mt-5">Khám phá thêm các tin tức hấp dẫn trên mobiEdu theo từng chủ đề.</p>
+      <p class="text-sm mt-5">Khám phá thêm các tin tức hấp dẫn trên edubook theo từng chủ đề.</p>
     </div>
     <div class="flex justify-between mt-10 gap-10">
       <div class="topic border-l-color_13 text-color_13 hover1">

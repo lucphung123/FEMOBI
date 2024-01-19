@@ -1,13 +1,13 @@
 <template>
-  <div class="flex-col flex items-center w-full space-y-5">
+  <div class="flex-col flex items-center w-full space-y-10">
     <div class="text-center">
-      <p class="text-white font-700 text-4xl">mobiEdu - Nền tảng bán sách toàn diện</p>
+      <p class="text-white font-700 text-4xl">EduBook - Nền tảng bán sách toàn diện</p>
     </div>
     <div class="w-3/5 text-center flex justify-center">
-      <p class="text-white text-lg text-center">mobiEdu là hệ sinh thái giáo dục, cung cấp giải pháp dạy học & quản lí trường học trực tuyến, phân phối các nội dung học tập tới người học ở mọi lứa tuổi.</p>
+      <p class="text-white text-lg text-center">EduBook là hệ sinh thái giáo dục, cung cấp giải pháp dạy học & quản lí trường học trực tuyến, phân phối các nội dung học tập tới người học ở mọi lứa tuổi.</p>
     </div>
   </div>
-  <div class="grid sm:(grid-cols-2 gap-4) xl:(grid-cols-4 gap-6)">
+  <div class="grid sm:(grid-cols-2 gap-4) xl:(grid-cols-4 gap-6) mt-20">
     <div class="w-full flex-col flex items-center justify-center space-y-8 border-r">
       <div class=""><img src="/img/icon/i1.png" alt="" /></div>
       <div class="flex">
@@ -41,10 +41,8 @@
       <div class="text-white text-xl">Đối tác</div>
     </div>
   </div>
-  <div class="p10">
-    <SlideSlide3 />
-  </div>
-  <div class="text-center">
+
+  <div class="text-center mt-25">
     <button class="text-blue-900 bg-white border-1px border-blue font-bold p-2 rd-20px w-150px">XEM THÊM</button>
   </div>
 </template>

@@ -10,7 +10,7 @@
         <SlideSlide8 />
       </div>
     </div>
-    <div class="text-center text-xl text-color_8 py-10">Hệ thống giải pháp dành cho Doanh nghiệp - Nhà trường của mobiEdu</div>
+    <div class="text-center text-xl text-color_8 py-10">Hệ thống giải pháp dành cho Doanh nghiệp - Nhà trường của edubook</div>
     <div class="flex flex-col justify-center w-full lg:w-225 xl:(w-300) mx-auto">
       <div class="flex">
         <nuxt-link to="/giai-phap/truong-mam-non-tieu-hoc" class="w1/4">
@@ -28,7 +28,7 @@
               <div class="bg-white w-150px h-150px rd-full shadow-2xl flex justify-center items-center border-3px border-color_4">
                 <img src="/img/giai-phap/G9.png" alt="" class="h-23" />
               </div>
-              <div><p class="text-center text-blue-600">mobiEdu mSchool</p></div>
+              <div><p class="text-center text-blue-600">edubook mSchool</p></div>
             </div>
           </div>
         </div>
@@ -93,7 +93,7 @@
       </div>
       <div class="w-2/7 space-y-3">
         <div class="text-2xl font-bold text-color_4">Chuyển đổi tên miền</div>
-        <div>Hỗ trợ gắn tên miền riêng thay cho tên miền .mobiedu.vn mặc định ban đầu, chạy như một website độc lập. Tên miền riêng mang thương hiệu của chính nhà trường.</div>
+        <div>Hỗ trợ gắn tên miền riêng thay cho tên miền .edubook.vn mặc định ban đầu, chạy như một website độc lập. Tên miền riêng mang thương hiệu của chính nhà trường.</div>
       </div>
     </div>
     <div class="flex items-center justify-center">
@@ -121,10 +121,10 @@
   </div>
   <div class="space-y-10">
     <div>
-      <a href="https://mschool.mobiedu.vn/" target="_blank"><img class="object-cover w-100%" src="/img/giai-phap/G19.png" alt="" /></a>
+      <a href="https://mschool.edubook.vn/" target="_blank"><img class="object-cover w-100%" src="/img/giai-phap/G19.png" alt="" /></a>
     </div>
     <div>
-      <a href="https://mschool.mobiedu.vn/" target="_blank"><img src="/img/giai-phap/G20.png" alt="" /></a>
+      <a href="https://mschool.edubook.vn/" target="_blank"><img src="/img/giai-phap/G20.png" alt="" /></a>
     </div>
   </div>
 </template>

@@ -3,7 +3,7 @@
     <div>
       <div class="flex justify-between">
         <div>
-          <p class="relative text-color_8 font-bold text-lg leading-6">VỀ MOBIEDU</p>
+          <p class="relative text-color_8 font-bold text-lg leading-6">VỀ EDUBOOK</p>
           <div class="pb-[22px] border-solid mt-5">
             <div>
               <p class="flex items-center text-color_9 text-base leading-9">Giới thiệu</p>
@@ -28,14 +28,14 @@
           </div>
         </div>
         <div>
-          <p class="relative text-color_8 font-bold text-lg leading-6">TẢI ỨNG DỤNG MOBIEDU NGAY</p>
+          <p class="relative text-color_8 font-bold text-lg leading-6">TẢI ỨNG DỤNG Edubook NGAY</p>
           <div class="mt-5 flex">
             <div class="mr-[18px] pr-[23px] border-r border-solid">
               <img src="/img/qr-code.png" alt="" />
             </div>
             <div class="pb-[22px] border-solid">
               <div>
-                <a href="https://apps.apple.com/vn/app/mobiedu-h%E1%BB%8Dc-vi%C3%AAn/id1506933069" target="_blank" class="flex items-center text-color_9 cursor-pointer text-base leading-9">
+                <a href="https://apps.apple.com/vn/app/EDUBOOK-h%E1%BB%8Dc-vi%C3%AAn/id1506933069" target="_blank" class="flex items-center text-color_9 cursor-pointer text-base leading-9">
                   <img class="mr-3" src="/img/icon/app-store.png" alt="" />
                   <span>App Store</span>
                 </a>
@@ -58,13 +58,13 @@
           </div>
         </div>
         <div>
-          <p class="relative text-color_8 font-bold text-lg leading-6">THEO DÕI MOBIEDU</p>
+          <p class="relative text-color_8 font-bold text-lg leading-6">THEO DÕI EDUBOOK</p>
           <div class="pb-[22px] border-solid mt-5">
             <div>
-              <a target="_blank" href="https://www.facebook.com/mobiedu.vn" class="flex items-center text-color_9 text-base leading-9"><img class="mr-3" src="/img/icon/facebook.png" alt="" /><span>Facebook</span></a>
+              <a target="_blank" href="https://www.facebook.com/EDUBOOK.vn" class="flex items-center text-color_9 text-base leading-9"><img class="mr-3" src="/img/icon/facebook.png" alt="" /><span>Facebook</span></a>
             </div>
             <div>
-              <a target="_blank" href="https://www.youtube.com/c/mobiEdu_vn" class="flex items-center text-color_9 text-base leading-9"><img class="mr-3" src="/img/icon/youtube.png" alt="" /><span>Youtube</span></a>
+              <a target="_blank" href="https://www.youtube.com/c/EDUBOOK_vn" class="flex items-center text-color_9 text-base leading-9"><img class="mr-3" src="/img/icon/youtube.png" alt="" /><span>Youtube</span></a>
             </div>
             <div>
               <nuxt-link to="/lien-he">
@@ -103,7 +103,7 @@
       <div>
         <div>
           <div class="w-80">
-            <img src="/img/logo-footer-mobiedu-30.png" alt="" />
+            <img src="/img/logo-footer-EDUBOOK-30.png" alt="" />
           </div>
         </div>
       </div>
@@ -129,7 +129,7 @@
         <p class="font-bold">@ Copyright 2020 - MobiFone</p>
         <div class="flex justify-center">
           <p class="font-bold">Email:</p>
-          <p class="text-blue ml-1">contact@mobiedu.vn.</p>
+          <p class="text-blue ml-1">contact@EDUBOOK.vn.</p>
         </div>
         <div class="flex justify-center">
           <p class="font-bold">Contact:</p>

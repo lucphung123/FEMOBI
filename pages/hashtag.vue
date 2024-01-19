@@ -55,11 +55,11 @@
       </div>
       <div class="mt-5 flex gap-2 border-b-2 pb-5">
         <img src="/img/tintuc/tintuc3.jpg" class="w-25 h-15 rounded-lg hover:(scale-110) transition duration-500" alt="" />
-        <p class="font-bold text-sm hover:text-color_4 cursor-pointer">MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN</p>
+        <p class="font-bold text-sm hover:text-color_4 cursor-pointer">EduBook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.EduBook.VN</p>
       </div>
       <div class="mt-5 flex gap-2 border-b-2 pb-5">
         <img src="/img/tintuc/tintuc1.jpg" class="w-25 h-15 rounded-lg hover:(scale-110) transition duration-500" alt="" />
-        <p class="font-bold text-sm hover:text-color_4 cursor-pointer">TƯNG BỪNG MỪNG SINH NHẬT MOBIFONE VỚI MOBIEDU</p>
+        <p class="font-bold text-sm hover:text-color_4 cursor-pointer">TƯNG BỪNG MỪNG SINH NHẬT MOBIFONE VỚI EduBook</p>
       </div>
       <div class="flex sticky flex-col transition duration-[all] z-4 ease-[ease-in-out] w-full top-40">
         <img src="/img/BannerHashtag.jpg" class="mt-10 w-full rounded-xl" alt="" />
@@ -82,7 +82,7 @@ const items = ref([
   {
     id: 1,
     url: "/img/tintuc/tintuc2.png",
-    title: "MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN",
+    title: "EduBook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.EduBook.VN",
     date: "19.08.2023",
     story: "Tin tức",
   },
@@ -96,56 +96,56 @@ const items = ref([
   {
     id: 3,
     url: "/img/tintuc/tintuc3.jpg",
-    title: "Đáp án đề thi môn Lịch sử tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại mobiEdu",
+    title: "Đáp án đề thi môn Lịch sử tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại EduBook",
     date: "29.06.2023",
     story: "Tuyển sinh",
   },
   {
     id: 4,
     url: "/img/tintuc/tintuc4.jpg",
-    title: "Đáp án đề thi môn Toán tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại mobiEdu",
+    title: "Đáp án đề thi môn Toán tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại EduBook",
     date: "28.06.2023",
     story: "Tuyển sinh",
   },
   {
     id: 5,
     url: "/img/tintuc/tintuc3.jpg",
-    title: "Đáp án đề thi môn Lịch sử tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại mobiEdu",
+    title: "Đáp án đề thi môn Lịch sử tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại EduBook",
     date: "29.06.2023",
     story: "Tuyển sinh",
   },
   {
     id: 6,
     url: "/img/tintuc/tintuc4.jpg",
-    title: "Đáp án đề thi môn Toán tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại mobiEdu",
+    title: "Đáp án đề thi môn Toán tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại EduBook",
     date: "28.06.2023",
     story: "Tuyển sinh",
   },
   {
     id: 7,
     url: "/img/tintuc/tintuc3.jpg",
-    title: "Đáp án đề thi môn Lịch sử tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại mobiEdu",
+    title: "Đáp án đề thi môn Lịch sử tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại EduBook",
     date: "29.06.2023",
     story: "Tuyển sinh",
   },
   {
     id: 8,
     url: "/img/tintuc/tintuc4.jpg",
-    title: "Đáp án đề thi môn Toán tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại mobiEdu",
+    title: "Đáp án đề thi môn Toán tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại EduBook",
     date: "28.06.2023",
     story: "Tuyển sinh",
   },
   {
     id: 9,
     url: "/img/tintuc/tintuc4.jpg",
-    title: "Đáp án đề thi môn Toán tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại mobiEdu",
+    title: "Đáp án đề thi môn Toán tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại EduBook",
     date: "28.06.2023",
     story: "Tuyển sinh",
   },
   {
     id: 10,
     url: "/img/tintuc/tintuc2.png",
-    title: "MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN",
+    title: "EduBook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.EduBook.VN",
     date: "19.08.2023",
     story: "Tin tức",
   },
@@ -159,49 +159,49 @@ const items = ref([
   {
     id: 12,
     url: "/img/tintuc/tintuc3.jpg",
-    title: "Đáp án đề thi môn Lịch sử tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại mobiEdu",
+    title: "Đáp án đề thi môn Lịch sử tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại EduBook",
     date: "29.06.2023",
     story: "Tuyển sinh",
   },
   {
     id: 13,
     url: "/img/tintuc/tintuc4.jpg",
-    title: "Đáp án đề thi môn Toán tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại mobiEdu",
+    title: "Đáp án đề thi môn Toán tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại EduBook",
     date: "28.06.2023",
     story: "Tuyển sinh",
   },
   {
     id: 14,
     url: "/img/tintuc/tintuc3.jpg",
-    title: "Đáp án đề thi môn Lịch sử tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại mobiEdu",
+    title: "Đáp án đề thi môn Lịch sử tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại EduBook",
     date: "29.06.2023",
     story: "Tuyển sinh",
   },
   {
     id: 15,
     url: "/img/tintuc/tintuc4.jpg",
-    title: "Đáp án đề thi môn Toán tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại mobiEdu",
+    title: "Đáp án đề thi môn Toán tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại EduBook",
     date: "28.06.2023",
     story: "Tuyển sinh",
   },
   {
     id: 16,
     url: "/img/tintuc/tintuc3.jpg",
-    title: "Đáp án đề thi môn Lịch sử tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại mobiEdu",
+    title: "Đáp án đề thi môn Lịch sử tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại EduBook",
     date: "29.06.2023",
     story: "Tuyển sinh",
   },
   {
     id: 17,
     url: "/img/tintuc/tintuc4.jpg",
-    title: "Đáp án đề thi môn Toán tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại mobiEdu",
+    title: "Đáp án đề thi môn Toán tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại EduBook",
     date: "28.06.2023",
     story: "Tuyển sinh",
   },
   {
     id: 18,
     url: "/img/tintuc/tintuc4.jpg",
-    title: "Đáp án đề thi môn Toán tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại mobiEdu",
+    title: "Đáp án đề thi môn Toán tốt nghiệp THPT Quốc gia 2023 nhanh nhất tại EduBook",
     date: "28.06.2023",
     story: "Tuyển sinh",
   },

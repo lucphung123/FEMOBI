@@ -11,7 +11,7 @@
           <SlideSlide8 />
         </div>
       </div>
-      <div class="text-center text-xl text-color_8 py-10">Hệ thống giải pháp dành cho Doanh nghiệp - Nhà trường của mobiEdu</div>
+      <div class="text-center text-xl text-color_8 py-10">Hệ thống giải pháp dành cho Doanh nghiệp - Nhà trường của edubook</div>
       <div class="flex flex-col justify-center w-full lg:w-225 xl:(w-300) mx-auto">
         <div class="flex">
           <nuxt-link to="/giai-phap/truong-mam-non-tieu-hoc" class="w1/4">
@@ -27,7 +27,7 @@
             <div class="flex items-center">
               <div class="space-y-3">
                 <img src="/img/giai-phap/G21.png" alt="" class="rd-full shadow-2xl border-3px border-color_4" />
-                <p class="text-center text-blue-600">mobiEdu SSL</p>
+                <p class="text-center text-blue-600">edubook SSL</p>
               </div>
             </div>
           </div>
@@ -38,8 +38,8 @@
     <div class="flex flex-col bg-gray-100 w-screen top-23">
       <div class="w-full lg:w-225 xl:(w-300) 2xl:(w-340) mx-auto flex items-center justify-center mt-15">
         <div class="flex flex-col text-center space-y-6 justify-center items-center">
-          <p class="text-4xl text-color_4 font-600 w-6/6">mobiEdu SLL - Ứng dụng siêu kết nối Nhà trường – Giáo viên – Phụ huynh</p>
-          <p class="w-5/6">mobiEdu SLL là mạng xã hội trường học, kết nối các bậc phụ huynh thông thái. Ngoài ra, SLL là phần mềm quản lý trường học thông minh và là công cụ hỗ trợ kết nối nhà trường - phụ huynh thông qua sổ liên lạc điện tử.</p>
+          <p class="text-4xl text-color_4 font-600 w-6/6">edubook SLL - Ứng dụng siêu kết nối Nhà trường – Giáo viên – Phụ huynh</p>
+          <p class="w-5/6">edubook SLL là mạng xã hội trường học, kết nối các bậc phụ huynh thông thái. Ngoài ra, SLL là phần mềm quản lý trường học thông minh và là công cụ hỗ trợ kết nối nhà trường - phụ huynh thông qua sổ liên lạc điện tử.</p>
         </div>
       </div>
       <div class="flex justify-center items-center w-full lg:w-225 xl:(w-300) 2xl:(w-340) mx-auto space-x-25 my-10">
@@ -118,10 +118,10 @@
     </div>
     <div class="space-y-10">
       <div>
-        <a href="https://mschool.mobiedu.vn/" target="_blank"><img class="object-cover w-100%" src="/img/giai-phap/G30.png" alt="" /></a>
+        <a href="https://mschool.edubook.vn/" target="_blank"><img class="object-cover w-100%" src="/img/giai-phap/G30.png" alt="" /></a>
       </div>
       <div>
-        <a href="https://mschool.mobiedu.vn/" target="_blank"><img src="/img/giai-phap/G31.png" alt="" /></a>
+        <a href="https://mschool.edubook.vn/" target="_blank"><img src="/img/giai-phap/G31.png" alt="" /></a>
       </div>
     </div>
   </ClientOnly>

@@ -42,17 +42,17 @@ const modules = [EffectCards, Autoplay]
 const products = [
   {
     imgSrc: "/img/about/giai-thuong-1.png",
-    title: "mobiEdu đạt Giải Vàng Stevie Awards 2021 cho giải pháp chuyển đổi số giáo dục ưu việt - giải thưởng hàng đầu thế giới về kinh doanh, tôn vinh và ghi nhận những thành tựu và đóng góp tích cực của các tổ chức và cá nhân trên toàn thế giới.",
+    title: "EduBook đạt Giải Vàng Stevie Awards 2021 cho giải pháp chuyển đổi số giáo dục ưu việt - giải thưởng hàng đầu thế giới về kinh doanh, tôn vinh và ghi nhận những thành tựu và đóng góp tích cực của các tổ chức và cá nhân trên toàn thế giới.",
     author: "Giải Vàng Stevie Awards Kinh doanh Quốc tế 2021",
   },
   {
     imgSrc: "/img/about/giai-thuong-2.jpg",
-    title: "mobiEdu đạt giải thưởng Sao Khuê 2021 lĩnh vực Giáo dục, đào tạo do Hiệp hội Phần mềm & Dịch vụ CNTT Việt Nam VINASA trao tặng.",
+    title: "EduBook đạt giải thưởng Sao Khuê 2021 lĩnh vực Giáo dục, đào tạo do Hiệp hội Phần mềm & Dịch vụ CNTT Việt Nam VINASA trao tặng.",
     author: "Giải thưởng Sao Khuê 2021",
   },
   {
     imgSrc: "/img/about/giai-thuong-3.jpg",
-    title: "Nền tảng giáo dục trực tuyến mobiEdu là công trình, đề tài sáng tạo tiêu biểu giai đoạn 2020 - 2021 do Đoàn TNCS Hồ Chí Minh khối Doanh ngiệp Trung Ương.",
+    title: "Nền tảng giáo dục trực tuyến EduBook là công trình, đề tài sáng tạo tiêu biểu giai đoạn 2020 - 2021 do Đoàn TNCS Hồ Chí Minh khối Doanh ngiệp Trung Ương.",
     author: "Giải thưởng Công trình sáng tạo tiêu biểu 2020 - 2021",
   },
 ]

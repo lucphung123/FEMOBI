@@ -38,7 +38,7 @@
             </div>
             <div class="flex-col space-y-10 flex-col justify-center items-center">
               <div>
-                <p class="text-[#004390] font-600 text-5xl">Giải pháp mobiEdu</p>
+                <p class="text-[#004390] font-600 text-5xl">Giải pháp EduBook</p>
               </div>
               <div>
                 <p class="text-xl">Các giải pháp giúp nhà trường - doanh nghiệp mọi lĩnh vực quản lí, đào tạo, liên lạc hiệu quả, tích hợp các nội dung đào tạo từ các chuyên gia dễ dàng, làm nổi bật thương hiệu tổ chức.</p>
@@ -59,7 +59,7 @@
             <div class="space-y-3 justify-center flex-col">
               <div class="flex items-center space-x-2">
                 <div class="i-mdi:view-list-outline text-4xl bg-white"></div>
-                <p class="text-white font-700 text-2xl">Hướng dẫn MOBIEDU</p>
+                <p class="text-white font-700 text-2xl">Hướng dẫn EduBook</p>
               </div>
               <div class="mx-2">
                 <p class="text-white text-lg">Trang wiki các kỳ thi tại Việt Nam, cung cấp thông tin cần thiết, kênh ôn luyện học tập, thi thử dành cho mọi đối tượng.</p>
@@ -79,7 +79,7 @@
       <Gift />
     </div>
     <div class="relative mt-80 md:mt-20 lg:mt-36 xl:mt-210 mb-0">
-      <div class="absolute w-screen left-1/2 -translate-x-1/2 -translate-y-full bg-[url(/img/bg/bg-home-4.png)] bg-cover bg-top h-200 flex flex-col items-center">
+      <div class="absolute w-screen left-1/2 -translate-x-1/2 -translate-y-full bg-[url(/img/bg/bg-home-4.png)] bg-cover bg-top h-180 flex flex-col items-center">
         <div class="w-full lg:w-225 xl:(w-300 h-250px) 2xl:(w-340 h-280px) mx-auto flex-col items-center my-auto">
           <div class="-mt-35">
             <Introduce />
@@ -89,7 +89,7 @@
     </div>
     <div class="my-15">
       <div>
-        <p class="text-color_4 font-700 text-4xl">Báo chí nói về mobiEdu</p>
+        <p class="text-color_4 font-700 text-4xl">Báo chí nói về EduBook</p>
       </div>
       <div><Review /></div>
     </div>

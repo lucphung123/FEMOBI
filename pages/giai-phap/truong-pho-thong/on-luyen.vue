@@ -10,7 +10,7 @@
         <SlideSlide8 />
       </div>
     </div>
-    <div class="text-center text-xl text-color_8 py-10">Hệ thống giải pháp dành cho Doanh nghiệp - Nhà trường của mobiEdu</div>
+    <div class="text-center text-xl text-color_8 py-10">Hệ thống giải pháp dành cho Doanh nghiệp - Nhà trường của edubook</div>
     <div class="flex flex-col justify-center w-full lg:w-225 xl:(w-300) mx-auto">
       <div class="flex">
         <nuxt-link to="/giai-phap/truong-mam-non-tieu-hoc" class="w1/4">
@@ -29,11 +29,11 @@
                 <div class="bg-white w-150px h-150px rd-full shadow-2xl flex justify-center items-center">
                   <img src="/img/giai-phap/G9.png" alt="" class="h-23" />
                 </div>
-                <div><p class="text-center">mobiEdu mSchool</p></div>
+                <div><p class="text-center">edubook mSchool</p></div>
               </nuxt-link>
               <nuxt-link to="/giai-phap/truong-pho-thong/mobiedu-tkb" class="space-y-3">
                 <img src="/img/giai-phap/G8.jpg" alt="" class="rd-full w-60% shadow-2xl" />
-                <p class="text-center w-60%">mobiEdu TKB</p>
+                <p class="text-center w-60%">edubook TKB</p>
               </nuxt-link>
             </div>
             <nuxt-link to="/giai-phap/truong-pho-thong/on-luyen" class="space-y-3">

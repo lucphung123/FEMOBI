@@ -25,7 +25,7 @@
         </div>
         <div class="mt-5 text-center">
           <p class="text-color_4 font-bold text-xl leading-[26px] mt-2.5 mb-5">Mua khóa học thành công</p>
-          <p class="text-black font-normal text-base leading-6">Bạn đã mua thành công khóa học Combo khóa học Anh văn giao tiếp trên mobiEdu</p>
+          <p class="text-black font-normal text-base leading-6">Bạn đã mua thành công khóa học Combo khóa học Anh văn giao tiếp trên edubook</p>
           <div class="flex text-center justify-center mt-5">
             <p class="italic">Mã đơn hàng:</p>
             <div class="text-color_4 not-italic font-bold">MS-12345</div>

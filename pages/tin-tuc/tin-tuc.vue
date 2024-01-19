@@ -52,7 +52,7 @@ const items = ref([
   {
     id: 1,
     date: "19.08.2023",
-    title: "MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN",
+    title: "edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN",
     category: "Tin tức",
     imageSrc: "/img/tintuc/banner.png",
     views: 8534,
@@ -60,7 +60,7 @@ const items = ref([
   {
     id: 2,
     date: "19.08.2023",
-    title: "MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN",
+    title: "edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN",
     category: "Tin tức",
     imageSrc: "/img/tintuc/tintuc3.jpg",
     views: 8534,
@@ -68,7 +68,7 @@ const items = ref([
   {
     id: 3,
     date: "19.08.2023",
-    title: "MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN",
+    title: "edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN",
     category: "Tin tức",
     imageSrc: "/img/tintuc/tintuc4.jpg",
     views: 8534,
@@ -76,7 +76,7 @@ const items = ref([
   {
     id: 4,
     date: "19.08.2023",
-    title: "MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN",
+    title: "edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN",
     category: "Tin tức",
     imageSrc: "/img/tintuc/tintuc3.jpg",
     views: 8534,
@@ -84,7 +84,7 @@ const items = ref([
   {
     id: 5,
     date: "19.08.2023",
-    title: "MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN",
+    title: "edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN",
     category: "Tin tức",
     imageSrc: "/img/tintuc/tintuc5.jpg",
     views: 8534,
@@ -92,7 +92,7 @@ const items = ref([
   {
     id: 6,
     date: "19.08.2023",
-    title: "MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN",
+    title: "edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN",
     category: "Tin tức",
     imageSrc: "/img/tintuc/tintuc1.jpg",
     views: 8534,
@@ -100,7 +100,7 @@ const items = ref([
   {
     id: 7,
     date: "19.08.2023",
-    title: "MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN",
+    title: "edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN",
     category: "Tin tức",
     imageSrc: "/img/tintuc/tintuc4.jpg",
     views: 8534,
@@ -108,7 +108,7 @@ const items = ref([
   {
     id: 8,
     date: "19.08.2023",
-    title: "MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN",
+    title: "edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN",
     category: "Tin tức",
     imageSrc: "/img/tintuc/tintuc5.jpg",
     views: 8534,
@@ -116,7 +116,7 @@ const items = ref([
   {
     id: 9,
     date: "19.08.2023",
-    title: "MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN",
+    title: "edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN",
     category: "Tin tức",
     imageSrc: "/img/tintuc/tintuc1.jpg",
     views: 8534,
@@ -124,7 +124,7 @@ const items = ref([
   {
     id: 10,
     date: "19.08.2023",
-    title: "MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN",
+    title: "edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN",
     category: "Tin tức",
     imageSrc: "/img/tintuc/tintuc4.jpg",
     views: 8534,
@@ -132,7 +132,7 @@ const items = ref([
   {
     id: 11,
     date: "19.08.2023",
-    title: "MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN",
+    title: "edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN",
     category: "Tin tức",
     imageSrc: "/img/tintuc/tintuc1.jpg",
     views: 8534,
@@ -140,7 +140,7 @@ const items = ref([
   {
     id: 12,
     date: "19.08.2023",
-    title: "MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN",
+    title: "edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN",
     category: "Tin tức",
     imageSrc: "/img/tintuc/tintuc1.jpg",
     views: 8534,
@@ -148,7 +148,7 @@ const items = ref([
   {
     id: 13,
     date: "19.08.2023",
-    title: "MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN",
+    title: "edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN",
     category: "Tin tức",
     imageSrc: "/img/tintuc/tintuc1.jpg",
     views: 8534,
@@ -156,7 +156,7 @@ const items = ref([
   {
     id: 14,
     date: "19.08.2023",
-    title: "MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN",
+    title: "edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN",
     category: "Tin tức",
     imageSrc: "/img/tintuc/tintuc1.jpg",
     views: 8534,
@@ -164,7 +164,7 @@ const items = ref([
   {
     id: 15,
     date: "19.08.2023",
-    title: "MOBIEDU RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.MOBIEDU.VN",
+    title: "edubook RA MẮT CHUYÊN TRANG CỘNG ĐỒNG HỎI ĐÁP HOIDAP.edubook.VN",
     category: "Tin tức",
     imageSrc: "/img/tintuc/tintuc1.jpg",
     views: 8534,

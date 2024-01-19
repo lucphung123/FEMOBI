@@ -11,8 +11,8 @@
   </div>
   <div>
     <div class="text-center mt-20">
-      <p class="text-36px text-color_4 font-bold">mobiEdu - Nền tảng chuyển đổi số giáo dục toàn diện</p>
-      <p class="text-20px text-color_8 px-65">mobiEdu là hệ sinh thái giáo dục, cung cấp giải pháp dạy học & quản lí trường học trực tuyến, phân phối các nội dung học tập tới người học ở mọi lứa tuổi.</p>
+      <p class="text-36px text-color_4 font-bold">edubook - Nền tảng chuyển đổi số giáo dục toàn diện</p>
+      <p class="text-20px text-color_8 px-65">edubook là hệ sinh thái giáo dục, cung cấp giải pháp dạy học & quản lí trường học trực tuyến, phân phối các nội dung học tập tới người học ở mọi lứa tuổi.</p>
     </div>
     <div class="flex mt-10">
       <div class="w1/3">
@@ -73,7 +73,7 @@
         <p class="font-bold text-color_6 text-8 mt-5">Sứ mệnh</p>
         <p class="mt-3">Kiến tạo hệ sinh thái Giáo dục số tổng thể, đồng hành cùng ngành giáo dục, các doanh nghiệp, giáo viên và người học để nâng cao tri thức, nâng tầm nguồn nhân lực Việt, góp phần đưa Việt Nam trở thành Quốc gia số, sánh vai với các cường quốc.</p>
         <p class="font-bold text-color_6 text-8 mt-5">Tầm nhìn</p>
-        <p class="mt-3">mobiEdu trở thành thương hiệu Giáo dục số hàng đầu Việt Nam, là Nền tảng Chuyển đổi số Quốc gia trong lĩnh vực giáo dục.</p>
+        <p class="mt-3">edubook trở thành thương hiệu Giáo dục số hàng đầu Việt Nam, là Nền tảng Chuyển đổi số Quốc gia trong lĩnh vực giáo dục.</p>
       </div>
       <div class="w-55% flex gap-5 ml-35">
         <div class="relative bg-#003158 w-55 h-110 hover:(opacity-100) rounded-2xl">
@@ -116,7 +116,7 @@
           <div class="bg-white h-60 w-56 flex items-center justify-center rounded-3xl mt-6 ease-in-out delay-50 hover:-translate-y-3 duration-200 hover:(bg-color_16) shadow-xl">
             <div>
               <div class="i-mdi:email text-color_1 text-8xl ml-12"></div>
-              <p class="text-5">contact@mobiedu.vn</p>
+              <p class="text-5">contact@edubook.vn</p>
             </div>
           </div>
         </div>
@@ -124,7 +124,7 @@
           <div class="bg-white h-50 w-50 flex items-center justify-center rounded-3xl ml-5 mt-15 ease-in-out delay-50 hover:-translate-y-3 duration-200 hover:(bg-color_16) shadow-xl">
             <div>
               <div class="i-mdi:facebook text-color_4 text-7xl ml-4 mb-3"></div>
-              <p class="text-5">mobiEdu.vn</p>
+              <p class="text-5">edubook.vn</p>
             </div>
           </div>
           <div class="bg-white h-40 w-40 flex items-center justify-center rounded-3xl ml-5 mt-6 ease-in-out delay-50 hover:-translate-y-3 duration-200 hover:(bg-color_16) shadow-xl">

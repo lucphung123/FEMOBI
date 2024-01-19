@@ -27,12 +27,12 @@ const modules = [EffectCards, Autoplay, Navigation]
 const products = [
   {
     src: "/img/1.jpg",
-    name: "mobiEdu",
+    name: "EduBook",
     office: "Nền tảng bán sách đa dạng phù hợp mọi lứa tuổi",
   },
   {
     src: "/img/1.jpg",
-    name: "mobiEdu",
+    name: "EduBook",
     office: "Nền tảng bán sách đa dạng phù hợp mọi lứa tuổi",
   },
 ]

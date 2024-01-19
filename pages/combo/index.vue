@@ -107,8 +107,8 @@
               <div class="overflow-auto transition-all scrollbar-hide mt-5" :class="item.open && index === 0 ? 'h-45 duration-500' : 'h-0 duration-500'">
                 <div v-for="(childItem, childIndex) in item.children" :key="childIndex">
                   <div class="space-y-1 bg-white rd-2 p-8">
-                    <div>3 bước để đăng kí ngay khoá học trên <span class="font-bold">mobiEdu</span></div>
-                    <div><span class="font-bold">Bước 1 : </span>Đăng nhập hoặc đăng kí vào website mobiedu.vn</div>
+                    <div>3 bước để đăng kí ngay khoá học trên <span class="font-bold">edubook</span></div>
+                    <div><span class="font-bold">Bước 1 : </span>Đăng nhập hoặc đăng kí vào website edubook.vn</div>
                     <div><span class="font-bold">Bước 2 : </span>Truy cập vào sách muốn đăng kí, chọn "Đăng kí học ngay"</div>
                     <div><span class="font-bold">Bước 3 : </span>Lựa chọn hình thức thanh toán và làm theo hướng dẫn</div>
                   </div>

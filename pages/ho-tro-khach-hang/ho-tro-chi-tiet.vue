@@ -60,7 +60,7 @@ const menuItems = ref([
     open: false,
     children: [
       {
-        title: "1. Hệ sinh thái giáo dục mobiEdu có những khóa học như thế nào?",
+        title: "1. Hệ sinh thái giáo dục edubook có những khóa học như thế nào?",
         children: [],
       },
     ],
@@ -70,7 +70,7 @@ const menuItems = ref([
     open: false,
     children: [
       {
-        title: "1. Các giải pháp mobiEdu là gì?",
+        title: "1. Các giải pháp edubook là gì?",
         children: [],
       },
     ],
@@ -80,7 +80,7 @@ const menuItems = ref([
     open: false,
     children: [
       {
-        title: "1. Cổng thi mobiEdu là gì?",
+        title: "1. Cổng thi edubook là gì?",
         children: [],
       },
     ],
@@ -92,15 +92,15 @@ const menuItems1 = ref([
     open: false,
     children: [
       {
-        title: "1. Đăng kí tài khoản trên mobiEdu.vn như thế nào?",
+        title: "1. Đăng kí tài khoản trên edubook.vn như thế nào?",
         children: [],
       },
       {
-        title: "2. Đăng nhập trên mobiEdu.vn như thế nào?",
+        title: "2. Đăng nhập trên edubook.vn như thế nào?",
         children: [],
       },
       {
-        title: "3. Hướng dẫn cách lấy lại mật khẩu trên mobiEdu.vn",
+        title: "3. Hướng dẫn cách lấy lại mật khẩu trên edubook.vn",
         children: [],
       },
     ],
@@ -119,7 +119,7 @@ const menuItems1 = ref([
         title: "3. Hướng dẫn kích hoạt khóa học",
       },
       {
-        title: "4. Không đăng kí tài khoản có mua được khóa học trên mobiEdu.vn không?",
+        title: "4. Không đăng kí tài khoản có mua được khóa học trên edubook.vn không?",
       },
       {
         title: "5. Không có internet có thể xem được video khóa học hay không?",
@@ -137,7 +137,7 @@ const menuItems1 = ref([
     open: false,
     children: [
       {
-        title: "1. Cổng thi mobiEdu là gì?",
+        title: "1. Cổng thi edubook là gì?",
         children: [],
       },
     ],

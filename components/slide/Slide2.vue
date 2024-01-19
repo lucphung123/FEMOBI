@@ -27,35 +27,35 @@ const modules = [EffectCards, Autoplay, Navigation]
 const products = [
   {
     src: "/img/1.jpg",
-    name: "mobiEdu",
+    name: "EduBook",
   },
   {
     src: "/img/1.jpg",
-    name: "mobiEdu",
+    name: "EduBook",
   },
   {
     src: "/img/1.jpg",
-    name: "mobiEdu",
+    name: "EduBook",
   },
   {
     src: "/img/1.jpg",
-    name: "mobiEdu",
+    name: "EduBook",
   },
   {
     src: "/img/1.jpg",
-    name: "mobiEdu",
+    name: "EduBook",
   },
   {
     src: "/img/1.jpg",
-    name: "mobiEdu",
+    name: "EduBook",
   },
   {
     src: "/img/1.jpg",
-    name: "mobiEdu",
+    name: "EduBook",
   },
   {
     src: "/img/1.jpg",
-    name: "mobiEdu",
+    name: "EduBook",
   },
 ]
 let mySwiper = ref({})

@@ -18,15 +18,15 @@
         <div class="w-70%">
           <div :class="{ hidden: activeSubTab1 !== 'course1' }" class="w-full rounded-lg border p-10">
             <p class="font-bold text-color_4 border-b pb-5 text-8">Khóa học</p>
-            <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">1. Hệ sinh thái giáo dục mobiEdu có những khóa học như thế nào?</p>
+            <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">1. Hệ sinh thái giáo dục EduBook có những khóa học như thế nào?</p>
           </div>
           <div :class="{ hidden: activeSubTab1 !== 'course2' }" class="w-full rounded-lg border p-10">
             <p class="font-bold text-color_4 border-b pb-5 text-8">Giải pháp</p>
-            <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">1. Các giải pháp mobiEdu là gì?</p>
+            <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">1. Các giải pháp EduBook là gì?</p>
           </div>
           <div :class="{ hidden: activeSubTab1 !== 'course3' }" class="w-full rounded-lg border p-10">
             <p class="font-bold text-color_4 border-b pb-5 text-8">Cổng thi</p>
-            <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">1. Cổng thi mobiEdu là gì?</p>
+            <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">1. Cổng thi EduBook là gì?</p>
           </div>
         </div>
       </div>
@@ -42,21 +42,21 @@
         <div class="w-70%">
           <div :class="{ hidden: activeSubTab !== 'news1' }" class="w-full rounded-lg border p-10">
             <p class="font-bold text-color_4 border-b pb-5 text-8">Đăng kí - Đăng nhập</p>
-            <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">1. Đăng kí tài khoản trên mobiEdu.vn như thế nào?</p>
-            <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">2. Đăng nhập trên mobiEdu.vn như thế nào?</p>
-            <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">3. Hướng dẫn cách lấy lại mật khẩu trên mobiEdu.vn</p>
+            <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">1. Đăng kí tài khoản trên EduBook.vn như thế nào?</p>
+            <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">2. Đăng nhập trên EduBook.vn như thế nào?</p>
+            <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">3. Hướng dẫn cách lấy lại mật khẩu trên EduBook.vn</p>
           </div>
           <div :class="{ hidden: activeSubTab !== 'news2' }" class="w-full rounded-lg border p-10">
             <p class="font-bold text-color_4 border-b pb-5 text-8">Mua & sử dụng</p>
             <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">1. Các khóa học có thời gian sử dụng trong bao lâu?</p>
             <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">2. Làm thế nào để mua tặng khóa học cho người khác?</p>
             <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">3. Hướng dẫn kích hoạt khóa học</p>
-            <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">4. Không đăng kí tài khoản có mua được khóa học trên mobiEdu.vn không?</p>
+            <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">4. Không đăng kí tài khoản có mua được khóa học trên EduBook.vn không?</p>
             <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">5. Không có internet có thể xem được video khóa học hay không?</p>
           </div>
           <div :class="{ hidden: activeSubTab !== 'news3' }" class="w-full rounded-lg border p-10">
             <p class="font-bold text-color_4 border-b pb-5 text-8">Quản lí tài khoản</p>
-            <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">1. Tài khoản trên mobiEdu có thể thay đổi được không?</p>
+            <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">1. Tài khoản trên EduBook có thể thay đổi được không?</p>
             <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">2. Làm thế nào để quản lí các khóa học sau khi đã mua?</p>
             <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">3. Tôi có thể nhìn thấy khóa học đã mua tặng người khác không?</p>
           </div>
@@ -74,9 +74,9 @@
           <div :class="{ hidden: activeSubTab2 !== 'other1' }" class="w-full rounded-lg border p-10">
             <p class="font-bold text-color_4 border-b pb-5 text-8">Thanh toán - Đổi trả</p>
             <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">1. Thanh toán online như thế nào</p>
-            <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">2. Tôi có thể thanh toán qua các hình thức nào trên mobiEdu?</p>
-            <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">3. Làm thế nào để thanh toán qua tài khoản di động/SMS khi mua các khóa học trên mobiEdu?</p>
-            <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">4. Làm thế nào để thanh toán online khi mua các khóa học trên mobiEdu?</p>
+            <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">2. Tôi có thể thanh toán qua các hình thức nào trên EduBook?</p>
+            <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">3. Làm thế nào để thanh toán qua tài khoản di động/SMS khi mua các khóa học trên EduBook?</p>
+            <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">4. Làm thế nào để thanh toán online khi mua các khóa học trên EduBook?</p>
             <p class="mt-5 text-xl border-b pb-5 cursor-pointer hover:text-color_4">5. Có thể thay đổi khóa học sau khi đã mua hay không?</p>
           </div>
           <div :class="{ hidden: activeSubTab2 !== 'other2' }" class="w-full rounded-lg border p-10">
@@ -99,7 +99,7 @@
       <a href="https://zalo.me/0777202020" target="_blank" class="cursor-pointer p-3 bg-color_2 rounded-lg flex justify-center px-4 ease-in-out delay-150 hover:-translate-y-3 duration-300">
         <img src="/img/icon/zalo-30.png" class="w-40px h-40px" alt="" />
       </a>
-      <a href="https://www.facebook.com/mobiedu.vn" target="_blank" class="cursor-pointer p-3 bg-color_4 rounded-lg ease-in-out delay-150 hover:-translate-y-3 duration-300">
+      <a href="https://www.facebook.com/EduBook.vn" target="_blank" class="cursor-pointer p-3 bg-color_4 rounded-lg ease-in-out delay-150 hover:-translate-y-3 duration-300">
         <div class="i-mdi:facebook text-white text-5xl"></div>
       </a>
     </div>

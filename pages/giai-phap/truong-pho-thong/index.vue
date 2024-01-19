@@ -10,7 +10,7 @@
         <SlideSlide8 />
       </div>
     </div>
-    <div class="text-center text-xl text-color_8 py-10">Hệ thống giải pháp dành cho Doanh nghiệp - Nhà trường của mobiEdu</div>
+    <div class="text-center text-xl text-color_8 py-10">Hệ thống giải pháp dành cho Doanh nghiệp - Nhà trường của edubook</div>
     <div class="flex flex-col justify-center w-full lg:w-225 xl:(w-300) mx-auto">
       <div class="flex">
         <nuxt-link to="/giai-phap/truong-mam-non-tieu-hoc" class="w1/4">
@@ -29,11 +29,11 @@
                 <div class="bg-white w-150px h-150px rd-full shadow-2xl flex justify-center items-center border-3px border-color_4">
                   <img src="/img/giai-phap/G9.png" alt="" class="h-23" />
                 </div>
-                <div><p class="text-center">mobiEdu mSchool</p></div>
+                <div><p class="text-center">edubook mSchool</p></div>
               </nuxt-link>
               <nuxt-link to="/giai-phap/truong-pho-thong/mobiedu-tkb" class="space-y-3">
                 <img src="/img/giai-phap/G8.jpg" alt="" class="rd-full w-60% shadow-2xl" />
-                <p class="text-center w-60%">mobiEdu TKB</p>
+                <p class="text-center w-60%">edubook TKB</p>
               </nuxt-link>
             </div>
             <nuxt-link to="/giai-phap/truong-pho-thong/on-luyen" class="space-y-3">
@@ -49,7 +49,7 @@
   <div class="flex flex-col bg-gray-100 w-screen top-23">
     <div class="w-full lg:w-225 xl:(w-300) 2xl:(w-340) mx-auto flex items-center justify-center mt-15">
       <div class="flex flex-col text-center space-y-6 justify-center">
-        <p class="text-4xl text-color_4 font-600">mobiEdu mSchool - Giải pháp dạy & học toàn diện của MobiFone</p>
+        <p class="text-4xl text-color_4 font-600">edubook mSchool - Giải pháp dạy & học toàn diện của MobiFone</p>
         <p class="w-5/6">mSchool giúp nhà trường, giáo viên tạo website giảng dạy online, với hệ thống lớp học ảo, tổ chức thi online và quản lý trường học toàn diện. Giải pháp tạo website dạy học dễ dàng - bảo mật chỉ và tùy biến theo nhu cầu khách hàng.</p>
       </div>
     </div>
@@ -103,7 +103,7 @@
       </div>
       <div class="w-2/7 space-y-3">
         <div class="text-2xl font-bold text-color_4">Chuyển đổi tên miền</div>
-        <div>Hỗ trợ gắn tên miền riêng thay cho tên miền .mobiedu.vn mặc định ban đầu, chạy như một website độc lập. Tên miền riêng mang thương hiệu của chính nhà trường.</div>
+        <div>Hỗ trợ gắn tên miền riêng thay cho tên miền .edubook.vn mặc định ban đầu, chạy như một website độc lập. Tên miền riêng mang thương hiệu của chính nhà trường.</div>
       </div>
     </div>
     <div class="flex items-center justify-center">
